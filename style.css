@@ -1,0 +1,15 @@
+/*
+Theme Name: JoseCaos Theme
+Theme URI: http://www.github.com/josecaos/josecaos_theme
+Author: @joseCao5
+Author URI: https://josecaos.xyz/
+Description: Un tema sencillo para administrar todas las canciones de sintesis que hay en distintas paginas
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: josecaos_theme
+Los estilos  se encuentran dentro de la carpeta css/josecaos.css
+*/
+
+@import url('css/josecaos.css');

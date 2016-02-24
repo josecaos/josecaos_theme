@@ -1,2 +1,3 @@
 # josecaos_theme
-Tema de Wordpress para el sitio http://www.josecaos.xyz
+Child-theme de Wordpress para el sitio http://www.josecaos.xyz
+basado en Foundation 6 JointWP

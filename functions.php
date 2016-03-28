@@ -10,3 +10,9 @@ function theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+//
+##custom scripts
+function custom_scripts() {
+    wp_enqueue_script( 'josecaos-js', '/wp-content/themes/josecaos_theme/assets/js/josecaos.js', array( 'jquery' ), '0.1', true );
+}
+add_action('wp_enqueue_scripts', 'custom_scripts', 998);

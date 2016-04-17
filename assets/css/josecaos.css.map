@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACA,CAAE;EACA,MAAM,EAAE,mBAAmB;;AAE7B,UAAW;EACT,WAAW,EAAE,yBAAyB",
+"mappings": "AAIA,UAAW;EACT,WAAW,EAAE,yBAAyB",
 "sources": ["../scss/josecaos.scss"],
 "names": [],
 "file": "josecaos.css"

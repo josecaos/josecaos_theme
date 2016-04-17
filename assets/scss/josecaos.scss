@@ -2,6 +2,65 @@
 * {
   // border: 1px solid lightgray;
 }
+//
+@import "layout_utils";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+//paleta colores fondo
+.fondo_naranja_o {
+  background: #703423 !important;
+}
+.fondo_naranja_c {
+  background: #D83100 !important;
+}
+.fondo_verde_o {
+  background: #194F32 !important;
+}
+.fondo_verde_c {
+  background: #009847 !important;
+}
+.fondo_negro {
+  background: #030404 !important;
+}
+.fondo_gris_c {
+  background: #6A6766 !important;
+}
+.fondo_blanco {
+  background: whitesmoke !important;
+}
+.fondo_transparente {
+  background: transparent !important;
+}
+//colores letra
+.color_naranja_o {
+  color: #703423 !important;
+}
+.color_naranja_c {
+  color: #D83100 !important;
+}
+.color_verde_o {
+  color: #194F32 !important;
+}
+.color_verde_c {
+  color: #009847 !important;
+}
+.color_negro {
+  color: #030404 !important;
+}
+.color_gris_c {
+  color: #6A6766 !important;
+}
+.color_blanco {
+  color: whitesmoke !important;
+}
+//
+body {
+  @extend .color_gris_c;
+  @extend .fondo_verde_c;
+}
 .menu-text {
   font-family: 'Press Start 2P', cursive;
+  font-size: 10vmin;
+  a {
+    @extend .color_naranja_c;
+  }
 }

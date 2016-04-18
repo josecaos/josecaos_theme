@@ -5,6 +5,10 @@
 //
 @import "layout_utils";
 @import "../../bower_components/font-awesome/scss/font-awesome";
+//cambio tamano off-canvas
+//esto en settings.scss del Theme Parent
+// $off-canvas-width: rem-calc(650);
+
 //paleta colores fondo
 .fondo_naranja_o {
   background: #703423 !important;
@@ -55,12 +59,29 @@
 //
 body {
   @extend .color_gris_c;
-  @extend .fondo_verde_c;
+  @extend .fondo_naranja_o;
 }
 .menu-text {
   font-family: 'Press Start 2P', cursive;
-  font-size: 10vmin;
+  font-size: 7vmin;
   a {
     @extend .color_naranja_c;
+  }
+}
+// formulario contact 7
+.wpcf7-form {
+  @extend .fondo_naranja_o;
+  @extend .color_naranja_c;
+  p {
+    @extend .pl3;
+    @extend .pr3;
+  }
+  input {
+    border: none !important;
+    @extend .fondo_gris_c;
+    @extend .color_negro;
+  }
+  #offCanvasRight {
+    @extend .fondo_naranja_o;
   }
 }

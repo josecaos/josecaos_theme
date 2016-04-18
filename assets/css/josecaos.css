@@ -456,7 +456,7 @@
 .pr2 {
   padding-right: 30px !important; }
 
-.pr3 {
+.pr3, .wpcf7-form p {
   padding-right: 45px !important; }
 
 .pr4 {
@@ -468,7 +468,7 @@
 .pl2 {
   padding-left: 30px !important; }
 
-.pl3 {
+.pl3, .wpcf7-form p {
   padding-left: 45px !important; }
 
 .pl4 {
@@ -3059,7 +3059,7 @@
   overflow: visible;
   clip: auto; }
 
-.fondo_naranja_o {
+.fondo_naranja_o, body, .wpcf7-form, .wpcf7-form #offCanvasRight {
   background: #703423 !important; }
 
 .fondo_naranja_c {
@@ -3068,13 +3068,13 @@
 .fondo_verde_o {
   background: #194F32 !important; }
 
-.fondo_verde_c, body {
+.fondo_verde_c {
   background: #009847 !important; }
 
 .fondo_negro {
   background: #030404 !important; }
 
-.fondo_gris_c {
+.fondo_gris_c, .wpcf7-form input {
   background: #6A6766 !important; }
 
 .fondo_blanco {
@@ -3086,7 +3086,7 @@
 .color_naranja_o {
   color: #703423 !important; }
 
-.color_naranja_c, .menu-text a {
+.color_naranja_c, .menu-text a, .wpcf7-form {
   color: #D83100 !important; }
 
 .color_verde_o {
@@ -3095,7 +3095,7 @@
 .color_verde_c {
   color: #009847 !important; }
 
-.color_negro {
+.color_negro, .wpcf7-form input {
   color: #030404 !important; }
 
 .color_gris_c, body {
@@ -3106,6 +3106,9 @@
 
 .menu-text {
   font-family: 'Press Start 2P', cursive;
-  font-size: 10vmin; }
+  font-size: 7vmin; }
+
+.wpcf7-form input {
+  border: none !important; }
 
 /*# sourceMappingURL=josecaos.css.map */

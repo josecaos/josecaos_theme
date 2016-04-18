@@ -61,6 +61,9 @@ body {
   @extend .color_gris_c;
   @extend .fondo_naranja_o;
 }
+#content {
+  @extend .fondo_negro;
+}
 .menu-text {
   font-family: 'Press Start 2P', cursive;
   font-size: 7vmin;
@@ -76,7 +79,7 @@ body {
     @extend .pl3;
     @extend .pr3;
   }
-  input {
+  input, textarea {
     border: none !important;
     @extend .fondo_gris_c;
     @extend .color_negro;

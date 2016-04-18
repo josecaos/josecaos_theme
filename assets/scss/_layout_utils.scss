@@ -10,15 +10,17 @@ $fontXXXL:50px;
 $fontHuge:100px;
 //variables texto responsiv0
 $fontRXXXS:1vmin;
-$fontRXXS:1.5vmin;
-$fontRXS:2vmin;
-$fontRS:3vmin;
-$fontRM:4vmin;
-$fontRL:5vmin;
-$fontRXL:5.5vmin;
-$fontRXXL:6.5vmin;
-$fontRXXXL:7vmin;
+$fontRXXS:2vmin;
+$fontRXS:3vmin;
+$fontRS:4vmin;
+$fontRM:5vmin;
+$fontRL:6vmin;
+$fontRXL:7vmin;
+$fontRXXL:8vmin;
+$fontRXXXL:9vmin;
 $fontRHuge:30vmin;
+
+
 
 /******* FOUNDATION MODS *******/
 
@@ -118,12 +120,8 @@ $screen-lg-min: 1025px;
 	right: 0;
 }
 
-.right {
-	right: 0;
-}
-.left {
-	left: 0;
-}
+
+
 .bottom {
 	bottom:0;
 }
@@ -132,9 +130,7 @@ $screen-lg-min: 1025px;
 	top: 0;
 }
 
-.w_10 {
-	width: 10%;
-}
+
 .w_100 {
 	width: 100%;
 }
@@ -273,10 +269,6 @@ $screen-lg-min: 1025px;
 	@extend .h;
 	height: 30%;
 }
-.h_35 {
-	@extend .h;
-	height: 35%s;
-}
 .h_40 {
 	@extend .h;
 	height: 40%;
@@ -322,15 +314,8 @@ $screen-lg-min: 1025px;
 	@extend .h;
 	min-height: 60%;
 }
-.minH_100vh {
-	@extend .h;
-	min-height: 100vh;
-}
-//max heights
-.maxH_80 {
-	@extend .h;
-	max-height: 80%;
-}
+
+
 
 
 
@@ -411,15 +396,8 @@ $screen-lg-min: 1025px;
 .ml4 {
 	margin-left: $spacing * 4 !important;
 }
-.ml5 {
-	margin-left: $spacing * 5 !important;
-}
-.ml7 {
- margin-left: $spacing * 7 !important;
-}
-.ml10 {
- margin-left: $spacing * 10 !important;
-}
+
+
 
 .mr1 {
 	margin-right: $spacing !important;
@@ -463,6 +441,10 @@ $screen-lg-min: 1025px;
 	margin-bottom: $spacing * 7 !important;
 
 }
+.mb10 {
+	margin-bottom: $spacing * 10 !important;
+
+}
 //
 .mb-1 {
 	margin-bottom: - $spacing !important;
@@ -501,9 +483,6 @@ $screen-lg-min: 1025px;
 }
 .p6 {
   padding: $spacing * 2.5 !important;
-}
-.p10 {
-  padding: $spacing * 5 !important;
 }
 
 
@@ -565,6 +544,9 @@ $screen-lg-min: 1025px;
 }
 
 //
+.pr0 {
+	padding-right: 0 !important;
+}
 .pr1 {
 	padding-right: $spacing !important;
 }
@@ -579,7 +561,9 @@ $screen-lg-min: 1025px;
 }
 
 
-
+.pl0 {
+	padding-left: 0 !important;
+}
 .pl1 {
 	padding-left: $spacing !important;
 }
@@ -871,7 +855,7 @@ $screen-lg-min: 1025px;
 }
 
 //cursor
-.pointer {
+.cursor-pointer {
 		cursor: pointer;
 }
 
@@ -955,7 +939,6 @@ $screen-lg-min: 1025px;
 
 .hidden {
 	display: none !important;
-	transition: 2s;
 }
 
 
@@ -1045,9 +1028,7 @@ $screen-lg-min: 1025px;
 .black {
 	color: #000;
 }
-.transparent {
-	background-color: transparent !important;
-}
+
 .white_bg {
 	background-color: #fff;
 }

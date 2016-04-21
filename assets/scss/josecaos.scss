@@ -2,13 +2,13 @@
 * {
   // border: 1px solid lightgray;
 }
+$altura_header = 13vh;
 //
 @import "layout_utils";
 @import "../../bower_components/font-awesome/scss/font-awesome";
 //cambio tamano off-canvas
 //esto en settings.scss del Theme Parent
 // $off-canvas-width: rem-calc(650);
-
 //paleta colores fondo
 .fondo_naranja_o {
   background: #703423 !important;
@@ -60,6 +60,12 @@
 body {
   @extend .color_gris_c;
   @extend .fondo_naranja_o;
+}
+header {
+    height: $altura_header;
+}
+.header_offset {
+  padding-top: $altura_header;
 }
 #content {
   @extend .fondo_negro;

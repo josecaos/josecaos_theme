@@ -108,7 +108,7 @@
 .w_100vw {
   width: 100vw; }
 
-.h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60 {
+.h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, #menu-menu-caos, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60 {
   display: block; }
 
 .ha {
@@ -186,7 +186,7 @@
 .h_90vh {
   height: 90vh; }
 
-.h_100vh {
+.h_100vh, #menu-menu-caos {
   height: 100vh; }
 
 .h_10 {
@@ -387,7 +387,7 @@
 .pt1 {
   padding-top: 15px !important; }
 
-.pt2 {
+.pt2, #menu-menu-caos li {
   padding-top: 30px !important; }
 
 .pt3 {
@@ -402,7 +402,7 @@
 .pb1 {
   padding-bottom: 15px !important; }
 
-.pb2 {
+.pb2, #menu-menu-caos li {
   padding-bottom: 30px !important; }
 
 .pb3 {
@@ -423,31 +423,31 @@
 .pb8 {
   padding-bottom: 120px !important; }
 
-.pr0 {
+.pr0, #menu-menu-caos li {
   padding-right: 0 !important; }
 
-.pr1 {
+.pr1, .wpcf7-form p {
   padding-right: 15px !important; }
 
 .pr2 {
   padding-right: 30px !important; }
 
-.pr3, .wpcf7-form p {
+.pr3 {
   padding-right: 45px !important; }
 
 .pr4 {
   padding-right: 60px !important; }
 
-.pl0 {
+.pl0, #menu-menu-caos li {
   padding-left: 0 !important; }
 
-.pl1 {
+.pl1, .wpcf7-form p {
   padding-left: 15px !important; }
 
 .pl2 {
   padding-left: 30px !important; }
 
-.pl3, .wpcf7-form p {
+.pl3 {
   padding-left: 45px !important; }
 
 .pl4 {
@@ -460,7 +460,7 @@
   padding-left: 90px !important; }
 
 @media screen and (max-width: 640px) {
-  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60 {
+  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, #menu-menu-caos, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60 {
     display: block; }
 
   .h_sm_0 {
@@ -3040,13 +3040,13 @@
 .fondo_naranja_c {
   background: #D83100 !important; }
 
-.fondo_verde_o {
+.fondo_verde_o, #menu-menu-caos {
   background: #194F32 !important; }
 
 .fondo_verde_c {
   background: #009847 !important; }
 
-.fondo_negro {
+.fondo_negro, #content {
   background: #030404 !important; }
 
 .fondo_gris_c, .wpcf7-form input, .wpcf7-form textarea {
@@ -3061,13 +3061,13 @@
 .color_naranja_o {
   color: #703423 !important; }
 
-.color_naranja_c, .menu-text a, .wpcf7-form {
+.color_naranja_c, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form {
   color: #D83100 !important; }
 
-.color_verde_o {
+.color_verde_o, .wpcf7-submit {
   color: #194F32 !important; }
 
-.color_verde_c {
+.color_verde_c, #menu-menu-caos li a {
   color: #009847 !important; }
 
 .color_negro, .wpcf7-form input, .wpcf7-form textarea {
@@ -3079,11 +3079,24 @@
 .color_blanco {
   color: whitesmoke !important; }
 
-.menu-text {
+header {
+  height: 13vh; }
+
+.header_offset {
+  padding-top: 13vh; }
+
+.menu_texto, #menu-menu-caos li a {
   font-family: 'Press Start 2P', cursive;
   font-size: 7vmin; }
 
+#menu-menu-caos li {
+  border: 1px solid #009847; }
+
 .wpcf7-form input, .wpcf7-form textarea {
   border: none !important; }
+
+.wpcf7-submit {
+  padding: 15px;
+  width: 100%; }
 
 /*# sourceMappingURL=josecaos.css.map */

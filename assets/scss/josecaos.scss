@@ -65,19 +65,27 @@ header {
     height: $altura_header;
 }
 .header_offset {
-  padding-top: $altura_header;
+  padding-top: $altura_header !important;
 }
 #content {
   @extend .fondo_negro;
 }
-.menu_texto {
+.logo_texto {
   font-family: 'Press Start 2P', cursive;
   font-size: 7vmin;
   a {
     @extend .color_naranja_c;
   }
 }
+.menu_texto {
+  font-family: 'Press Start 2P', cursive;
+  @extend .fontRS;
+  a {
+    @extend .color_naranja_c;
+  }
+}
 //
+
 #menu-menu-caos {
   @extend .h_100vh;
   @extend .fondo_verde_o;
@@ -104,14 +112,25 @@ header {
   input, textarea {
     border: none !important;
     @extend .fondo_gris_c;
-    @extend .color_negro;
+    @extend .color_naranja_c;
   }
   #offCanvasRight {
     @extend .fondo_naranja_o;
   }
-}
-.wpcf7-submit {
-  padding: 15px;
-  width: 100%;
-  @extend .color_verde_o;
+  #offCanvasLeft {
+    @extend .fondo_verde_o;
+  }
+  .wpcf7-submit {
+    padding: 15px;
+    width: 100%;
+    @extend .color_verde_o;
+  }
+  .wpcf7-submit:hover {
+    @extend .fondo_verde_c;
+    @extend .color_gris_c;
+  }
+  .wpcf7-submit:active {
+    @extend .fondo_naranja_o;
+    @extend .color_naranja_c;
+  }
 }

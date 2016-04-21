@@ -785,7 +785,7 @@
 .fontRXS {
   font-size: 3vmin; }
 
-.fontRS {
+.fontRS, .menu_texto, #menu-menu-caos li a {
   font-size: 4vmin; }
 
 .fontRM {
@@ -3034,16 +3034,16 @@
   overflow: visible;
   clip: auto; }
 
-.fondo_naranja_o, body, .wpcf7-form, .wpcf7-form #offCanvasRight {
+.fondo_naranja_o, body, .wpcf7-form, .wpcf7-form #offCanvasRight, .wpcf7-form .wpcf7-submit:active {
   background: #703423 !important; }
 
 .fondo_naranja_c {
   background: #D83100 !important; }
 
-.fondo_verde_o, #menu-menu-caos {
+.fondo_verde_o, #menu-menu-caos, .wpcf7-form #offCanvasLeft {
   background: #194F32 !important; }
 
-.fondo_verde_c {
+.fondo_verde_c, .wpcf7-form .wpcf7-submit:hover {
   background: #009847 !important; }
 
 .fondo_negro, #content {
@@ -3061,19 +3061,19 @@
 .color_naranja_o {
   color: #703423 !important; }
 
-.color_naranja_c, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form {
+.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active {
   color: #D83100 !important; }
 
-.color_verde_o, .wpcf7-submit {
+.color_verde_o, .wpcf7-form .wpcf7-submit {
   color: #194F32 !important; }
 
 .color_verde_c, #menu-menu-caos li a {
   color: #009847 !important; }
 
-.color_negro, .wpcf7-form input, .wpcf7-form textarea {
+.color_negro {
   color: #030404 !important; }
 
-.color_gris_c, body {
+.color_gris_c, body, .wpcf7-form .wpcf7-submit:hover {
   color: #6A6766 !important; }
 
 .color_blanco {
@@ -3083,19 +3083,21 @@ header {
   height: 13vh; }
 
 .header_offset {
-  padding-top: 13vh; }
+  padding-top: 13vh !important; }
 
-.menu_texto, #menu-menu-caos li a {
+.logo_texto {
   font-family: 'Press Start 2P', cursive;
   font-size: 7vmin; }
+
+.menu_texto, #menu-menu-caos li a {
+  font-family: 'Press Start 2P', cursive; }
 
 #menu-menu-caos li {
   border: 1px solid #009847; }
 
 .wpcf7-form input, .wpcf7-form textarea {
   border: none !important; }
-
-.wpcf7-submit {
+.wpcf7-form .wpcf7-submit {
   padding: 15px;
   width: 100%; }
 

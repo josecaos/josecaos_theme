@@ -63,6 +63,11 @@ body {
 }
 header {
     height: $altura_header;
+    &>#botones_header {
+      &>i:hover {
+        @extend .color_gris_c;
+      }
+    }
 }
 .header_offset {
   padding-top: $altura_header !important;
@@ -136,11 +141,12 @@ header {
 }
 // footer
 #redes_sociales {
+  a:hover,
+  a:focus {
+    @extend .color_naranja_c;
+    transition: 1s;
+  }
   li {
     display: inline-block;
-    a:hover {
-      @extend .color_naranja_c;
-      transition: 1s;
-    }
   }
 }

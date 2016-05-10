@@ -3064,7 +3064,8 @@
 .color_naranja_o {
   color: #703423 !important; }
 
-.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active, #redes_sociales li a:hover {
+.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active, #redes_sociales a:hover,
+#redes_sociales a:focus {
   color: #D83100 !important; }
 
 .color_verde_o, .wpcf7-form .wpcf7-submit {
@@ -3076,7 +3077,7 @@
 .color_negro {
   color: #030404 !important; }
 
-.color_gris_c, body, .wpcf7-form .wpcf7-submit:hover {
+.color_gris_c, body, header > #botones_header > i:hover, .wpcf7-form .wpcf7-submit:hover {
   color: #6A6766 !important; }
 
 .color_blanco {
@@ -3104,9 +3105,10 @@ header {
   padding: 15px;
   width: 100%; }
 
+#redes_sociales a:hover,
+#redes_sociales a:focus {
+  transition: 1s; }
 #redes_sociales li {
   display: inline-block; }
-  #redes_sociales li a:hover {
-    transition: 1s; }
 
 /*# sourceMappingURL=josecaos.css.map */

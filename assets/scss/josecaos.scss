@@ -138,5 +138,9 @@ header {
 #redes_sociales {
   li {
     display: inline-block;
+    a:hover {
+      @extend .color_naranja_c;
+      transition: 1s;
+    }
   }
 }

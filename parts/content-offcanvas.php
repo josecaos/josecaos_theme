@@ -1,6 +1,6 @@
 <div class="off-canvas position-right fondo_naranja_o" id="offCanvasRight" data-off-canvas data-position="right">
-<a class="small-12 columns pr1 text-right fontRXS color_naranja_c" aria-label="Close menu" data-close>X</a>
-<h1 class="small-12 text-center menu_texto p1 fontRS fondo_naranja_o color_naranja_c">Booking</h2>
+<a class="small-12 columns p2 text-right fontRXS color_naranja_c" aria-label="Close menu" data-close>X</a>
+<h1 class="small-12 text-center menu_texto p1 fontRS fondo_naranja_o color_naranja_c">HolaMundo.send()</h2>
 	<?php
 	echo do_shortcode('[contact-form-7 id="15" title="Contact Caos"]');
 	?>

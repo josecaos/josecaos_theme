@@ -56,7 +56,7 @@
 
 				<div class="off-canvas-content" data-off-canvas-content>
 
-					<header class="header pl1 pr1 fondo_naranja_o fixed w_100 p0 z1" role="banner">
+					<header class="header pl1 pr1 fondo_negro fixed w_100 p0 z1" role="banner">
 
 						 <!-- This navs will be applied to the topbar, above all content
 							  To see additional nav styles, visit the /parts directory -->

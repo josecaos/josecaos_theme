@@ -2,7 +2,7 @@
 
 	<div id="content" class="header_offset">
 
-		<div id="inner-content" class="row">
+		<div id="inner-content" class="row expanded">
 
 		    <main id="main" class="large-8 medium-8 columns" role="main">
 

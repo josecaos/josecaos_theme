@@ -3,13 +3,24 @@
 							<div class="large-8 medium-12 columns">
 								<nav role="navigation">
 		    						<?php joints_footer_links(); ?>
-										<ul id="redes_sociales"class="m0">
-											<a href="#" class="small-2 columns text-center fontRM color_negro">
-												<li class="p2 mr2"><i class="fa fa-github"></i></li>
-												<li class="p2 mr2"><i class="fa fa-github"></i></li>
-												<li class="p2 mr2"><i class="fa fa-github"></i></li>
-												<li class="p2 mr2"><i class="fa fa-github"></i></li>
-												<li class="p2 mr2"><i class="fa fa-github"></i></li>
+										<ul id="redes_sociales" class="small-12 columns m0">
+											<a href="http://www.github.com/josecaos" target="_blank" class="small-2 columns text-center fontRM color_negro">
+												<li class="p2"><i class="fa fa-github"></i></li>
+											</a>
+											<a href="http://www.twitter.com/joseCao5" target="_blank" class="small-2 columns text-center fontRM color_negro">
+												<li class="p2"><i class="fa fa-twitter"></i></li>
+											</a>
+											<a href="http://www.instagram.com/josecaos" target="_blank" class="small-2 columns text-center fontRM color_negro">
+												<li class="p2"><i class="fa fa-instagram"></i></li>
+											</a>
+											<a href="http://www.soundcloud.com/josecaos" target="_blank" class="small-2 columns text-center fontRM color_negro">
+												<li class="p2"><i class="fa fa-soundcloud"></i></li>
+											</a>
+											<a href="https://vimeo.com/mixfuckedup" target="_blank" class="small-2 columns text-center fontRM color_negro">
+												<li class="p2"><i class="fa fa-vimeo"></i></li>
+											</a>
+											<a href="https://www.youtube.com/user/mixfuckedupmac" target="_blank" class="small-2 columns text-center fontRM color_negro">
+												<li class="p2"><i class="fa fa-youtube"></i></li>
 											</a>
 										</ul>
 		    					</nav>

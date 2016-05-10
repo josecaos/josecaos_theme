@@ -1,9 +1,9 @@
-					<footer class="footer fondo_gris_c color_negro m0" role="contentinfo">
-						<div id="inner-footer" class="row">
+					<footer class="footer fondo_gris_c color_negro m0 h_15vh" role="contentinfo">
+						<div id="inner-footer" class="row h_100">
 							<div class="large-8 medium-12 columns">
-								<nav role="navigation">
+								<nav role="navigation" class="h_100">
 		    						<?php joints_footer_links(); ?>
-										<ul id="redes_sociales" class="small-12 columns m0">
+										<ul id="redes_sociales" class="small-12 columns h_100 m0">
 											<a href="http://www.github.com/josecaos" target="_blank" class="small-2 columns text-center fontRM color_negro">
 												<li class="p2"><i class="fa fa-github"></i></li>
 											</a>
@@ -25,9 +25,11 @@
 										</ul>
 		    					</nav>
 		    				</div>
-							<div class="large-4 medium-12 columns">
-								<p class="source-org copyright align-center">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+
+							<div class="large-4 medium-12 columns h_100">
+								<p class="text-center source-org copyright align-center m0 pt1">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
 							</div>
+
 						</div> <!-- end #inner-footer -->
 					</footer> <!-- end .footer -->
 				</div>  <!-- end .main-content -->

@@ -1,4 +1,4 @@
-					<footer class="footer fondo_gris_c color_negro m0 h_15vh" role="contentinfo">
+					<footer class="footer fondo_naranja_c color_negro m0 minH_10vh" role="contentinfo">
 						<div id="inner-footer" class="row h_100">
 							<div class="large-8 medium-12 columns">
 								<nav role="navigation" class="h_100">

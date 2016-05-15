@@ -319,7 +319,11 @@ $screen-lg-min: 1025px;
 }
 
 
-
+//min viewport heights
+.minH_10vh {
+	@extend .h;
+	min-height: 10vh;
+}
 
 
 .m0 {

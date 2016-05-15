@@ -108,7 +108,7 @@
 .w_100vw {
   width: 100vw; }
 
-.h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, #menu-menu-caos, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60 {
+.h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, #menu-menu-caos, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60, .minH_10vh {
   display: block; }
 
 .ha {
@@ -239,6 +239,9 @@
 
 .minH_60 {
   min-height: 60%; }
+
+.minH_10vh {
+  min-height: 10vh; }
 
 .m0 {
   margin: 0 !important; }
@@ -463,7 +466,7 @@
   padding-left: 90px !important; }
 
 @media screen and (max-width: 640px) {
-  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, #menu-menu-caos, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60 {
+  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, #menu-menu-caos, .h_10, .h_20, .h_25, .h_33, .h_30, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_60, .minH_10vh {
     display: block; }
 
   .h_sm_0 {
@@ -3037,10 +3040,10 @@
   overflow: visible;
   clip: auto; }
 
-.fondo_naranja_o, body, .wpcf7-form, .wpcf7-form #offCanvasRight, .wpcf7-form .wpcf7-submit:active {
+.fondo_naranja_o, body, .wpcf7-form, .wpcf7-form .wpcf7-submit:active {
   background: #703423 !important; }
 
-.fondo_naranja_c {
+.fondo_naranja_c, .wpcf7-form #offCanvasRight {
   background: #D83100 !important; }
 
 .fondo_verde_o, #menu-menu-caos, .wpcf7-form #offCanvasLeft {

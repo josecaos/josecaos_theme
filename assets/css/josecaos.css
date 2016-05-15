@@ -3040,10 +3040,10 @@
   overflow: visible;
   clip: auto; }
 
-.fondo_naranja_o, body, .wpcf7-form, .wpcf7-form .wpcf7-submit:active {
+.fondo_naranja_o, body, .wpcf7-form .wpcf7-submit:active {
   background: #703423 !important; }
 
-.fondo_naranja_c, .wpcf7-form #offCanvasRight {
+.fondo_naranja_c, .wpcf7-form, .wpcf7-form #offCanvasRight {
   background: #D83100 !important; }
 
 .fondo_verde_o, #menu-menu-caos, .wpcf7-form #offCanvasLeft {
@@ -3067,7 +3067,7 @@
 .color_naranja_o {
   color: #703423 !important; }
 
-.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active, #redes_sociales a:hover,
+.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active, #redes_sociales a:hover,
 #redes_sociales a:focus {
   color: #D83100 !important; }
 
@@ -3077,7 +3077,7 @@
 .color_verde_c, #menu-menu-caos li a {
   color: #009847 !important; }
 
-.color_negro {
+.color_negro, .wpcf7-form {
   color: #030404 !important; }
 
 .color_gris_c, body, header > #botones_header > i:hover, .wpcf7-form .wpcf7-submit:hover {

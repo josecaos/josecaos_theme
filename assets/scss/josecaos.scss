@@ -108,8 +108,8 @@ header {
 }
 // formulario contact 7
 .wpcf7-form {
-  @extend .fondo_naranja_o;
-  @extend .color_naranja_c;
+  @extend .fondo_naranja_c;
+  @extend .color_negro;
   p {
     @extend .pl1;
     @extend .pr1;

@@ -27,7 +27,7 @@
 		    				</div>
 
 							<div class="large-4 medium-12 columns h_100">
-								<p class="text-center source-org copyright align-center m0 pt1">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+								<div class="text-center source-org copyright align-center m0 p2">&copy;  <?php bloginfo('name'); ?> | <?php echo date('Y'); ?></div>
 							</div>
 
 						</div> <!-- end #inner-footer -->

@@ -62,12 +62,17 @@ body {
   @extend .fondo_naranja_o;
 }
 header {
-    height: $altura_header;
-    &>#botones_header {
-      &>i:hover {
-        @extend .color_gris_c;
-      }
+  height: $altura_header;
+  a.logo_texto:hover {
+    @extend .color_verde_c ;
+    transition: 1s;
+  }
+  #botones_header {
+    a:hover {
+      @extend .color_gris_c ;
+      transition: 1s;
     }
+  }
 }
 .header_offset {
   padding-top: $altura_header !important;
@@ -93,16 +98,26 @@ header {
 
 #menu-menu-caos {
   @extend .h_100vh;
-  @extend .fondo_verde_o;
+  @extend .fondo_negro;
   li {
-      border: 1px solid #009847;//.fondo_verde_c
-      @extend .pt2;
-      @extend .pb2;
-      @extend .pl0;
-      @extend .pr0;
+    // border-top: 1px solid #D83100;
+    border-bottom: 1px solid #D83100;
+    @extend .pt2;
+    @extend .pb2;
+    @extend .pl0;
+    @extend .pr0;
     a {
       @extend .menu_texto;
-      @extend .color_verde_c;
+      @extend .color_naranja_c;
+    }
+  }
+  li:hover {
+    @extend .fondo_naranja_c;
+    color: black !important;
+    transition: 1s;
+    a {
+      @extend .color_negro;
+      transition: 1s;
     }
   }
 }
@@ -131,7 +146,7 @@ header {
     @extend .color_verde_o;
   }
   .wpcf7-submit:hover {
-    @extend .fondo_verde_c;
+    @extend .fondo_naranja_o;
     @extend .color_gris_c;
   }
   .wpcf7-submit:active {
@@ -143,7 +158,7 @@ header {
 #redes_sociales {
   a:hover,
   a:focus {
-    @extend .color_naranja_c;
+    @extend .color_gris_c;
     transition: 1s;
   }
   li {

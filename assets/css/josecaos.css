@@ -3040,19 +3040,19 @@
   overflow: visible;
   clip: auto; }
 
-.fondo_naranja_o, body, .wpcf7-form .wpcf7-submit:active {
+.fondo_naranja_o, body, .wpcf7-form .wpcf7-submit:hover, .wpcf7-form .wpcf7-submit:active {
   background: #703423 !important; }
 
-.fondo_naranja_c, .wpcf7-form, .wpcf7-form #offCanvasRight {
+.fondo_naranja_c, #menu-menu-caos li:hover, .wpcf7-form, .wpcf7-form #offCanvasRight {
   background: #D83100 !important; }
 
-.fondo_verde_o, #menu-menu-caos, .wpcf7-form #offCanvasLeft {
+.fondo_verde_o, .wpcf7-form #offCanvasLeft {
   background: #194F32 !important; }
 
-.fondo_verde_c, .wpcf7-form .wpcf7-submit:hover {
+.fondo_verde_c {
   background: #009847 !important; }
 
-.fondo_negro, #content {
+.fondo_negro, #content, #menu-menu-caos {
   background: #030404 !important; }
 
 .fondo_gris_c, .wpcf7-form input, .wpcf7-form textarea {
@@ -3067,20 +3067,20 @@
 .color_naranja_o {
   color: #703423 !important; }
 
-.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a a, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active, #redes_sociales a:hover,
-#redes_sociales a:focus {
+.color_naranja_c, .logo_texto a, .menu_texto a, #menu-menu-caos li a, .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form .wpcf7-submit:active {
   color: #D83100 !important; }
 
 .color_verde_o, .wpcf7-form .wpcf7-submit {
   color: #194F32 !important; }
 
-.color_verde_c, #menu-menu-caos li a {
+.color_verde_c, header a.logo_texto:hover {
   color: #009847 !important; }
 
-.color_negro, .wpcf7-form {
+.color_negro, #menu-menu-caos li:hover a, .wpcf7-form {
   color: #030404 !important; }
 
-.color_gris_c, body, header > #botones_header > i:hover, .wpcf7-form .wpcf7-submit:hover {
+.color_gris_c, body, header #botones_header a:hover, .wpcf7-form .wpcf7-submit:hover, #redes_sociales a:hover,
+#redes_sociales a:focus {
   color: #6A6766 !important; }
 
 .color_blanco {
@@ -3088,6 +3088,10 @@
 
 header {
   height: 13vh; }
+  header a.logo_texto:hover {
+    transition: 1s; }
+  header #botones_header a:hover {
+    transition: 1s; }
 
 .header_offset {
   padding-top: 13vh !important; }
@@ -3100,7 +3104,12 @@ header {
   font-family: 'Press Start 2P', cursive; }
 
 #menu-menu-caos li {
-  border: 1px solid #009847; }
+  border-bottom: 1px solid #D83100; }
+#menu-menu-caos li:hover {
+  color: black !important;
+  transition: 1s; }
+  #menu-menu-caos li:hover a {
+    transition: 1s; }
 
 .wpcf7-form input, .wpcf7-form textarea {
   border: none !important; }

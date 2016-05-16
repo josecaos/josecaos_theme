@@ -26,7 +26,7 @@
 		    					</nav>
 		    				</div>
 
-							<div class="large-4 medium-12 columns h_100">
+							<div class="large-4 medium-12 columns h_100 align-middle pt1">
 								<div class="text-center source-org copyright align-center m0 p2">&copy;  <?php bloginfo('name'); ?> | <?php echo date('Y'); ?></div>
 							</div>
 

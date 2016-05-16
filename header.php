@@ -48,7 +48,7 @@
 
 	<body <?php body_class(); ?>>
 
-		<div class="off-canvas-wrapper">
+		<div class="off-canvas-wrapper fondo_naranja_c">
 
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 

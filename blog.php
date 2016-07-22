@@ -1,6 +1,7 @@
 <?php
 /*Template Name: Baul*/
 
+get_header();
 ?>
 <div id="content" class="header_offset">
 
@@ -31,3 +32,9 @@
   </div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
+
+<?php
+
+get_footer();
+
+ ?>

@@ -29,37 +29,29 @@
 
 		<?php wp_head(); ?>
 
-		<!-- Drop Google Analytics here -->
+		<!-- Analytics -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-74096683-1', 'auto');
-  ga('send', 'pageview');
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  //
+  // ga('create', 'UA-74096683-1', 'auto');
+  // ga('send', 'pageview');
 
 </script>
-		<!-- end analytics -->
+		<!-- -->
 
 	</head>
 
-	<!-- Uncomment this line if using the Off-Canvas Menu -->
+	<body>
+					<header id="header-escritorio" class="columns h-10-v fixed top left p-0">
 
-	<body <?php body_class(); ?>>
 
-		<div class="off-canvas-wrapper fondo_naranja_c">
+					</header>
+					<header id="header-movil" class="columns h-10-v fixed top left p-0">
 
-			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-				<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
+					</header>
 
-				<div class="off-canvas-content" data-off-canvas-content>
-
-					<header class="header pl1 pr1 fondo_negro fixed w_100 p0 z1" role="banner">
-
-						 <!-- This navs will be applied to the topbar, above all content
-							  To see additional nav styles, visit the /parts directory -->
-						 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-
-					</header> <!-- end .header -->
+          <div id="main" class="columns p-0">

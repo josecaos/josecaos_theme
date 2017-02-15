@@ -1,8 +1,11 @@
-					<footer class="footer fondo_naranja_c color_negro m0 minH_10vh" role="contentinfo">
-						<div id="inner-footer" class="row h_100">
+</div>  <!-- end .main-content -->
+
+					<footer class="footer">
+						<div id="inner-footer" class="row h-100">
 							<div class="large-8 medium-12 columns">
+
 								<nav role="navigation" class="h_100">
-		    						<?php joints_footer_links(); ?>
+
 										<ul id="redes_sociales" class="small-12 columns h_100 m0">
 											<a href="http://www.github.com/josecaos" target="_blank" class="small-2 columns text-center fontRM color_negro">
 												<li class="p2"><i class="fa fa-github"></i></li>
@@ -32,9 +35,6 @@
 
 						</div> <!-- end #inner-footer -->
 					</footer> <!-- end .footer -->
-				</div>  <!-- end .main-content -->
-			</div> <!-- end .off-canvas-wrapper-inner -->
-		</div> <!-- end .off-canvas-wrapper -->
 		<?php wp_footer(); ?>
 	</body>
 </html> <!-- end page -->

@@ -1,24 +1,12 @@
 /*
-Theme Name: JoseCaos - Theme
+Theme Name: joseCaos - Theme
 Theme URI: http://www.github.com/josecaos/josecaos_theme
 Author: @joseCao5
 Author URI: https://josecaos.xyz/
-Template: JointsWP
-Description: Tema original basado en JointsWP
-Version: 0.1
+Description: Tema original para el sitio de Musica y codigo de "@joseCao5"
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
-Text Domain: josecaos_theme
+Tags: josecaos, musica, codigo,code,livecoding, algorave
+Text Domain: josecaos.xyz
 */
-/**/
-#custom_cf7-2 .widgettitle {
-  cursor: pointer;
-}
-#custom_cf7-2 .clearfix {
-  display: none;
-}
-/*quitar metainfo*/
-.byline {
-  display: none;
-}

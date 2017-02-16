@@ -13,7 +13,8 @@
     "motion-ui": "~1.2.2",
     "font-awesome": "fontawesome#^4.7.0",
     "flocking": "^0.1.6",
-    "imgLiquid": "^0.9.944"
+    "imgLiquid": "^0.9.944",
+    "vivus": "^0.4.0"
   },
   "ignore": [
     "**/.*",

@@ -55,11 +55,23 @@
 @import "../style_utils/scss/style_utils";
 //
 
+* {
+  outline: 1px dashed purple;
+}
+
 div, section, ul {
 
 display: block;
 height: 100%;
 
+}
+
+.fa {
+  transition: 0.1s;
+}
+
+.p-top {
+  padding-top: 15vh;//igual que header
 }
 
 

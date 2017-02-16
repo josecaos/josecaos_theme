@@ -6,11 +6,23 @@ jQuery(document).foundation()
 //
 jQuery(document).ready(function($){
 
+  svgs()
+
   contador()
 
   boton_menu_movil()
 
 })//ready
+
+  function svgs() {
+
+    new Vivus('home-svg', {
+      duration: 200
+    });
+
+  }
+
+
 
 function contador() {
 

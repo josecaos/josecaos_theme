@@ -17,7 +17,9 @@ jQuery(document).ready(function($){
   function svgs() {
 
     new Vivus('home-svg', {
-      duration: 200
+      duration: 2000
+    },function() {
+      console.log('heyhey si esviyi');
     });
 
   }

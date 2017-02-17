@@ -45,17 +45,18 @@
   </head>
 
   <body>
-    <header id="header-escritorio" class="columns h-15-v fixed top left p-0 hide-for-small-only">
+    <header id="header-escritorio" class="columns h-15-v fixed top left p-0 hidden">
 
       <i class="fa fa-bitcoin font-xxl black"></i>
 
     </header>
-    <header id="header-movil" class="columns h-10-v fixed top left p-0 show-for-small-only">
+    <header id="header-movil" class="columns h-10-v fixed top left p-0 ">
 
+      <!--  -->
       <div class="columns small-10 medium-11">
 
-        <div class="row small-12 align-middle medium-1">
-          <div class="columns h-a">
+        <div class="row small-12 align-middle">
+          <div class="columns text-left h-a">
             Logo
           </div>
         </div>
@@ -63,14 +64,11 @@
       </div>
 
       <!--  -->
-      <div class="columns small-2 medium-11">
-        <div class="row small-12 align-middle medium-1">
-
-          <div class="iconos columns small-10 medium-11 font-l text-center h-a">
+      <div class="columns small-2 medium-1">
+        <div class="row small-12 align-middle">
+          <div class="iconos columns font-l text-center h-a">
             <!-- icono desde js -->
           </div>
-
-
         </div>
       </div>
 

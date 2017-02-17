@@ -74,7 +74,7 @@ div, section, ul {
   padding-top: 15vh;//igual que header
 }
 
-// boton menu
+// animacion boton menu
 @keyframes barras {
     0% {opacity: 0.5;}
     50% {opacity: 1;}
@@ -83,10 +83,8 @@ div, section, ul {
 // .fa-bars,.fa-close
 .fa-barcode,.fa-align-left,.fa-align-right,
 .fa-chevron-left,.fa-check,.fa-chevron-right,.fa-chevron-up {
-
   animation-name: barras;
   animation-duration: 0.2s;
-
 }
 .gira-icono-menu {
   transition: 1s;

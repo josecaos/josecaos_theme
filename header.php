@@ -66,8 +66,10 @@
       <!--  -->
       <div class="columns small-2 medium-1">
         <div class="row small-12 align-middle">
-          <div class="iconos columns font-l text-center h-a">
-            <!-- icono desde js -->
+          <div class="iconos columns text-center h-a regresa-icono-menu">
+            <a id="menu-bars" class="columns p-0 font-xl">
+              <!-- icono desde js -->
+            </a>
           </div>
         </div>
       </div>

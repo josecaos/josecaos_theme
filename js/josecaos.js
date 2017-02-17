@@ -6,7 +6,7 @@ jQuery(document).foundation()
 //
 jQuery(document).ready(function($){
 
-  svgs()
+  // svgs()
 
   contador()
 
@@ -14,15 +14,15 @@ jQuery(document).ready(function($){
 
 })//ready
 
-  function svgs() {
+function svgs() {
 
-    new Vivus('home-svg', {
-      duration: 2000
-    },function() {
-      console.log('heyhey si esviyi');
-    });
+  new Vivus('home-svg', {
+    duration: 2000
+  },function() {
+    console.log('heyhey si esviyi');
+  });
 
-  }
+}
 
 
 
@@ -50,15 +50,14 @@ function contador() {
 
 function boton_menu_movil() {
 
-// cambia consecutivamente el icono del menu
-  var iconos = ['bars','barcode','align-left','barcode','align-right','barcode','align-justify','barcode','align-left','barcode','align-right','barcode']
+  // cambia consecutivamente el icono del menu
+  var iconos = ['bars','barcode','align-left','barcode','bars','align-right','barcode','bars']
   var iconindex = 0
   var arrlong = iconos.length - 2
 
   setInterval(function(){
-
-    jQuery('.iconos').html('<a class="columns p-0"><i class="fa fa-' + iconos[iconindex] + ' "></i></a>')
-
+    //boton menu
+    jQuery('.iconos a').html('<i class="fa fa-' + iconos[iconindex] + ' z-1"></i>')
 
     if (iconindex <= arrlong)  {
 
@@ -71,6 +70,13 @@ function boton_menu_movil() {
     }
 
 
-  },125)
+  },200)
+
+  jQuery('.iconos').on('click', function() {
+
+    jQuery('.iconos').toggleClass('gira-icono-menu regresa-icono-menu')
+
+  })
+
 
 }

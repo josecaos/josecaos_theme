@@ -56,13 +56,13 @@
 //
 
 * {
-  outline: 1px dashed purple;
+  // outline: 1px dashed purple;
 }
 
 div, section, ul {
 
-display: block;
-height: 100%;
+  display: block;
+  height: 100%;
 
 }
 
@@ -74,7 +74,36 @@ height: 100%;
   padding-top: 15vh;//igual que header
 }
 
+// boton menu
+@keyframes barras {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+// .fa-bars,
+.fa-barcode,.fa-align-left,.fa-align-right {
 
+  animation-name: barras;
+  animation-duration: 0.2s;
+
+}
+.gira-icono-menu {
+  transition: 1s;
+  -webkit-transform: rotate(450deg);
+  -moz-transform: rotate(450deg);
+  -ms-transform: rotate(450deg);
+  -o-transform: rotate(450deg);
+  transform: rotate(450deg);
+}
+.regresa-icono-menu {
+  transition: 1s;
+  -webkit-transform: rotate(-0deg);
+  -moz-transform: rotate(-0deg);
+  -ms-transform: rotate(-0deg);
+  -o-transform: rotate(-0deg);
+  transform: rotate(-0deg);
+}
+//
 
 footer {
 

@@ -80,8 +80,9 @@ div, section, ul {
     50% {opacity: 1;}
     100% {opacity: 0.5;}
 }
-// .fa-bars,
-.fa-barcode,.fa-align-left,.fa-align-right {
+// .fa-bars,.fa-close
+.fa-barcode,.fa-align-left,.fa-align-right,
+.fa-chevron-left,.fa-check,.fa-chevron-right,.fa-chevron-up {
 
   animation-name: barras;
   animation-duration: 0.2s;

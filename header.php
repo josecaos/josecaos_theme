@@ -83,6 +83,6 @@
 
 
 
-      <div class="numeros columns">
+      <div class="numeros columns text-center">
 
       </div>

@@ -61,6 +61,7 @@
           </div>
         </div>
 
+
       </div>
 
       <!--  -->
@@ -79,6 +80,6 @@
 
     <div id="main" class="columns p-0 p-top">
 
-      <div class="numeros columns text-center">
-
+      <div class="numeros columns small-2 text-center">
+        <!-- contador aqui desde js -->
       </div>

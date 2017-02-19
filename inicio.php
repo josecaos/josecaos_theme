@@ -5,12 +5,13 @@
 get_header();
 
 ?>
-<div class="columns h-a text-center black">
+<!-- svg intro -->
+<div class="row small-10 h-100 text-center align-middle">
 
-  <path id="home-svg"></path>
+  <path id="home-svg" class="columns h-30"></path>
 
 </div>
-
+<!-- fin intro -->
 <?php
 
 get_footer();

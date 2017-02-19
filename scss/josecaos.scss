@@ -59,11 +59,10 @@
   // outline: 1px dashed purple;
 }
 
+//obligados
 div, section, ul {
-
   display: block;
   height: 100%;
-
 }
 
 .fa {
@@ -108,6 +107,11 @@ div, section, ul {
 }
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+
+//vectores
+path {
+  border-color: purple;
 }
 
 //

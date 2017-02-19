@@ -18,11 +18,11 @@ function svgs() {
 
   new Vivus('home-svg', {
     type: 'oneByOne',
-    duration: 2000,
-    // file: 'wp-content/themes/josecaos_theme/img/test.svg'
-    file: 'wp-content/themes/josecaos_theme/img/mancha.svg'
+    duration: 500,
+    file: 'wp-content/themes/josecaos_theme/img/test.svg'
+    // file: 'wp-content/themes/josecaos_theme/img/nr.svg'
   },function() {
-    console.log('heyhey si esviyi');
+    console.log('termino el svg');
   });
 
 }
@@ -35,7 +35,7 @@ function contador() {
 
   setInterval(function(){
 
-    jQuery('.numeros').html('<p class="font-xxl">' + iter + '</p>')
+    jQuery('.numeros').html('<p class="font-xxxl">' + iter + '</p>')
 
     if (iter <= 10) {
       iter = iter + 1

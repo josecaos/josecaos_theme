@@ -1,34 +1,36 @@
 </div>  <!-- end .main-content -->
 
 					<footer class="footer columns">
-						<div id="inner-footer" class="row h-100 align-middle">
+						<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
 
-								<nav role="navigation" class="columns small-8 h-a font-s font-md-l text-center color-negro">
+								<nav role="navigation" class="columns small-8 h-a text-left">
 
-										<ul id="redes_sociales" class="small-12 columns h_100 m0">
-											<a href="http://www.github.com/josecaos" target="_blank" class="small-2 columns">
-												<li class="p2"><i class="fa fa-github"></i></li>
+										<ul id="redes_sociales" class="small-12 columns p-0 m0 font-s font-md-xl">
+											<a href="http://www.github.com/josecaos" target="_blank" class="columns small-2 p-0">
+												<li class="p2"><i class="fa fa-github text-shadow"></i></li>
 											</a>
-											<a href="http://www.twitter.com/joseCao5" target="_blank" class="small-2 columns">
-												<li class="p2"><i class="fa fa-twitter"></i></li>
+											<a href="http://www.soundcloud.com/josecaos" target="_blank" class="columns small-2 p-0">
+												<li class="p2"><i class="fa fa-soundcloud text-shadow"></i></li>
 											</a>
-											<a href="http://www.instagram.com/josecaos" target="_blank" class="small-2 columns">
-												<li class="p2"><i class="fa fa-instagram"></i></li>
+											<a href="http://www.twitter.com/joseCao5" target="_blank" class="columns small-2 p-0">
+												<li class="p2"><i class="fa fa-twitter text-shadow"></i></li>
 											</a>
-											<a href="http://www.soundcloud.com/josecaos" target="_blank" class="small-2 columns">
-												<li class="p2"><i class="fa fa-soundcloud"></i></li>
+											<a href="http://www.instagram.com/josecaos" target="_blank" class="columns small-2 p-0">
+												<li class="p2"><i class="fa fa-instagram text-shadow"></i></li>
 											</a>
-											<a href="https://vimeo.com/mixfuckedup" target="_blank" class="small-2 columns">
-												<li class="p2"><i class="fa fa-vimeo"></i></li>
+											<a href="https://vimeo.com/mixfuckedup" target="_blank" class="small-2 columns p-0">
+												<li class="p2"><i class="fa fa-vimeo text-shadow"></i></li>
 											</a>
 											<a href="https://www.youtube.com/user/mixfuckedupmac" target="_blank" class="small-2 columns">
-												<li class="p2"><i class="fa fa-youtube"></i></li>
+												<li class="p2"><i class="fa fa-youtube text-shadow"></i></li>
 											</a>
 										</ul>
 		    					</nav>
 
-							<div class="small-4 columns h_100 align-middle pt1">
-								<div class="text-center source-org copyright align-center m0 p2 font-xs font-md-m">&copy;  <?php echo date('Y');?> &nbsp; <?php  bloginfo('name'); ?></div>
+							<div class="row expanded small-4 align-middle">
+								<div class="copyright columns text-right m0 p2 font-xs font-md-m">
+									&copy;  <?php echo date('Y');?> &nbsp; <?php  bloginfo('name'); ?>
+								</div>
 							</div>
 
 						</div> <!-- end #inner-footer -->

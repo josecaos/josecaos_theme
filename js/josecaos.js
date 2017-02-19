@@ -6,7 +6,7 @@ jQuery(document).foundation()
 //
 jQuery(document).ready(function($){
 
-  // svgs()
+  svgs()
 
   contador()
 
@@ -17,7 +17,10 @@ jQuery(document).ready(function($){
 function svgs() {
 
   new Vivus('home-svg', {
-    duration: 2000
+    type: 'oneByOne',
+    duration: 2000,
+    // file: 'wp-content/themes/josecaos_theme/img/test.svg'
+    file: 'wp-content/themes/josecaos_theme/img/mancha.svg'
   },function() {
     console.log('heyhey si esviyi');
   });
@@ -33,7 +36,6 @@ function contador() {
   setInterval(function(){
 
     jQuery('.numeros').html('<p class="font-xxl">' + iter + '</p>')
-
 
     if (iter <= 10) {
       iter = iter + 1
@@ -51,8 +53,8 @@ function contador() {
 function boton_menu_movil() {
 
   // cambia consecutivamente el icono del menu
-  var abreico = ['bars','barcode','align-left','barcode','bars','align-right','barcode','bars','bars']
-  var cierraico = ['close','chevron-left','barcode','check','close','chevron-right','barcode','close','chevron-up','close','close']
+  var abreico = ['bars','bars','bars','barcode','barcode','align-left','align-right','bars']
+  var cierraico = ['close','close','close','barcode','barcode','check','chevron-left','chevron-right','chevron-up','close']
   var iconindex = 0
   var arrlong,iconos
 
@@ -67,7 +69,7 @@ function boton_menu_movil() {
 
   setInterval(function(){
     //boton menu
-    jQuery('.iconos a').html('<i class="fa fa-' + iconos[Math.floor(Math.random()*iconos.length)] + ' z-1"></i>')
+    jQuery('.iconos a').html('<i class="fa fa-' + iconos[Math.floor(Math.random()*iconos.length)] + ' z-1 text-shadow"></i>')
 
   },200)
 

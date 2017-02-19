@@ -87,7 +87,7 @@ div, section, ul {
   animation-duration: 0.2s;
 }
 .gira-icono-menu {
-  transition: 1s;
+  transition: 0.5s;
   -webkit-transform: rotate(450deg);
   -moz-transform: rotate(450deg);
   -ms-transform: rotate(450deg);
@@ -95,13 +95,21 @@ div, section, ul {
   transform: rotate(450deg);
 }
 .regresa-icono-menu {
-  transition: 1s;
+  transition: 0.5s;
   -webkit-transform: rotate(-0deg);
   -moz-transform: rotate(-0deg);
   -ms-transform: rotate(-0deg);
   -o-transform: rotate(-0deg);
   transform: rotate(-0deg);
 }
+
+.shadow {
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+
 //
 
 footer {

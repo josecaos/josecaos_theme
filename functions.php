@@ -17,7 +17,7 @@ function caos_scripts() {
   wp_enqueue_script( 'what-input', get_stylesheet_directory_uri() . '/bower_components/what-input/dist/what-input.js',  array( 'jquery' ), '0.1', true );
   wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/bower_components/foundation-sites/dist/js/foundation.js',  array( 'jquery' ), '0.1', true );
   wp_enqueue_script( 'imgLiquid', get_stylesheet_directory_uri() . '/bower_components/imgLiquid/js/imgLiquid-min.js',  array( 'jquery' ), '0.1', true );
-  wp_enqueue_script( 'svg', get_stylesheet_directory_uri() . '/bower_components/vivus/dist/vivus.min.js',  array( 'jquery' ), '0.1', true );
+  wp_enqueue_script( 'svg', get_stylesheet_directory_uri() . '/bower_components/vivus/dist/vivus.js',  array( 'jquery' ), '0.1', true );
   wp_enqueue_script( 'flocking-js', get_stylesheet_directory_uri() . '/bower_components/flocking/dist/flocking-all.min.js', array( '' ), '0.1', true);
   wp_enqueue_script( 'josecaos-js', get_stylesheet_directory_uri() . '/js/josecaos.js', array( 'jquery' ), '0.1', true);
 }

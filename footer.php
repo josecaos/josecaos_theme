@@ -1,6 +1,6 @@
 </div>  <!-- end .main-content -->
 
-					<footer class="footer columns h-10-v fixed bottom left">
+					<footer class="footer columns h-10-v fixed bottom left color-claro-bg">
 
 						<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
 

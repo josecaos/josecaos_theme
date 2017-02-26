@@ -50,7 +50,7 @@
       <i class="fa fa-bitcoin font-xxl black"></i>
 
     </header>
-    <header id="header-movil" class="columns h-10-v fixed top left p-0 shadow">
+    <header id="header-movil" class="columns h-10-v fixed top left p-0 shadow color-claro-bg">
 
       <!--  -->
       <div class="columns small-10 medium-11">
@@ -79,7 +79,3 @@
     </header>
 
     <div id="main" class="columns p-0 p-top">
-
-      <div class="numeros columns small-2 text-center">
-        <!-- contador aqui desde js -->
-      </div>

@@ -20,7 +20,7 @@ function svgs() {
     type: 'oneByOne',
     duration: 500,
     file: 'wp-content/themes/josecaos_theme/img/test.svg'
-    // file: 'wp-content/themes/josecaos_theme/img/nr.svg'
+    // file: 'wp-content/themes/josecaos_theme/img/m-board.svg'
   },function() {
     console.log('termino el svg');
   });
@@ -53,8 +53,8 @@ function contador() {
 function boton_menu_movil() {
 
   // cambia consecutivamente el icono del menu
-  var abreico = ['bars','bars','bars','barcode','barcode','align-left','align-right','bars']
-  var cierraico = ['close','close','close','barcode','barcode','check','chevron-left','chevron-right','chevron-up','close']
+  var abreico = ['bars','bars','bars','bars','bars','barcode','barcode','microchip','align-left','align-right','bars']
+  var cierraico = ['close','close','close','close','close','barcode','check','chevron-up','close']
   var iconindex = 0
   var arrlong,iconos
 

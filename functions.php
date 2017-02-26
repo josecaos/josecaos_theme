@@ -1,5 +1,6 @@
 <?php
 
+// Dependencias
 function caos_styles() {
 
   ##custom scss compilado
@@ -22,3 +23,18 @@ function caos_scripts() {
   wp_enqueue_script( 'josecaos-js', get_stylesheet_directory_uri() . '/js/josecaos.js', array( 'jquery' ), '0.1', true);
 }
 add_action('wp_enqueue_scripts', 'caos_scripts');
+
+//
+function sidebars() {
+
+	register_sidebar( array(
+		'name'          => 'Caos 1 sidebar',
+		'id'            => 'caos-1-sidebar',
+		'before_widget' => '<div class="">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'sidebars' );

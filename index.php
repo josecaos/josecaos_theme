@@ -3,7 +3,7 @@
 get_header();
 
 
-get_template_part("inicio");
+get_template_part("secciones/home/inicio");
 
 
 get_footer();

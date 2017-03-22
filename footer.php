@@ -1,4 +1,4 @@
-</div>  <!-- end .main-content -->
+</main>  <!-- end .main-content -->
 
 					<footer class="footer columns h-10-v fixed bottom left color-claro-bg">
 

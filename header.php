@@ -78,4 +78,4 @@
 
     </header>
 
-    <div id="main" class="columns p-0 p-top">
+    <main id="main" class="columns p-0 p-top">

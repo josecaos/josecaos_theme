@@ -78,4 +78,12 @@
 
     </header>
 
+    <nav id="menu" class="menu columns small-6 medium-4 large-2 p-0 h-100 fixed top right z1k">
+
+      <?php
+      get_template_part('secciones/menu-movil');
+      ?>
+
+    </nav>
+
     <main id="main" class="columns p-0 p-top">

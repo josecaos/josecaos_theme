@@ -21,7 +21,7 @@ function svgs() {
   new Vivus('heroscreen-svg', {
     type: 'oneByOne',
     duration: 500,
-    file: 'wp-content/themes/josecaos_theme/img/test.svg'
+    file: 'wp-content/themes/josecaos_theme/img/circuito.svg'
     // file: 'wp-content/themes/josecaos_theme/img/m-board.svg'
   },function() {
     console.log('termino de animacion  svg');

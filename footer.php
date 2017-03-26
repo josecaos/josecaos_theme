@@ -1,12 +1,12 @@
 </main>  <!-- end .main-content -->
 
-					<footer class="footer columns h-10-v fixed bottom left color-claro-bg">
+					<footer class="footer columns fixed bottom left color-claro-bg">
 
 						<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
 
 								<nav role="navigation" class="columns small-7 h-a text-left">
 
-										<ul id="redes_sociales" class="small-12 columns p-0 m0 font-s font-md-xl">
+										<ul id="redes_sociales" class="small-12 columns p-0 m0 font-m font-md-l">
 											<a href="http://www.github.com/josecaos" target="_blank" class="columns small-2 p-0">
 												<li class="p2"><i class="fa fa-github text-shadow"></i></li>
 											</a>

@@ -1,2 +1,2 @@
 # joseCaos theme
-Theme de Wordpress para el sitio de música y código.
+#### Tema de Wordpress para sitio de código y música.

@@ -19,21 +19,20 @@
      id="defs5307">
     <filter
        inkscape:collect="always"
-       id="filter5905"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.82300485"
-         id="feGaussianBlur5907" />
-    </filter>
-    <filter
-       inkscape:collect="always"
        id="filter5957"
        color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.32568194"
          id="feGaussianBlur5959" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter6008">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.27558474"
+         id="feGaussianBlur6010" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -43,9 +42,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7023651"
-     inkscape:cx="375.21145"
-     inkscape:cy="151.87119"
+     inkscape:zoom="2.2137507"
+     inkscape:cx="149.4949"
+     inkscape:cy="48.951612"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -60,7 +59,16 @@
      fit-margin-top="1.1"
      fit-margin-bottom="1"
      fit-margin-right="1"
-     fit-margin-left="1" />
+     fit-margin-left="1">
+    <sodipodi:guide
+       orientation="0,1"
+       position="180.23709,3.6137763"
+       id="guide6025" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="205.53353,51.496312"
+       id="guide6027" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5310">
     <rdf:RDF>
@@ -79,65 +87,57 @@
      id="layer1"
      transform="translate(-161.97378,-286.09511)">
     <path
-       style="opacity:0.73459712;fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter5905)"
-       d="m 488.25616,290.43116 37.14286,0 0.17734,72.41378 -37.3202,-0.98521 z"
+       style="fill:none;stroke:#000000;stroke-width:5.00623273999999974;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter6008);opacity:1"
+       d="m 488.25616,290.43116 30.66342,0 -0.47061,72.41378 -30.19281,-0.98521 z"
        id="path5317"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       transform="matrix(0.69716194,0,0,0.71687364,83.093615,81.300192)" />
+       transform="matrix(0.54064028,0,0,0.63684485,165.90335,109.69925)" />
     <path
        d="m 265.73549,423.14451 9,-0.072 0,18.072 -9,0 0,-9 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000004999999987;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5962"
        inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,-20.444898,17.127642)" />
+       transform="matrix(0.69716194,0,0,0.71687364,-16.3794,17.127642)" />
     <path
-       d="m 310.73549,387.14451 9,0 0,9 -9,0 0,-9 m -9,18 18,0 0,9 0,9 0,9 0,9 -9,0 0,-9 0,-9 0,-9 -9,0 0,-9 m -9,36 18,0 0,9 -9,0 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 198.25356,294.66134 6.27445,0 0,6.45186 -6.27445,0 0,-6.45186 m -6.27446,12.90372 12.54891,0 0,6.45186 0,6.45187 0,6.45186 0,6.45186 -6.27445,0 0,-6.45186 0,-6.45186 0,-6.45187 -6.27446,0 0,-6.45186 m -6.27446,25.80745 12.54892,0 0,6.45187 -6.27446,0 -6.27446,0 0,-6.45187"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5964"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,-20.444898,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 337.73549,396.14451 9.072,0 -0.072,9 -9,0 0,-9 m -9,9 9,0 0,18 0,9 -9,0 0,-9 0,-9 0,-9 m 18,0 9,0.072 0,17.928 0,9 -9,0 0,-9 0,-9 0,-9 m -9,27 9,0 0,9 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 223.11744,301.1132 6.32465,0 -0.0502,6.45186 -6.27445,0 0,-6.45186 m -6.27446,6.45186 6.27446,0 0,12.90373 0,6.45186 -6.27446,0 0,-6.45186 0,-6.45187 0,-6.45186 m 12.54891,0 6.27446,0.0516 0,12.85211 0,6.45186 -6.27446,0 0,-6.45186 0,-6.45187 0,-6.45186 m -6.27445,19.35559 6.27445,0 0,6.45186 -6.27445,0 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5966"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,-14.404392,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 373.73549,396.14451 18,0 0,9 -9,0 -18,0 9,0.072 0,-9.072 m -9,9 9,0.072 0,8.928 -9,0 0,-9 m 9,9 9.072,0 -0.072,9 -9,0 0,-9 m 9,9 9,-0.072 0,9.072 -8.928,0 -0.072,-9 m -18,9 27,0 -8.928,0 -0.072,9 -9,0 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 254.24227,301.1132 12.54891,0 0,6.45186 -6.27445,0 -12.54892,0 6.27446,0.0516 0,-6.50348 m -6.27446,6.45186 6.27446,0.0516 0,6.40024 -6.27446,0 0,-6.45186 m 6.27446,6.45186 6.32465,0 -0.0502,6.45187 -6.27446,0 0,-6.45187 m 6.27446,6.45187 6.27445,-0.0516 0,6.50348 -6.22426,0 -0.0502,-6.45186 m -12.54892,6.45186 18.82337,0 -6.22426,0 -0.0502,6.45186 -6.27446,0 -6.27446,0 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5968"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,-10.377388,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 409.73549,396.14451 9.072,0 -0.072,9 -9,0 0,-9 m -9,9 9,0 0,9 9,0 0,-9 9,0 0,9 0,9 -9,0 -9,0 0,9 9,0 9,0 0,9 -9,0 -9,0 0,-9 -9,0 0,-9 0,-9 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 283.87048,301.1132 6.32465,0 -0.0502,6.45186 -6.27446,0 0,-6.45186 m -6.27446,6.45186 6.27446,0 0,6.45186 6.27446,0 0,-6.45186 6.27445,0 0,6.45186 0,6.45187 -6.27445,0 -6.27446,0 0,6.45186 6.27446,0 6.27445,0 0,6.45186 -6.27445,0 -6.27446,0 0,-6.45186 -6.27446,0 0,-6.45186 0,-6.45187 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5970"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,-5.8470084,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 445.73549,387.14451 9.072,-0.072 -0.072,9.072 -9,0 0,-9 m -9,9 9,0 0,18 0,9 0,9 -9,0 0,-9 0,-9 0,-9 0,-9 m 18,0 9,0 0,9 -9,0 0,-9 m 0,27 9,-0.072 0,9.072 -9,0 0,-9 m -9,9 9,0 0,9 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 314.00206,294.66134 6.32466,-0.0516 -0.0502,6.50348 -6.27446,0 0,-6.45186 m -6.27445,6.45186 6.27445,0 0,12.90372 0,6.45187 0,6.45186 -6.27445,0 0,-6.45186 0,-6.45187 0,-6.45186 0,-6.45186 m 12.54891,0 6.27446,0 0,6.45186 -6.27446,0 0,-6.45186 m 0,19.35559 6.27446,-0.0516 0,6.50348 -6.27446,0 0,-6.45186 m -6.27446,6.45186 6.27446,0 0,6.45186 -6.27446,0 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5972"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,-0.81325326,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 490.80749,432.14451 0,-9.072 -9.072,0.072 0,9 9.072,0 m -18.072,-36 18,0 0,9 9,0 0,9 0,9 0,9 0,9 -9,0 -9,0 0,-9 -9,0 0,-9 9,0 0,-9 9,0 0,-9 -9,0 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 349.95493,326.92065 0,-6.50348 -6.32466,0.0516 0,6.45186 6.32466,0 m -12.59911,-25.80745 12.54891,0 0,6.45186 6.27446,0 0,6.45186 0,6.45187 0,6.45186 0,6.45186 -6.27446,0 -6.27446,0 0,-6.45186 -6.27445,0 0,-6.45186 6.27445,0 0,-6.45187 6.27446,0 0,-6.45186 -6.27446,0 -6.27445,0 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5974"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,3.7171263,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 517.73549,396.14451 9.072,0 -0.072,9 -9,0 0,-9 m -9,9 9,0 0,18 0,9 -9,0 0,-9 0,-9 0,-9 m 18,0 9,0.072 0,17.928 0,9 -9,0 0,-9 0,-9 0,-9 m -9,27 9,0 0,9 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 372.75511,301.1132 6.32465,0 -0.0502,6.45186 -6.27445,0 0,-6.45186 m -6.27446,6.45186 6.27446,0 0,12.90373 0,6.45186 -6.27446,0 0,-6.45186 0,-6.45187 0,-6.45186 m 12.54891,0 6.27446,0.0516 0,12.85211 0,6.45186 -6.27446,0 0,-6.45186 0,-6.45187 0,-6.45186 m -6.27445,19.35559 6.27445,0 0,6.45186 -6.27445,0 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5976"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,7.7441304,17.127642)" />
+       inkscape:connector-curvature="0" />
     <path
-       d="m 553.73549,396.14451 18,0 0,9 -9,0 -18,0 9,0.072 0,-9.072 m -9,9 9,0.072 0,8.928 -9,0 0,-9 m 9,9 9.072,0 -0.072,9 -9,0 0,-9 m 9,9 9,-0.072 0,9.072 -8.928,0 -0.072,-9 m -18,9 27,0 -8.928,0 -0.072,9 -9,0 -9,0 0,-9"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       d="m 403.39007,301.1132 12.54891,0 0,6.45186 -6.27445,0 -12.54892,0 6.27446,0.0516 0,-6.50348 m -6.27446,6.45186 6.27446,0.0516 0,6.40024 -6.27446,0 0,-6.45186 m 6.27446,6.45186 6.32465,0 -0.0502,6.45187 -6.27446,0 0,-6.45187 m 6.27446,6.45187 6.27445,-0.0516 0,6.50348 -6.22426,0 -0.0502,-6.45186 m -12.54892,6.45186 18.82337,0 -6.22426,0 -0.0502,6.45186 -6.27446,0 -6.27446,0 0,-6.45186"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:2.61571169;stroke-miterlimit:4;stroke-opacity:1;font-family:Atari;-inkscape-font-specification:Atari"
        id="path5978"
-       inkscape:connector-curvature="0"
-       transform="matrix(0.69716194,0,0,0.71687364,13.281261,17.127642)" />
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

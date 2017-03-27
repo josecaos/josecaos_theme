@@ -15,23 +15,33 @@ jQuery(document).ready(function($){
 
   menu()
 
+
+  $('.imgLiquid.imgLiquidFill').imgLiquid()
+  $('.imgLiquid.imgLiquidNoFill').imgLiquid({fill:false})
+  $('.imgLiquid.imgLiquidNoFillTop').imgLiquid({fill:false, verticalAlign: 'top'})
+  $('.imgLiquid.imgLiquidNoFillLeft').imgLiquid({fill:false, horizontalAlign: 'left'})
+
 })//ready
 
 function svgs() {
   new Vivus('jc-logo', {
-    type: 'oneByOne',
-    duration: 500,
+    type: 'delayed',
+    duration: 125,
     file: 'wp-content/themes/josecaos_theme/img/josecaos-logo.svg'
+    onReady: function (myVivus) {
+    myVivus.el.setAttribute('height', 'auto')
+  }
   },function() {
     console.log('Termino de escribir el logo');
   });
 
   new Vivus('heroscreen-svg', {
-    type: 'oneByOne',
-    duration: 250,
-    file: 'wp-content/themes/josecaos_theme/img/circuito.svg'
-  },function() {
-    console.log('termino de dibujar circuitos');
+    duration: 1000,
+    // file: 'wp-content/themes/josecaos_theme/img/circuito.svg'
+    onReady: function (myVivus) {
+    // `el` property is the SVG element
+    myVivus.el.setAttribute('height', 'auto');
+  }
   });
 
 }

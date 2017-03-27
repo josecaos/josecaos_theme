@@ -50,7 +50,7 @@
       <!--  -->
       <div class="columns small-10 medium-11 p-t-0-2 p-b-0-2">
 
-        <div class="columns small-6 medium-4 large-2">
+        <div class="columns small-11 medium-8 large-4">
           <path id="jc-logo" class="columns p-0 h-100"></path>
         </div>
 
@@ -79,4 +79,4 @@
 
     </nav>
 
-    <main id="main" class="columns p-0 p-top">
+    <main id="main" class="columns h-100-v p-0 p-top">

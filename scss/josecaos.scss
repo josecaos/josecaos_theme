@@ -57,7 +57,7 @@
 //
 
 * {
-  // outline: 1px dashed purple;
+  outline: 1px dashed purple;
 }
 
 //reset
@@ -65,7 +65,16 @@ div, main, section, article, ul {
   display: block;
   height: 100%;
 }
+//vectores
+path {
+  // border-color: purple;
+  height: 100%;
+}
 
+footer {
+height: 7vh;
+
+}
 .fa {
   transition: 0.1s;
 }
@@ -107,18 +116,10 @@ div, main, section, article, ul {
 .shadow {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
+.shadow-up {
+  box-shadow: 2px -2px 2px rgba(0,0,0,0.25);
+}
+
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
-}
-
-//vectores
-path {
-  border-color: purple;
-}
-
-//
-
-footer {
-height: 7vh;
-
 }

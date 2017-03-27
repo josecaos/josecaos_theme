@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="290.7923"
+   height="58.652672"
+   id="svg5305"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="josecaos-logo.svg">
+  <defs
+     id="defs5307">
+    <filter
+       inkscape:collect="always"
+       id="filter5905"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.82300485"
+         id="feGaussianBlur5907" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5957"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.32568194"
+         id="feGaussianBlur5959" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7023651"
+     inkscape:cx="375.21145"
+     inkscape:cy="151.87119"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showborder="true"
+     fit-margin-top="1.1"
+     fit-margin-bottom="1"
+     fit-margin-right="1"
+     fit-margin-left="1" />
+  <metadata
+     id="metadata5310">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-161.97378,-286.09511)">
+    <path
+       style="opacity:0.73459712;fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter5905)"
+       d="m 488.25616,290.43116 37.14286,0 0.17734,72.41378 -37.3202,-0.98521 z"
+       id="path5317"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       transform="matrix(0.69716194,0,0,0.71687364,83.093615,81.300192)" />
+    <path
+       d="m 265.73549,423.14451 9,-0.072 0,18.072 -9,0 0,-9 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5962"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,-20.444898,17.127642)" />
+    <path
+       d="m 310.73549,387.14451 9,0 0,9 -9,0 0,-9 m -9,18 18,0 0,9 0,9 0,9 0,9 -9,0 0,-9 0,-9 0,-9 -9,0 0,-9 m -9,36 18,0 0,9 -9,0 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5964"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,-20.444898,17.127642)" />
+    <path
+       d="m 337.73549,396.14451 9.072,0 -0.072,9 -9,0 0,-9 m -9,9 9,0 0,18 0,9 -9,0 0,-9 0,-9 0,-9 m 18,0 9,0.072 0,17.928 0,9 -9,0 0,-9 0,-9 0,-9 m -9,27 9,0 0,9 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5966"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,-14.404392,17.127642)" />
+    <path
+       d="m 373.73549,396.14451 18,0 0,9 -9,0 -18,0 9,0.072 0,-9.072 m -9,9 9,0.072 0,8.928 -9,0 0,-9 m 9,9 9.072,0 -0.072,9 -9,0 0,-9 m 9,9 9,-0.072 0,9.072 -8.928,0 -0.072,-9 m -18,9 27,0 -8.928,0 -0.072,9 -9,0 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5968"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,-10.377388,17.127642)" />
+    <path
+       d="m 409.73549,396.14451 9.072,0 -0.072,9 -9,0 0,-9 m -9,9 9,0 0,9 9,0 0,-9 9,0 0,9 0,9 -9,0 -9,0 0,9 9,0 9,0 0,9 -9,0 -9,0 0,-9 -9,0 0,-9 0,-9 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5970"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,-5.8470084,17.127642)" />
+    <path
+       d="m 445.73549,387.14451 9.072,-0.072 -0.072,9.072 -9,0 0,-9 m -9,9 9,0 0,18 0,9 0,9 -9,0 0,-9 0,-9 0,-9 0,-9 m 18,0 9,0 0,9 -9,0 0,-9 m 0,27 9,-0.072 0,9.072 -9,0 0,-9 m -9,9 9,0 0,9 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5972"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,-0.81325326,17.127642)" />
+    <path
+       d="m 490.80749,432.14451 0,-9.072 -9.072,0.072 0,9 9.072,0 m -18.072,-36 18,0 0,9 9,0 0,9 0,9 0,9 0,9 -9,0 -9,0 0,-9 -9,0 0,-9 9,0 0,-9 9,0 0,-9 -9,0 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5974"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,3.7171263,17.127642)" />
+    <path
+       d="m 517.73549,396.14451 9.072,0 -0.072,9 -9,0 0,-9 m -9,9 9,0 0,18 0,9 -9,0 0,-9 0,-9 0,-9 m 18,0 9,0.072 0,17.928 0,9 -9,0 0,-9 0,-9 0,-9 m -9,27 9,0 0,9 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5976"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,7.7441304,17.127642)" />
+    <path
+       d="m 553.73549,396.14451 18,0 0,9 -9,0 -18,0 9,0.072 0,-9.072 m -9,9 9,0.072 0,8.928 -9,0 0,-9 m 9,9 9.072,0 -0.072,9 -9,0 0,-9 m 9,9 9,-0.072 0,9.072 -8.928,0 -0.072,-9 m -18,9 27,0 -8.928,0 -0.072,9 -9,0 -9,0 0,-9"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:3.70000005;stroke-miterlimit:4;stroke-opacity:1;filter:url(#filter5957);font-family:Atari;-inkscape-font-specification:Atari"
+       id="path5978"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.69716194,0,0,0.71687364,13.281261,17.127642)" />
+  </g>
+</svg>

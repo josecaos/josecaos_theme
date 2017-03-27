@@ -13,18 +13,25 @@ jQuery(document).ready(function($){
 
   svgs()
 
+  menu()
 
 })//ready
 
 function svgs() {
+  new Vivus('jc-logo', {
+    type: 'oneByOne',
+    duration: 500,
+    file: 'wp-content/themes/josecaos_theme/img/josecaos-logo.svg'
+  },function() {
+    console.log('Termino de escribir el logo');
+  });
 
   new Vivus('heroscreen-svg', {
     type: 'oneByOne',
-    duration: 500,
+    duration: 250,
     file: 'wp-content/themes/josecaos_theme/img/circuito.svg'
-    // file: 'wp-content/themes/josecaos_theme/img/m-board.svg'
   },function() {
-    console.log('termino de animacion  svg');
+    console.log('termino de dibujar circuitos');
   });
 
 }
@@ -92,8 +99,8 @@ function boton_menu_movil() {
 
 
 }
-var menumovil = jQuery("#menu");
 function menu() {
+  var menumovil = jQuery("#menu");
   // registra su posicion actual, fuera de la pantalla
   var anchomenumovil = menumovil.width()
   var posicioninicial = menumovil.css({
@@ -104,7 +111,7 @@ function menu() {
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
-
+  console.log(posicioninicial);
   //  var menuicono = $('#menu-movil-boton i');
   // reset del icono en caso de resize
   //  if (menuicono.hasClass('fa-close')) {
@@ -122,6 +129,7 @@ function menu() {
     'transform': 'translateX(' + anchomenumovil +'px)'
   }
 
+  // accion boton
   jQuery('#menu-bars').on('click', function() {
 
     var posicion = menumovil.position();

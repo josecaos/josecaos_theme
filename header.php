@@ -45,20 +45,13 @@
   </head>
 
   <body>
-    <header id="header-escritorio" class="columns h-15-v fixed top left p-0 hidden">
-
-      <i class="fa fa-bitcoin font-xxl black"></i>
-
-    </header>
-    <header id="header-movil" class="columns h-10-v fixed top left p-0 shadow color-claro-bg">
+    <header id="header" class="columns h-10-v fixed top left p-0 shadow color-claro-bg z1k1">
 
       <!--  -->
-      <div class="columns small-10 medium-11">
+      <div class="columns small-10 medium-11 p-t-0-2 p-b-0-2">
 
-        <div class="row small-12 align-middle">
-          <div class="columns text-left h-a">
-            Logo
-          </div>
+        <div class="columns small-6 medium-4 large-2">
+          <path id="jc-logo" class="columns p-0 h-100"></path>
         </div>
 
 

@@ -79,4 +79,4 @@
 
     </nav>
 
-    <main id="main" class="columns h-100-v p-0 p-top">
+    <main id="main" class="columns h-100 p-0 p-top">

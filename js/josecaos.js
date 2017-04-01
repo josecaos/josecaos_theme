@@ -27,12 +27,12 @@ function svgs() {
   new Vivus('jc-logo', {
     type: 'delayed',
     duration: 125,
-    file: 'wp-content/themes/josecaos_theme/img/josecaos-logo.svg'
+    file: 'wp-content/themes/josecaos_theme/img/josecaos-logo.svg',
     onReady: function (myVivus) {
     myVivus.el.setAttribute('height', 'auto')
-  }
   },function() {
     console.log('Termino de escribir el logo');
+  }
   });
 
   new Vivus('heroscreen-svg', {

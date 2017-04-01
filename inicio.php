@@ -7,7 +7,7 @@ get_header();
 
 <section class="columns p-0 rel">
   <div class="columns p-0 absUpL imgLiquid imgLiquidFill z-1">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo3.jpg" alt="" />
+    <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo-release.png" alt="" />
   </div>
 
 <?php

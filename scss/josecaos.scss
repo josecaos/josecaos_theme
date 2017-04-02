@@ -149,9 +149,9 @@ height: 7vh;
 
 // animacion texto inicio
 @keyframes anuncio {
-    0% {transform: skewX(25deg);}
-    50% {transform: skewX(-25deg);}
-    100% {transform: skewX(25deg);}
+    0% {transform: skewX(10deg);}
+    50% {transform: skewX(-10deg);}
+    100% {transform: skewX(10deg);}
 }
 // .fa-bars,.fa-close
 .skewed-bg {
@@ -160,9 +160,9 @@ height: 7vh;
   animation-iteration-count:infinite;
 }
 @keyframes anunciotexto {
-    0% {transform: rotate(2deg);}
-    50% {transform: rotate(-2deg);}
-    100% {transform: rotate(2deg);}
+    0% {transform: rotate(4deg);}
+    50% {transform: rotate(-4deg);}
+    100% {transform: rotate(4deg);}
 }
 // .fa-bars,.fa-close
 .texto-skewed {

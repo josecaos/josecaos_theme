@@ -75,10 +75,10 @@
 
     </header>
 
-    <nav id="menu" class="menu columns small-6 medium-4 large-2 p-0 h-100 fixed top right z1k">
+    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k shadow-up-white">
 
       <?php
-      get_template_part('secciones/menu-movil');
+      get_template_part('secciones/menu');
       ?>
 
     </nav>
@@ -90,12 +90,12 @@
       <div class="columns p-0 fixed top left imgLiquid imgLiquidFill z-1">
         <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo-release.png" alt="" />
       </div>
+      <div id="heroscreen-anim" class="columns p-0 absUpL z-1">
 
-      <div class="columns p-0 absUpL z-1">
-
-        <div id="heroscreen-svg" class="columns p-0 hidden"></div>
+        <div id="heroscreen-svg" class="columns p-0"></div>
 
       </div>
+
 
 
       <main id="main" class="columns small-12 medium-8 large-9 p-0">

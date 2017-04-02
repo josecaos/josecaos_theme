@@ -1,11 +1,9 @@
-<section class="columns">
+<section class="columns p-0 ">
 
 
   <div class="row align-middle">
   <div class="columns h-a p-1 shadow-white rel skewed-bg">
-    <div class="columns p-0 absUpL cortina-rojo-bg z-1">
-
-    </div>
+    <div class="columns p-0 absUpL cortina-rojo-bg z-1"></div>
 
     <?php
 

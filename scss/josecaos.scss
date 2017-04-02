@@ -126,12 +126,47 @@ height: 7vh;
 }
 
 .shadow {
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+}
+.shadow-white {
+  box-shadow: 2px 2px 2px rgba(150,150,150,0.25);
 }
 .shadow-up {
-  box-shadow: 2px -2px 2px rgba(0,0,0,0.25);
+  box-shadow: 2px -2px 2px rgba(0,0,0,0.35);
 }
-
+.shadow-up-white {
+  box-shadow: 2px -2px 2px rgba(150,150,150,0.25);
+}
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+.skewed-bg{
+  transform: skewX(20deg);
+}
+.texto-skewed {
+  transform: rotate(2deg);
+}
+
+// animacion texto inicio
+@keyframes anuncio {
+    0% {transform: skewX(25deg);}
+    50% {transform: skewX(-25deg);}
+    100% {transform: skewX(25deg);}
+}
+// .fa-bars,.fa-close
+.skewed-bg {
+  animation-name: anuncio;
+  animation-duration: 60s;
+  animation-iteration-count:infinite;
+}
+@keyframes anunciotexto {
+    0% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+}
+// .fa-bars,.fa-close
+.texto-skewed {
+  animation-name: anunciotexto;
+  animation-duration: 60s;
+  animation-iteration-count:infinite;
 }

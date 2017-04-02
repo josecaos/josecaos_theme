@@ -55,6 +55,13 @@ azul-claro $azul_claro
     }
   }
 
+//cortinas transparentes
+.cortina-#{nth($value, 1)}-bg {
+  & {
+    background-color: nth($value, 2) !important;
+    opacity: 0.5;
+  }
+}
 
 }
 

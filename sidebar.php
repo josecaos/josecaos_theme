@@ -1,8 +1,6 @@
 <sidebar class="columns small-12 medium-4 large-3 h-75-v text-center">
 
-	<div class="numeros h-a columns text-center">
-    <!-- contador aqui desde js -->
-  </div>
+
 
   <div class="columns text-center">
     <!-- contador aqui desde js -->
@@ -20,6 +18,10 @@
 
 	<?php endif; ?>
 
+</div>
+
+<div class="numeros h-a p-t-0-1 columns text-center">
+	<!-- contador aqui desde js -->
 </div>
 
 

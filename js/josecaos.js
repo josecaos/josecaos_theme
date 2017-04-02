@@ -7,7 +7,7 @@ jQuery(document).foundation()
 jQuery(document).ready(function($){
 
 
-  contador()
+  // contador()
 
   boton_menu_movil()
 
@@ -20,6 +20,13 @@ jQuery(document).ready(function($){
   $('.imgLiquid.imgLiquidNoFill').imgLiquid({fill:false})
   $('.imgLiquid.imgLiquidNoFillTop').imgLiquid({fill:false, verticalAlign: 'top'})
   $('.imgLiquid.imgLiquidNoFillLeft').imgLiquid({fill:false, horizontalAlign: 'left'})
+
+
+// para evitar se visualice el svg al cargar
+setTimeout(function() {
+  $('#heroscreen-svg').removeClass('hidden')
+},3000)
+// 
 
 })//ready
 
@@ -49,26 +56,40 @@ function svgs() {
 
 }
 
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
 
 function contador() {
 
   var iter = 0
-
   setInterval(function(){
 
-    jQuery('.numeros').html('<p class="font-xxxl">' + iter + ' segundos</p>')
+    jQuery('.numeros').html('<p class="font-xxxl">' + iter + 'ms </p>')
 
-    if (iter <= 10) {
+    if (iter <= 100000000) {
       iter = iter + 1
 
     } else {
       iter = 0
     }
 
-
-
-  },1000)
+  },100)
 
 }
 

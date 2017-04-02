@@ -93,7 +93,7 @@
 
       <div class="columns p-0 absUpL z-1">
 
-        <div id="heroscreen-svg" class="columns p-0"></div>
+        <div id="heroscreen-svg" class="columns p-0 hidden"></div>
 
       </div>
 

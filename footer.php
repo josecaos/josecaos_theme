@@ -1,6 +1,12 @@
 </main>  <!-- end .main-content -->
+<?php
+get_template_part("sidebar");
+?>
+</div>
+<!-- contenedor -->
 
-<footer class="footer columns fixed bottom left color-claro-bg shadow-up">
+
+<footer class="footer columns fixed bottom left color-negro-bg shadow-up">
 
 	<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
 

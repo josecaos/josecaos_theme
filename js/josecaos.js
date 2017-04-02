@@ -24,24 +24,27 @@ jQuery(document).ready(function($){
 })//ready
 
 function svgs() {
-  new Vivus('jc-logo', {
-    type: 'delayed',
-    duration: 125,
-    file: 'wp-content/themes/josecaos_theme/img/josecaos-logo.svg',
-    onReady: function (myVivus) {
-    myVivus.el.setAttribute('height', 'auto')
-  },function() {
-    console.log('Termino de escribir el logo');
-  }
-  });
+  // new Vivus('jc-logo', {
+  //   type: 'delayed',
+  //   duration: 125,
+  //   file: 'wp-content/themes/josecaos_theme/img/josecaos-logo.svg',
+  //   onReady: function (obj) {
+  //     // obj.el.setAttribute('height', '30')
+  //     // obj.el.setAttribute('width', 'auto')
+  //   },function() {
+  //     console.log('Termino de escribir el logo');
+  //   }
+  // });
 
   new Vivus('heroscreen-svg', {
-    duration: 1000,
-    // file: 'wp-content/themes/josecaos_theme/img/circuito.svg'
-    onReady: function (myVivus) {
-    // `el` property is the SVG element
-    myVivus.el.setAttribute('height', 'auto');
-  }
+    duration: 5000,
+    type: 'oneByOne',
+    file: 'wp-content/themes/josecaos_theme/img/circuito.svg',
+    onReady: function (obj) {
+      // `el` property is the SVG element
+      // obj.el.setAttribute('height', '100')
+      // obj.el.setAttribute('width', 'auto')
+    }
   });
 
 }
@@ -54,7 +57,7 @@ function contador() {
 
   setInterval(function(){
 
-    jQuery('.numeros').html('<p class="font-xxxl">' + iter + '</p>')
+    jQuery('.numeros').html('<p class="font-xxxl">' + iter + ' segundos</p>')
 
     if (iter <= 10) {
       iter = iter + 1
@@ -65,7 +68,7 @@ function contador() {
 
 
 
-  },100)
+  },1000)
 
 }
 
@@ -92,14 +95,16 @@ function boton_menu_movil() {
 
   },200)
 
-  jQuery('.iconos').on('click', function() {
+  jQuery('.iconos a').on('click', function() {
 
     jQuery('.iconos').toggleClass('gira-icono-menu regresa-icono-menu')
     setTimeout(function () {
 
       if (jQuery('.iconos').hasClass('regresa-icono-menu')) {
         iconos = abreico
+        jQuery('.iconos a').removeClass('color-amarillo').addClass('color-azul-claro')
       } else if (jQuery('.iconos').hasClass('gira-icono-menu')) {
+        jQuery('.iconos a').removeClass('color-azul-claro').addClass('color-amarillo')
         iconos = cierraico
       }
 
@@ -109,6 +114,7 @@ function boton_menu_movil() {
 
 
 }
+
 function menu() {
   var menumovil = jQuery("#menu");
   // registra su posicion actual, fuera de la pantalla
@@ -122,7 +128,7 @@ function menu() {
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
   console.log(posicioninicial);
-  //  var menuicono = $('#menu-movil-boton i');
+  //  var menuicono = $('#menu-bars i');
   // reset del icono en caso de resize
   //  if (menuicono.hasClass('fa-close')) {
   //
@@ -161,7 +167,7 @@ function menu() {
       //cambia el icono
       //  setTimeout(function() {
       //
-      //    menuicono.removeClass('fa-bars color-secondary-1-2').addClass('fa-close color-complement-2');
+         menuicono.removeClass('fa-bars color-secondary-1-2').addClass('fa-close color-complement-2');
       //
       //  },125);
 

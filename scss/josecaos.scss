@@ -57,23 +57,35 @@
 //
 
 * {
-  outline: 1px dashed purple;
+  // outline: 1px dashed purple;
 }
 
 //reset
 div, main, section, article, ul {
   display: block;
   height: 100%;
+  font-family: 'Space Mono', monospace;
 }
 //vectores
-path {
+path, svg, g {
   // border-color: purple;
   height: 100%;
+  width: 100%;
 }
-
+p, div, ul, li {
+  @extend .color-claro;
+}
+h1,h2,h3,h4,h5,h6, #jc-logo {
+  font-family: 'Press Start 2P', cursive;
+}
+a {
+  @extend .color-azul-claro;
+}
+a:hover {
+  @extend .color-amarillo;
+}
 footer {
 height: 7vh;
-
 }
 .fa {
   transition: 0.1s;

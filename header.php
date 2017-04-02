@@ -45,13 +45,17 @@
   </head>
 
   <body>
-    <header id="header" class="columns h-10-v fixed top left p-0 shadow color-claro-bg z1k1">
 
+    <header id="header" class="columns h-10-v fixed top left p-0 shadow color-negro-bg z1k1">
       <!--  -->
-      <div class="columns small-10 medium-11 p-t-0-2 p-b-0-2">
+      <div class="columns small-10 medium-11">
 
-        <div class="columns small-11 medium-8 large-4">
-          <path id="jc-logo" class="columns p-0 h-100"></path>
+        <div id="jc-logo" class="row expanded align-middle">
+          <!-- <path id="jc-logo" class="columns p-0"></path> -->
+          <h2 class="columns p-0 p-t-0-2 color-azul-claro">
+            .joseCaos
+          </h2>
+
         </div>
 
 
@@ -79,4 +83,19 @@
 
     </nav>
 
-    <main id="main" class="columns h-100 p-0 p-top">
+
+    <div id="contenedor" class="columns h-100-v p-top rel">
+
+
+      <div class="columns p-0 fixed top left imgLiquid imgLiquidFill z-1">
+        <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo-release.png" alt="" />
+      </div>
+
+      <div class="columns p-0 absUpL z-1">
+
+        <div id="heroscreen-svg" class="columns p-0"></div>
+
+      </div>
+
+
+      <main id="main" class="columns small-12 medium-8 large-9 p-0">

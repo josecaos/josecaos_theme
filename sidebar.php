@@ -1,4 +1,5 @@
-<sidebar class="columns small-12 medium-4 large-3 h-100 text-center">
+<sidebar class="columns small-12 medium-4 large-3 h-75-v text-center">
+
 	<div class="numeros h-a columns text-center">
     <!-- contador aqui desde js -->
   </div>

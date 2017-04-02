@@ -6,7 +6,10 @@ function caos_styles() {
   ##custom scss compilado
   wp_enqueue_style( 'defaul-style',get_stylesheet_directory_uri() . '/style.css');
   wp_enqueue_style( 'caos-style',get_stylesheet_directory_uri() . '/css/josecaos.css');
-  ##fuente 8bit
+
+  ## fuente contenidos
+  wp_enqueue_style( 'content-font','https://fonts.googleapis.com/css?family=Space+Mono');
+  ## fuente 8bit
   wp_enqueue_style( '8bit-font','https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 }

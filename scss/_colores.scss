@@ -3,25 +3,19 @@ $claro: whitesmoke;
 $negro: #000;
 $oscuro: #333;
 //
-// $rojo-1:
-// $rojo-2:
-// $rojo-3:
-//
-// $amarilo-1:
-// $amarilo-2:
-// $amarilo-3:
-//
-
-
-//
+$rojo: #290001;
+$amarillo: #E3AE03;
+$azul_claro: #36BCFF;
 
 $colores: (
 
-blanco   $blanco,
+blanco $blanco,
 claro $claro,
-negro   $negro,
+negro $negro,
 oscuro $oscuro,
-
+rojo $rojo,
+amarillo $amarillo,
+azul-claro $azul_claro
 );
 
 

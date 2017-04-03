@@ -52,9 +52,9 @@
 
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
-          <h2 class="columns p-0 p-t-0-2 color-azul-claro">
+          <h3 class="columns p-0 p-t-0-2 color-azul-claro">
             .joseCaos
-          </h2>
+          </h3>
 
         </div>
 

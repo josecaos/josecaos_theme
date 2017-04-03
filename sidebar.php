@@ -2,7 +2,10 @@
 
 
 
-  <div class="columns h-a cortina-rojo-bg text-left p-0-3">
+  <div class="columns h-a rel text-left p-0-3">
+    <div class="columns p-0 absUpL cortina-rojo-bg">
+
+    </div>
 
 	<?php if ( is_active_sidebar( 'caos-1-sidebar' ) ) : ?>
 
@@ -20,7 +23,7 @@
 
 </div>
 
-<div class="numeros h-a p-t-0-1 columns text-center">
+<div class="numeros h-10-v p-t-0-1 columns text-center">
 	<!-- contador aqui desde js -->
 </div>
 

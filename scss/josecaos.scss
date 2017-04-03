@@ -175,5 +175,6 @@ height: 7vh;
 // override widgets
 .textwidget {
   height: auto !important;
+  @extend .p-b-0-2;
 }
 //

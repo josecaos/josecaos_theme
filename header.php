@@ -90,7 +90,7 @@
       <div class="columns p-0 fixed top left imgLiquid imgLiquidFill z-1">
         <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo-release.png" alt="" />
       </div>
-      <div id="heroscreen-anim" class="columns p-0 absUpL z-1">
+      <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">
 
         <div id="heroscreen-svg" class="columns p-0"></div>
 

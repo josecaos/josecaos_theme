@@ -1,8 +1,8 @@
-<sidebar class="columns small-12 medium-4 large-3 h-75-v text-center">
+<sidebar class="columns small-12 medium-4 large-3 h-80-v text-center">
 
 
 
-  <div class="columns text-center">
+  <div class="columns h-a text-center">
     <!-- contador aqui desde js -->
 	<?php if ( is_active_sidebar( 'caos-1-sidebar' ) ) : ?>
 

@@ -10,7 +10,7 @@
 
         <a href="" class="p-0 h-a columns text-center font-l color-azul-claro-hover">
           <h3 class="columns p-0-2">
-          El sitio esá en desarrollo
+          El sitio está en desarrollo
 
           </h3>
           <h5 class="columns p-0-2">

@@ -1,4 +1,4 @@
-<section class="columns p-0 ">
+<section id="info" class="columns small-10 medium-9 large-8 p-0 top left">
 
 
   <div class="row align-middle">

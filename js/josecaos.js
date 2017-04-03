@@ -27,6 +27,13 @@ jQuery(document).ready(function($){
       // console.log("play svg");
     })
 
+    if ($(document).width() > 1024) {
+      $('#info').addClass('fixed')
+    } else {
+      $('#info').removeClass('fixed')
+
+    }
+
 
 })//ready
 

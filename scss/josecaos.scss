@@ -140,6 +140,9 @@ height: 7vh;
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
+.text-shadow-white {
+  text-shadow: 2px 2px 2px rgba(200,200,200,0.25);
+}
 .skewed-bg{
   transform: skewX(20deg);
 }
@@ -178,5 +181,8 @@ height: 7vh;
 .textwidget {
   height: auto !important;
   @extend .p-b-0-2;
+}
+.easy_bitcoin_donate_widget_text_below {
+  @extend .font-xxs;
 }
 //

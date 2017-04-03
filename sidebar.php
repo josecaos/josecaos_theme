@@ -2,10 +2,8 @@
 
 
 
-  <div class="columns h-a rel text-left p-0-3">
-    <div class="columns p-0 absUpL cortina-rojo-bg">
-
-    </div>
+  <div class="columns h-a rel text-left p-0-2 shadow-up-white">
+    <div class="columns p-0 absUpL cortina-rojo-bg z-1"></div>
 
 	<?php if ( is_active_sidebar( 'caos-1-sidebar' ) ) : ?>
 

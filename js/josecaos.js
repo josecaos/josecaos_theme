@@ -25,6 +25,7 @@ jQuery(document).ready(function($){
 
     hero.play(1, function() {
       // console.log("play svg");
+      // hero.stop().reset().play()
     })
 
     if ($(document).width() > 1024) {
@@ -50,15 +51,15 @@ function svgs() {
   //   }
   // });
 
+var types = ['delayed', 'oneByOne', 'scenario']
+var esc = types[Math.floor(Math.random()*types.length)]
+console.log(esc);
   hero = new Vivus('heroscreen-svg', {
-    duration: 500,
-    type: 'oneByOne',
+    duration: 850,
+    type: esc,
     file: 'wp-content/themes/josecaos_theme/img/circuito.svg',
-    onReady: function (obj) {
-      // `el` property is the SVG element
-      // obj.el.setAttribute('height', '100')
-      // obj.el.setAttribute('width', 'auto')
-    }
+  },function (obj) {
+
   });
 
 

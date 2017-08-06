@@ -38,14 +38,18 @@ function logo_cursor() {
   var i = 0
 
   setInterval(function () {
-    if (i == 0) {
-      cursor.html('|')
-      i = 1
-    } else if ( i ==1) {
-      cursor.html(' ')
-      i = 0
-    }
 
+    if (i % 2 === 0) {
+      console.log("even");
+      cursor.html(' ')
+    }
+       else {
+         console.log("odd");
+         cursor.html('|')
+        }
+
+    console.log(i);
+    i++
   }, 500)
 }
 
@@ -179,10 +183,10 @@ function menu() {
 
         })
         //
-        jQuery('.iconos a').removeClass('color-amarillo').addClass('color-azul-claro')
+        jQuery('.iconos a').removeClass('color-amarillo').addClass('color-claro')
 
       } else if (jQuery('.iconos').hasClass('gira-icono-menu')) {
-        jQuery('.iconos a').removeClass('color-azul-claro').addClass('color-amarillo')
+        jQuery('.iconos a').removeClass('color-claro').addClass('color-amarillo')
         // entra menu
         menumovil.css({
           'transition': '0.25s',

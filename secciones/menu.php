@@ -1,26 +1,13 @@
-<ul id="lista-menu" class="columns p-0 text-left h-100-v color-amarillo-bg">
+<ul id="lista-menu" class="columns p-0 text-left h-100-v color-oscuro-bg">
 
   <?php
-  for ($i=0; $i < 1 ; $i++):
+  for ($i=0; $i < 4 ; $i++):
     ?>
 
-    <li class="columns h-100 p-0">
-
-      <div class="columns p-0">
-
-        <a href="" class="p-0 h-a columns text-center font-l color-azul-claro-hover">
-          <h3 class="columns p-0-2">
-          El sitio está en desarrollo
-
-          </h3>
-          <h5 class="columns p-0-2">
-          Regresa pronto :)
-
-        </h5>
-        </a>
-
-      </div>
-
+    <li class="columns small-6 h-a text-center">
+      <a class="columns p-1" href="#">
+        menu item
+      </a>
     </li>
 
     <?php

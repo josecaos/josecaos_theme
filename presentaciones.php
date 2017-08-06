@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Releases*/
+/*Template Name: Presentaciones*/
 
 get_header('inicio');
 

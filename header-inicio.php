@@ -50,7 +50,7 @@
 
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
-          <h6 class="columns p-0 p-r-0-2 color-claro">
+          <h6 class="columns p-l-1 p-0 color-claro text-left">
             JoseCaos <span class="logo-cursor">|</span>
           </h6>
 

@@ -6,7 +6,7 @@
 <!-- contenedor -->
 
 
-<footer class="footer columns fixed bottom left color-negro-bg shadow-up">
+<footer class="footer columns fixed bottom left color-negro-bg shadow-up z1k">
 
 	<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
 

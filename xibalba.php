@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Xibalba-released*/
+/*Template Name: Xibalba-release*/
 
 get_header();
 
@@ -7,7 +7,7 @@ get_header();
 
 <?php
 // get_template_part('secciones/home/heroscreen');
-get_template_part('secciones/released/xibalba-release');
+get_template_part('secciones/released/xibalba-new-release');
 ?>
 
 

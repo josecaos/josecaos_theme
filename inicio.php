@@ -1,16 +1,16 @@
 <?php
 /*Template Name: Inicio*/
 
-get_header();
+get_header('inicio');
 
 ?>
 
 <?php
-// get_template_part('secciones/home/heroscreen');
-get_template_part('secciones/home/info');
+get_template_part('secciones/inicio/heroscreen');
+echo "wevos";
 ?>
 
 
 <?php
 
-get_footer();
+get_footer('inicio');

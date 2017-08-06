@@ -79,7 +79,7 @@ h1,h2,h3,h4,h5,h6, #jc-logo {
   font-family: 'Press Start 2P', cursive;
 }
 a {
-  @extend .color-azul-claro;
+  @extend .color-claro; 
 }
 a:hover {
   @extend .color-amarillo;

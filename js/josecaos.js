@@ -12,8 +12,8 @@ jQuery(document).ready(function($){
 
   menu()
 
-  svgs()
-
+  // svgs()
+  logo_cursor()
 
 
   $('.imgLiquid.imgLiquidFill').imgLiquid()
@@ -22,21 +22,32 @@ jQuery(document).ready(function($){
   $('.imgLiquid.imgLiquidNoFillLeft').imgLiquid({fill:false, horizontalAlign: 'left'})
 
 
+  if ($(document).width() > 1024) {
+    $('#info').addClass('fixed')
+  } else {
+    $('#info').removeClass('fixed')
 
-    hero.play(1, function() {
-      // console.log("play svg");
-      // hero.stop().reset().play()
-    })
-
-    if ($(document).width() > 1024) {
-      $('#info').addClass('fixed')
-    } else {
-      $('#info').removeClass('fixed')
-
-    }
+  }
 
 
 })//ready
+
+function logo_cursor() {
+
+  var cursor = jQuery("span.logo-cursor")
+  var i = 0
+
+  setInterval(function () {
+    if (i == 0) {
+      cursor.html('|')
+      i = 1
+    } else if ( i ==1) {
+      cursor.html(' ')
+      i = 0
+    }
+
+  }, 500)
+}
 
 function svgs() {
   // new Vivus('jc-logo', {
@@ -51,9 +62,9 @@ function svgs() {
   //   }
   // });
 
-var types = ['delayed', 'oneByOne', 'scenario']
-var esc = types[Math.floor(Math.random()*types.length)]
-console.log(esc);
+  var types = ['delayed', 'oneByOne', 'scenario']
+  var esc = types[Math.floor(Math.random()*types.length)]
+  console.log(esc);
   hero = new Vivus('heroscreen-svg', {
     duration: 850,
     type: esc,

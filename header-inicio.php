@@ -51,7 +51,7 @@
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
           <h6 class="columns p-l-1 p-0 color-claro text-left">
-            JoseCaos <span class="logo-cursor">|</span>
+            JoseCaos <span class="logo-cursor color-rojo">|</span>
           </h6>
 
         </div>
@@ -84,12 +84,10 @@
 
     <!-- <div id="contenedor" class="columns h-100-v p-top rel"> -->
 
-    <main id="main" class="columns small-12 medium-8 large-9 p-0">
+    <main id="main" class="grid-x grid-padding-x">
 
-      <!-- <div class="columns p-0 fixed top left imgLiquid imgLiquidFill z-1">
-        <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo-release.png" alt="" />
-      </div>
-      <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">
+      <div id="fondo1" class="columns p-0 h-100-v fixed top left z-1"></div>
+      <!-- <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">
 
         <div id="heroscreen-svg" class="columns p-0"></div>
 

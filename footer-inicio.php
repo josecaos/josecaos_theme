@@ -40,7 +40,7 @@
 		</nav>
 
 		<div class="row expanded small-5 align-middle">
-			<div class="copyright columns h-a text-right m0 p2 font-xs font-md-s">
+			<div class="copyright columns h-a text-right font-xxs font-md-s">
 				&nbsp; Mixfuckedup	&copy;  <?php echo date('Y');?> &nbsp; <?php  //bloginfo('name'); ?>
 			</div>
 		</div>

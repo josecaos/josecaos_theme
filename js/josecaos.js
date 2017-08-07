@@ -14,6 +14,7 @@ jQuery(document).ready(function($){
 
   // svgs()
   logo_cursor()
+  fondo_grid()
 
 
   $('.imgLiquid.imgLiquidFill').imgLiquid()
@@ -40,16 +41,17 @@ function logo_cursor() {
   setInterval(function () {
 
     if (i % 2 === 0) {
-      console.log("even");
+      // console.log("even");
       cursor.html(' ')
     }
-       else {
-         console.log("odd");
-         cursor.html('|')
-        }
+    else {
+      //  console.log("odd");
+      cursor.html('|')
+    }
 
-    console.log(i);
+    // console.log(i);
     i++
+
   }, 500)
 }
 
@@ -203,6 +205,34 @@ function menu() {
     },80)
 
   })
+}
 
+//fondo inicio
 
+function getColor() {
+  var colors = ['#aaa','#bbb','#ccc','#ddd']
+  var index = Math.round(Math.random() * (colors.length - 1))
+  return colors[index]
+}
+
+function fondo_grid() {
+
+  var grid = jQuery('#fondo1')
+  var blockSize = 120 // Pixels
+  var width = jQuery(document).width()/grid.width() //grid.width()  // Blocks
+  var height = 4 //grid.height() // Blocks
+  var animationMs = 2000 // Milliseconds
+  for (var i = 0; i < height; i++) {
+    for (var j = 0; j < width; j++) {
+      var color = getColor();
+      var style = {
+        'top': i * blockSize + 'px',
+        'left': j * blockSize + 'px',
+        'background': color,
+        'animation-delay': ((i + 1) + (j + 1)) * animationMs + 'ms'
+      };
+      var block = jQuery('<div />').addClass('block').css(style);
+      grid.append(block);
+    }
+  }
 }

@@ -79,7 +79,7 @@ h1,h2,h3,h4,h5,h6, #jc-logo {
   font-family: 'Press Start 2P', cursive;
 }
 a {
-  @extend .color-claro; 
+  @extend .color-claro;
 }
 a:hover {
   @extend .color-amarillo;
@@ -185,4 +185,39 @@ height: 7vh;
 .easy_bitcoin_donate_widget_text_below {
   @extend .font-xxs;
 }
+//
+// fondo inicio
+$blockx: 100px;
+$blocky: 100px;
+$blockMaxScale: 1.1;
+$animationMs: 1000ms;
+$backgroundColor: #0C0D0D;
+
+// @keyframes go {
+//   0% {
+//     transform: scale(1, 1) translate(0, 0);
+//   }
+//   100% {
+//     transform: scale($blockMaxScale, $blockMaxScale) translate(0, 0);
+//   }
+// }
+
+body {
+  background: $backgroundColor;
+  overflow: hidden;
+
+  #fondo1 {
+    margin: .5em;
+    position: relative;
+    // width: 100%;
+
+    .block {
+      width: $blockx;
+      height: $blocky;
+      position: absolute;
+      // animation: go $animationMs ease infinite alternate;
+    }
+  }
+}
+
 //

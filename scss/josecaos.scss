@@ -150,33 +150,6 @@ height: 7vh;
   transform: rotate(2deg);
 }
 
-// animacion texto inicio
-@keyframes anuncio {
-    0% {transform: skewX(10deg);}
-    50% {transform: skewX(-10deg);}
-    100% {transform: skewX(10deg);}
-}
-// .fa-bars,.fa-close
-.skewed-bg {
-  animation-name: anuncio;
-  animation-duration: 30s;
-  animation-iteration-count:infinite;
-}
-@keyframes anunciotexto {
-    0% {transform: rotate(4deg);}
-    50% {transform: rotate(-4deg);}
-    100% {transform: rotate(4deg);}
-}
-// .fa-bars,.fa-close
-.texto-skewed {
-  animation-name: anunciotexto;
-  animation-duration: 30s;
-  animation-iteration-count:infinite;
-}
-#info {
-  margin-left: 5vw
-}
-
 // override widgets
 .textwidget {
   height: auto !important;
@@ -187,27 +160,38 @@ height: 7vh;
 }
 //
 // fondo inicio
-$blockx: 100px;
-$blocky: 100px;
-$blockMaxScale: 1.1;
-$animationMs: 1000ms;
-$backgroundColor: #0C0D0D;
+$blockx: 160px;
+$blocky: 160px;
+$blockMaxScale: 0.97;
+$animationMs: 250ms;
+$backgroundColor: #000; //#E3AE03;
 
-// @keyframes go {
-//   0% {
-//     transform: scale(1, 1) translate(0, 0);
-//   }
-//   100% {
-//     transform: scale($blockMaxScale, $blockMaxScale) translate(0, 0);
-//   }
-// }
+@keyframes go {
+  0% {
+    // border-radius: 15px;
+    -webkit-filter: blur(0); /* Safari 6.0 - 9.0 */
+    filter: blur(0);
+    // -webkit-filter: hue-rotate(0deg); /* Safari 6.0 - 9.0 */
+    // filter: hue-rotate(0deg);
+    // transform: scale(1, 1) translate(0, 0);
+  }
+
+  100% {
+    // border-radius: 5px;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+    // -webkit-filter: hue-rotate(360deg); /* Safari 6.0 - 9.0 */
+    // filter: hue-rotate(360deg);
+    // transform: scale($blockMaxScale, $blockMaxScale) translate(0, 0);
+  }
+}
 
 body {
   background: $backgroundColor;
-  overflow: hidden;
 
   #fondo1 {
-    margin: .5em;
+    // margin: .5em;
+    overflow: hidden;
     position: relative;
     // width: 100%;
 
@@ -215,7 +199,12 @@ body {
       width: $blockx;
       height: $blocky;
       position: absolute;
-      // animation: go $animationMs ease infinite alternate;
+      transition: 0.25s;
+      animation: go $animationMs ease infinite alternate;
+
+    }
+    .block:hover {
+      @extend .color-amarillo;
     }
   }
 }

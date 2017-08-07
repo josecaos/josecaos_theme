@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>JoseCaos</title>
+  <title>JoseCaos</title>
   <!-- Force IE to use the latest rendering engine available -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -30,8 +30,8 @@
     <!-- Analytics -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-74096683-1', 'auto');
@@ -50,8 +50,8 @@
 
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
-          <h6 class="columns p-l-1 p-0 color-claro text-left">
-            JoseCaos <span class="logo-cursor color-rojo">|</span>
+          <h6 class="columns p-l-1 p-0 color-claro text-left color-amarillo">
+            JoseCaos <span class="logo-cursor">|</span>
           </h6>
 
         </div>
@@ -86,9 +86,17 @@
 
     <main id="main" class="grid-x grid-padding-x">
 
-      <div id="fondo1" class="columns p-0 h-100-v fixed top left z-1"></div>
+      <div id="fondo1" class="columns p-0 h-100-v top left z-1">
+
+        <div class="columns absUpL z1k">
+          <div class="row w-100 align-middle">
+            <h1 class="columns h-a text-center text-shadow">HEROSCREEN</h1>
+          </div>
+        </div>
+
+      </div>
       <!-- <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">
 
-        <div id="heroscreen-svg" class="columns p-0"></div>
+      <div id="heroscreen-svg" class="columns p-0"></div>
 
-      </div> -->
+    </div> -->

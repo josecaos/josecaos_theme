@@ -30,7 +30,10 @@ jQuery(document).ready(function($){
 
   }
 
-
+  // cambio color fondo
+  $(document).on('click', function () {
+    cambia_color()
+  })
 })//ready
 
 function logo_cursor() {
@@ -209,30 +212,51 @@ function menu() {
 
 //fondo inicio
 
-function getColor() {
-  var colors = ['#aaa','#bbb','#ccc','#ddd']
+function get_color() {
+  var colors = ['rgba(0,0,0,0)','rgb(20,20,20)','rgb(30,30,30)','rgb(40,40,40)']
   var index = Math.round(Math.random() * (colors.length - 1))
   return colors[index]
 }
-
-function fondo_grid() {
+function cambia_color() {
+  jQuery('.block').each(function () {
+    var color = get_color()
+    var style = {
+      'background': color
+    };
+    jQuery(this).css(style)
+  })
+}
+function fondo_grid(block_num) {
 
   var grid = jQuery('#fondo1')
-  var blockSize = 120 // Pixels
-  var width = jQuery(document).width()/grid.width() //grid.width()  // Blocks
-  var height = 4 //grid.height() // Blocks
-  var animationMs = 2000 // Milliseconds
+  var blockSize = 115 // Pixels
+  var width = jQuery(document).width()/blockSize //Math.round(jQuery(document).width()/blockSize) //#bloques de ancho
+  // debug
+  console.log(width);
+  //
+  var height = Math.round(jQuery(document).height()/(blockSize*2)) //# bloques alto
+  // debug
+  console.log(height);
+  //
+  var animationMs = Math.random() * (1000 - 250) + 250
+  var dir = -1
   for (var i = 0; i < height; i++) {
     for (var j = 0; j < width; j++) {
-      var color = getColor();
+      // var color = get_color();
       var style = {
-        'top': i * blockSize + 'px',
-        'left': j * blockSize + 'px',
-        'background': color,
+        'bottom': (i * (dir* -1)) * (blockSize * (dir* -1)) + 'px',
+        'left': (j * dir) * (blockSize * dir) + 'px',
+        // 'background': color,
         'animation-delay': ((i + 1) + (j + 1)) * animationMs + 'ms'
       };
       var block = jQuery('<div />').addClass('block').css(style);
       grid.append(block);
     }
   }
+
+setTimeout(function () {
+  cambia_color()
+
+},1000)
+
 }

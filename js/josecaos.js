@@ -1,6 +1,6 @@
 /*
-Funciones fuera del ready usar prefijo 'jQuery'
-en vez de '$', este solo dentro de el ready
+Funciones fuera del metodo .ready usar prefijo 'jQuery'
+en vez de '$'
 */
 jQuery(document).foundation()
 //
@@ -158,11 +158,13 @@ function menu() {
   //una vez declarado el array base
   arrlong  = iconos.length - 2
 
-  setInterval(function(){
-    //boton menu
-    jQuery('.iconos a').html('<i class="fa fa-' + iconos[Math.floor(Math.random()*iconos.length)] + ' z-1 text-shadow"></i>')
-
-  },500)
+// default icono
+  jQuery('.iconos a').html('<i class="fa fa-bars z-1 text-shadow"></i>')
+//
+  jQuery('.iconos a').on('mouseover focus',function () {
+      //boton menu
+      jQuery('.iconos a').html('<i class="fa fa-' + iconos[Math.floor(Math.random()*iconos.length)] + ' z-1 text-shadow"></i>')
+  })
 
   // click
   jQuery('.iconos a').on('click', function() {
@@ -175,6 +177,14 @@ function menu() {
         iconos = abreico
         // sale
         menumovil.css(salemenu)
+        //
+        // setInterval(function(){
+        //   //boton menu
+        //   jQuery('.iconos a').html('<i class="fa fa-' + iconos[Math.floor(Math.random()*iconos.length)] + ' z-1 text-shadow"></i>')
+        //
+        // },750)
+
+        //
 
         // resetea la posicion si un link es presionado
         jQuery('#lista-menu > a').on('click', function() {
@@ -213,7 +223,7 @@ function menu() {
 //fondo inicio
 
 function get_color() {
-  var colors = ['rgba(0,0,0,0)','rgb(20,20,20)','rgb(30,30,30)','rgb(40,40,40)']
+  var colors = ['rgba(0,0,0,0)','rgb(10,10,10)','rgb(20,20,20)','rgb(30,30,30)','rgba(0,250,0,0.35)']
   var index = Math.round(Math.random() * (colors.length - 1))
   return colors[index]
 }
@@ -254,9 +264,9 @@ function fondo_grid(block_num) {
     }
   }
 
-setTimeout(function () {
-  cambia_color()
+  setTimeout(function () {
+    cambia_color()
 
-},1000)
+  },1000)
 
 }

@@ -50,7 +50,7 @@
 
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
-          <h6 class="columns p-l-1 p-0 color-claro text-left color-amarillo">
+          <h6 class="columns p-l-1 p-0 color-claro text-left color-verde">
             JoseCaos <span class="logo-cursor">|</span>
           </h6>
 
@@ -84,15 +84,9 @@
 
     <!-- <div id="contenedor" class="columns h-100-v p-top rel"> -->
 
-    <main id="main" class="grid-x grid-padding-x">
+    <main id="main" class="grid-x grid-padding-x h-100">
 
       <div id="fondo1" class="columns p-0 h-100-v top left z-1">
-
-        <div class="columns absUpL z1k">
-          <div class="row w-100 align-middle">
-            <h1 class="columns h-a text-center text-shadow">HEROSCREEN</h1>
-          </div>
-        </div>
 
       </div>
       <!-- <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">

@@ -7,9 +7,9 @@ get_header('inicio');
 
 <?php
 get_template_part('secciones/inicio/heroscreen');
-echo "wevos";
-?>
 
+get_template_part('secciones/inicio/secciones');
+?>
 
 <?php
 

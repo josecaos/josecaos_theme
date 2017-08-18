@@ -51,7 +51,7 @@
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
           <h6 class="columns p-l-1 p-0 color-claro text-left color-verde">
-            JoseCaos <span class="logo-cursor">|</span>
+            JoseCaos <small><span class="texto-cursor"></span></small><span class="logo-cursor">|</span>
           </h6>
 
         </div>
@@ -73,7 +73,7 @@
 
     </header>
 
-    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k shadow-up-white">
+    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k color-azul-claro-bg">
 
       <?php
       get_template_part('secciones/menu');

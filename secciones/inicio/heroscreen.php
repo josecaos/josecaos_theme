@@ -1,27 +1,25 @@
-<!-- svg intro -->
-<section class="columns h-100-v p-0 p-t-3">
+<section id="heroscreen" class="columns h-100-v p-0 p-t-3">
 
   <?php
   $args = page_id(70);
-  $q = new WP_Query('page');
+  $q = new WP_Query($args);
 
-  if (have_posts()->$q):
-    while (have_posts()->$q): the_post()->$q;
-?>
-  <div class="columns">
-    <div class="row w-100 align-middle">
-
-
-<?php
-echo get_the_content();
-
-?>
+  if ($q->have_posts()):
+    while ($q->have_posts()): $q->the_post();
+    ?>
+    <div class="columns">
+      <div class="row w-100 align-middle">
 
 
+        <?php
+        echo get_the_content();
+        ?>
 
+
+
+      </div>
     </div>
-  </div>
 
-<?php endwhile; ?>
+  <?php endwhile; ?>
 <?php endif; ?>
 </section>

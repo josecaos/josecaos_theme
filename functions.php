@@ -41,3 +41,10 @@ function sidebars() {
 
 }
 add_action( 'widgets_init', 'sidebars' );
+
+//
+function page_id($id) {
+
+  return array( 'page_id' => $id );
+
+}

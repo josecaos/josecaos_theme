@@ -199,7 +199,7 @@ body {
       width: $blockx;
       height: $blocky;
       position: absolute;
-      transition: 0.25s;
+      transition: 0.5s;
       animation: go $animationMs ease infinite alternate;
 
     }

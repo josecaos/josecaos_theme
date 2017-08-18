@@ -31,9 +31,18 @@ jQuery(document).ready(function($){
   }
 
   // cambio color fondo
-  $(document).on('click', function () {
-    cambia_color()
-  })
+  // $(document).on('hover click', function () {
+var tiempoFondo = [500,1500,3000,7000]
+var t  = shuffle(tiempoFondo)
+var cambio
+cambio = t[0]
+setInterval(function() {
+
+  cambia_color()
+
+}, cambio)
+  // })
+
 })//ready
 
 function logo_cursor() {
@@ -244,7 +253,7 @@ function fondo_grid(block_num) {
   // debug
   console.log(width);
   //
-  var height = Math.round(jQuery(document).height()/(blockSize*2)) //# bloques alto
+  var height = Math.round(jQuery(document).height()/(blockSize)) //# bloques alto
   // debug
   console.log(height);
   //
@@ -252,7 +261,6 @@ function fondo_grid(block_num) {
   var dir = -1
   for (var i = 0; i < height; i++) {
     for (var j = 0; j < width; j++) {
-      // var color = get_color();
       var style = {
         'bottom': (i * (dir* -1)) * (blockSize * (dir* -1)) + 'px',
         'left': (j * dir) * (blockSize * dir) + 'px',
@@ -264,9 +272,9 @@ function fondo_grid(block_num) {
     }
   }
 
-  setTimeout(function () {
-    cambia_color()
-
-  },1000)
+  // setTimeout(function () {
+  //   cambia_color()
+  //
+  // },1000)
 
 }

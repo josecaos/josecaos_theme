@@ -84,9 +84,9 @@
 
     <!-- <div id="contenedor" class="columns h-100-v p-top rel"> -->
 
-    <main id="main" class="grid-x grid-padding-x h-100">
+    <main id="main" class="grid-x grid-padding-x h-a">
 
-      <div id="fondo1" class="columns p-0 h-100-v top left z-1">
+      <div id="fondo1" class="columns left z-1">
 
       </div>
       <!-- <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">

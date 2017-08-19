@@ -73,7 +73,7 @@
 
     </header>
 
-    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k color-azul-claro-bg">
+    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k color-amarillo-bg">
 
       <?php
       get_template_part('secciones/menu');

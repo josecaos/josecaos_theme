@@ -19,7 +19,7 @@
 
 <section class="columns p-t-0-3 text-left h-70-v">
   <h5 class="columns text-center">Donaciones</h5>
-  <small class="texto-donacion columns text-justify"><p>
+  <small class="texto-donacion columns text-justify"><p class="color-oscuro">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum assumenda nihil soluta repudiandae.
   </p></small>
 

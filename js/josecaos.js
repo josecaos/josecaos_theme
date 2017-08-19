@@ -194,7 +194,7 @@ function logo_cursor() {
     // default icono
     jQuery('.iconos a').html('<i class="fa fa-bars z-1 text-shadow"></i>')
     //
-    jQuery('.iconos a').on('mouseover focus',function () {
+    jQuery('.iconos a').on('mouseover click',function () {
       //boton menu
       jQuery('.iconos a').html('<i class="fa fa-' + iconos[Math.floor(Math.random()*iconos.length)] + ' z-1 text-shadow"></i>')
     })

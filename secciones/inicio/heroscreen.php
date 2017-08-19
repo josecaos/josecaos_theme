@@ -10,11 +10,11 @@
     <div class="columns">
       <div class="row w-100 align-middle">
 
-
-        <?php
-        echo get_the_content();
-        ?>
-
+        <h1 class="columns text-center text-shadow ">
+          <?php
+          echo get_the_content();
+          ?>
+        </h1>
 
 
       </div>

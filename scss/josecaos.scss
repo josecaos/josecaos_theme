@@ -94,7 +94,18 @@ height: 7vh;
 .p-top {
   padding-top: 10vh;//igual que header
 }
-
+.p-bottom {
+  padding-bottom: 7vh;//igual que header
+}
+.pointer {
+  cursor: pointer;
+}
+.lista-about p {
+  color: #bbb !important;
+}
+.lista-about p:hover {
+  @extend .color-amarillo;
+}
 // animacion boton menu
 @keyframes barras {
     0% {opacity: 0.5;}
@@ -163,7 +174,7 @@ height: 7vh;
 $blockx: 160px;
 $blocky: 160px;
 $blockMaxScale: 0.97;
-$animationMs: 250ms;
+$animationMs: 500ms;
 $backgroundColor: #000; //#E3AE03;
 
 @keyframes go {
@@ -178,8 +189,8 @@ $backgroundColor: #000; //#E3AE03;
 
   100% {
     // border-radius: 5px;
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-    filter: blur(5px);
+    -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+    filter: blur(3px);
     // -webkit-filter: hue-rotate(360deg); /* Safari 6.0 - 9.0 */
     // filter: hue-rotate(360deg);
     // transform: scale($blockMaxScale, $blockMaxScale) translate(0, 0);

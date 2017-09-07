@@ -1,6 +1,6 @@
-<section id="heroscreen" class="columns h-100-v p-0 p-top p-bottom">
+<section id="inicio" class="columns h-100-v p-0 p-top p-bottom">
 
-<div class="columns small-12 medium-6 h-50 h-md-100">
+<div class="columns small-12 medium-3 large-2 h-a h-md-100">
 
   <h6 class="columns text-left h-a p-t-0-2"></h6>
 
@@ -29,7 +29,7 @@
 </div>
 
 <!--  -->
-<div class="columns small-12 medium-6 h-50 h-md-100">
+<div class="columns small-12 medium-9 large-10 h-a h-md-100">
 <?php
 $args = page_id(70);
 $q = new WP_Query($args);

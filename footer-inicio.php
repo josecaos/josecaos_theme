@@ -41,7 +41,7 @@
 
 		<div class="row expanded small-5 align-middle">
 			<div class="copyright columns h-a text-right font-xxs font-md-s">
-				&nbsp; Mixfuckedup	&copy;  <?php echo date('Y');?> &nbsp; <?php  //bloginfo('name'); ?>
+				&nbsp; <a href="http://mixfuckedup.net">Mixfuckedup</a>	&copy;  <?php echo date('Y');?> &nbsp; <?php  //bloginfo('name'); ?>
 			</div>
 		</div>
 

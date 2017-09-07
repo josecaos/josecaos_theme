@@ -61,10 +61,13 @@
 }
 
 //reset
-div, main, section, article, ul {
+div, main, section, article, ul, p {
   display: block;
   height: 100%;
-  font-family: 'Space Mono', monospace;
+}
+div, ul, p{
+  // font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 //vectores
 path, svg, g {
@@ -220,4 +223,6 @@ body {
   }
 }
 
+
 //
+@import "responsivos";

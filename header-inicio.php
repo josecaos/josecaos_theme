@@ -84,7 +84,7 @@
 
     <!-- <div id="contenedor" class="columns h-100-v p-top rel"> -->
 
-    <main id="main" class="grid-x grid-padding-x h-a">
+    <main id="main" class="columns h-a">
 
       <div id="fondo1" class="columns left z-1">
 

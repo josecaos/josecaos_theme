@@ -1,7 +1,7 @@
 
-  <div class="columns small-12 medium-3 large-2 p-0 h-a h-md-100 p-top">
+  <div class="columns small-12 medium-3 large-2 p-0 h-a h-md-100 p-top" data-sticky-container>
 
-    <ul class="columns h-a p-0 p-t-1">
+    <ul class="columns h-a p-0 p-t-1" data-sticky data-margin-top="5">
 
       <?php
 

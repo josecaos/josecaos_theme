@@ -23,7 +23,7 @@
     <meta name="theme-color" content="#121212">
     <?php } ?>
 
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <!-- <link rel="pingback" href="<?php //bloginfo('pingback_url'); ?>"> -->
 
     <?php wp_head(); ?>
 
@@ -49,9 +49,8 @@
       <div class="columns small-10">
 
         <div id="jc-logo" class="row expanded align-middle">
-          <!-- <path id="jc-logo" class="columns p-0"></path> -->
-          <h6 class="columns p-l-1 p-0 color-claro text-left color-verde">
-            JoseCaos <small><span class="texto-cursor"></span></small><span class="logo-cursor">|</span>
+          <h6 class="columns p-l-1 p-0 color-claro text-left">
+            <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a> <small><span class="texto-cursor"></span></small><span class="logo-cursor">|</span>
           </h6>
 
         </div>

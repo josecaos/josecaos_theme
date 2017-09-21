@@ -1,7 +1,7 @@
 <ul id="lista-menu" class="columns p-0 text-left h-30-v color-oscuro-bg">
 
   <?php
-  $arr = array('Releases', 'fechas', 'Códigos', 'contacto');
+  $arr = array('Releases', 'fechas', 'SCTweets', 'contacto');
   for ($i=0; $i < 4 ; $i++):
     ?>
 

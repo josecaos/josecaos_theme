@@ -2,10 +2,10 @@
 Funciones fuera del metodo .ready usar prefijo 'jQuery'
 en vez de '$'
 */
-jQuery(document).foundation()
 //
 var hero = 0;
 jQuery(document).ready(function($){
+  jQuery(document).foundation()
 
 
   // contador()
@@ -37,16 +37,23 @@ jQuery(document).ready(function($){
   var cambio
   cambio = t[0]
   setInterval(function() {
-
     cambia_color()
-
   }, cambio)
   // })
 
-  // setTimeout(function() {
-  //   texto_cursor()
-  // },15000)
-
+  jQuery(window).resize(function() {
+    var ancho = jQuery("#menu").width()
+    setTimeout(function() {
+      jQuery("#menu").css({
+        'transition': '1s',
+        '-webkit-transform': 'translateX('+ ancho +'px)',
+        '-moz-transform': 'translateX('+ ancho +'px)',
+        '-ms-transform': 'translateX('+ ancho +'px)',
+        '-o-transform': 'translateX('+ ancho +'px)',
+        'transform': 'translateX('+ ancho +'px)'
+      })
+    })
+  })
 })//ready
 
 function logo_cursor() {
@@ -95,13 +102,10 @@ function texto_cursor(num_array) {
     case 3:
     letras = textos[2]
     break;
-
-    default:
-
   }
 
 
-    id = setInterval(function () {
+  id = setInterval(function () {
 
     if (i == letras.length + 5) {
 
@@ -113,7 +117,7 @@ function texto_cursor(num_array) {
 
     i++
 
-  }, 250)
+  }, 150)
 }
 
 function svgs() {

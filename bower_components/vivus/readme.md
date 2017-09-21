@@ -2,6 +2,8 @@
 
 Demo available on http://maxwellito.github.io/vivus
 
+Play with it on [Vivus Instant](https://maxwellito.github.io/vivus-instant/)
+
 Vivus is a lightweight JavaScript class (with no dependencies) that allows you to animate SVGs, giving them the appearance of being drawn. There are a variety of different animations available, as well as the option to create a custom script to draw your SVG in whatever way you like.
 
 Available via:
@@ -13,6 +15,8 @@ Available via:
  - [WebJars](http://www.webjars.org/)
 
 Join the conversation on [Gitter](https://gitter.im/maxwellito/vivus)
+
+Try Vivus with your SVG on [Vivus Instant](https://maxwellito.github.io/vivus-instant/). If you plan to use the library to animate a single SVG without callback or controls, this will allow you to download your animated SVG, powered by CSS, JavaScript free.
 
 ## Animations
 
@@ -138,7 +142,7 @@ The Vivus constructor asks for 3 parameters:
 
 | Name          | Description         |
 |---------------|---------------------|
-| `play(speed, callback)` | Plays the animation with the speed given in parameter. This value can be negative to go backward, between 0 and 1 to go slowly, or superior to 1 to go fast. [Default: `1`]. Callback executed after the animation is finished (optional) |
+| `play(speed, callback)` | Plays the animation with the speed given in parameter. This value can be negative to go backward, between 0 and 1 to go slowly, >1 to go faster, or <0 to go in reverse from current state. [Default: `1`]. Callback executed after the animation is finished (optional) |
 | `stop()`      | Stops the animation. |
 | `reset()`     | Reinitialises the SVG to the original state: undrawn. |
 | `finish()`    | Set the SVG to the final state: drawn. |
@@ -189,11 +193,11 @@ new Vivus('my-svg-id', {
 }, myCallback);
 ```
 
-**WARNING**: `animTimingFunction` is called at every frame of the animation, and `pathTimingFunction` is also called at every frame for each path of your SVG. So be careful about them. Keep it simple, or it can affect the performances.
+**WARNING**: `animTimingFunction` is called at every frame of the animation, and `pathTimingFunction` is also called at every frame for each path of your SVG. So be careful about them. Keep it simple, or it can affect the performance.
 
 ## Extra attributes
 
-The attribute `data-ignore` allow to ignore path tags from the vivus animation.
+The attribute `data-ignore` allows you to ignore path tags from the vivus animation.
 
 ```html
 <svg id="my-svg">
@@ -291,7 +295,7 @@ Then you can run Gulp with one of the following tasks:
 
 Some SVG weren't working at all. The only solution found was to clone and replace each updated path element. Of course this solution requires more resources and a lot of DOM manipulation, but it will give a smooth animation like other browsers. This fallback is only applied on Internet Explorer (all versions), and can be disabled via the option `forceRender`.
 
-Replacing each updated path by a clone was the only way to force IE to re-render the SVG. On some SVGs this trick is not necessary, but IE can be a bit tricky with this. If you're worried about performances, I would recommend you to check if your SVG works correctly by disabling the `forceRender` option. If it works correctly on IE, then keep it like this.
+Replacing each updated path by a clone was the only way to force IE to re-render the SVG. On some SVGs this trick is not necessary, but IE can be a bit tricky with this. If you're worried about performance, I would recommend checking if your SVG works correctly by disabling the `forceRender` option. If it works correctly on IE, then keep it like this.
 
 By default, `forceRender` is `true` on Internet Explorer only.
 

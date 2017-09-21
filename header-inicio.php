@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JoseCaos</title>
+  <title><?php echo bloginfo(); ?></title>
   <!-- Force IE to use the latest rendering engine available -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -46,7 +46,7 @@
 
     <header id="header" class="columns h-10-v fixed top left p-0 shadow color-negro-bg z1k1">
       <!--  -->
-      <div class="columns small-10 medium-11">
+      <div class="columns small-10">
 
         <div id="jc-logo" class="row expanded align-middle">
           <!-- <path id="jc-logo" class="columns p-0"></path> -->
@@ -60,10 +60,10 @@
       </div>
 
       <!--  -->
-      <div class="columns small-2 medium-1">
-        <div class="row small-12 align-middle">
-          <div class="iconos columns text-center h-a regresa-icono-menu">
-            <a id="menu-bars" class="columns p-0 font-xl">
+      <div class="columns small-2">
+        <div class="row small-12 align-middle align-right">
+          <div class="iconos h-a regresa-icono-menu">
+            <a id="menu-bars" class="w-a p-l-1 p-r-1 font-xl">
               <!-- icono animado desde js -->
             </a>
           </div>
@@ -86,11 +86,8 @@
 
     <main id="main" class="columns h-a">
 
-      <div id="fondo1" class="columns left z-1">
+      <div id="fondo1" class="columns left z-1"></div>
 
-      </div>
-      <!-- <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">
-
-      <div id="heroscreen-svg" class="columns p-0"></div>
-
-    </div> -->
+      <?php
+      get_template_part("sidebar");
+      ?>

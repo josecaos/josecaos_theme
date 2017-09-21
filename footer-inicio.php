@@ -1,9 +1,6 @@
-</main>  <!-- end .main-content -->
-<?php
-// get_template_part("sidebar");
-?>
-<!-- </div> -->
-<!-- contenedor -->
+
+</main>
+<!-- fin contenedor -->
 
 
 <footer class="footer columns fixed bottom left color-negro-bg shadow-up z1k">

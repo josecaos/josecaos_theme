@@ -1,13 +1,13 @@
 /**
  * vivus - JavaScript library to make drawing animation on SVG
- * @version v0.4.0
+ * @version v0.4.1
  * @link https://github.com/maxwellito/vivus
  * @license MIT
  */
 
 'use strict';
 
-(function (window, document) {
+(function () {
 
   'use strict';
 
@@ -40,7 +40,9 @@ function Pathformer(element) {
       throw new Error('Pathformer [constructor]: "element" parameter is not related to an existing ID');
     }
   }
-  if (element.constructor instanceof window.SVGElement || /^svg$/i.test(element.nodeName)) {
+  if (element instanceof window.SVGElement || 
+      element instanceof window.SVGGElement ||
+      /^svg$/i.test(element.nodeName)) {
     this.el = element;
   } else {
     throw new Error('Pathformer [constructor]: "element" parameter must be a string or a SVGelement');
@@ -268,7 +270,7 @@ Pathformer.prototype.parseAttr = function (element) {
 
   'use strict';
 
-var requestAnimFrame, cancelAnimFrame, parsePositiveInt;
+var setupEnv, requestAnimFrame, cancelAnimFrame, parsePositiveInt;
 
 /**
  * Vivus
@@ -319,6 +321,8 @@ var requestAnimFrame, cancelAnimFrame, parsePositiveInt;
  * @param {Function}     callback Callback for the end of the animation
  */
 function Vivus (element, options, callback) {
+
+  setupEnv();
 
   // Setup
   this.isReady = false;
@@ -392,6 +396,7 @@ Vivus.prototype.setElement = function (element, options) {
   switch (element.constructor) {
   case window.SVGSVGElement:
   case window.SVGElement:
+  case window.SVGGElement:
     this.el = element;
     this.isReady = true;
     break;
@@ -953,12 +958,6 @@ Vivus.prototype.isInViewport = function (el, h) {
   return (elTop + elHeight * h) <= viewed && (elBottom) >= scrolled;
 };
 
-/**
- * Alias for document element
- *
- * @type {DOMelement}
- */
-Vivus.prototype.docElem = window.document.documentElement;
 
 /**
  * Get the viewport height in pixels
@@ -986,41 +985,55 @@ Vivus.prototype.scrollY = function () {
   return window.pageYOffset || this.docElem.scrollTop;
 };
 
-/**
- * Alias for `requestAnimationFrame` or
- * `setTimeout` function for deprecated browsers.
- *
- */
-requestAnimFrame = (function () {
-  return (
-    window.requestAnimationFrame       ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame    ||
-    window.oRequestAnimationFrame      ||
-    window.msRequestAnimationFrame     ||
-    function(/* function */ callback){
-      return window.setTimeout(callback, 1000 / 60);
-    }
-  );
-})();
+setupEnv = function () {
 
-/**
- * Alias for `cancelAnimationFrame` or
- * `cancelTimeout` function for deprecated browsers.
- *
- */
-cancelAnimFrame = (function () {
-  return (
-    window.cancelAnimationFrame       ||
-    window.webkitCancelAnimationFrame ||
-    window.mozCancelAnimationFrame    ||
-    window.oCancelAnimationFrame      ||
-    window.msCancelAnimationFrame     ||
-    function(id){
-      return window.clearTimeout(id);
-    }
-  );
-})();
+  if (Vivus.prototype.docElem) {
+    return;
+  }
+
+  /**
+   * Alias for document element
+   *
+   * @type {DOMelement}
+   */
+  Vivus.prototype.docElem = window.document.documentElement;
+
+  /**
+   * Alias for `requestAnimationFrame` or
+   * `setTimeout` function for deprecated browsers.
+   *
+   */
+  requestAnimFrame = (function () {
+    return (
+      window.requestAnimationFrame       ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame    ||
+      window.oRequestAnimationFrame      ||
+      window.msRequestAnimationFrame     ||
+      function(/* function */ callback){
+        return window.setTimeout(callback, 1000 / 60);
+      }
+    );
+  })();
+
+  /**
+   * Alias for `cancelAnimationFrame` or
+   * `cancelTimeout` function for deprecated browsers.
+   *
+   */
+  cancelAnimFrame = (function () {
+    return (
+      window.cancelAnimationFrame       ||
+      window.webkitCancelAnimationFrame ||
+      window.mozCancelAnimationFrame    ||
+      window.oCancelAnimationFrame      ||
+      window.msCancelAnimationFrame     ||
+      function(id){
+        return window.clearTimeout(id);
+      }
+    );
+  })();
+};
 
 /**
  * Parse string to integer.
@@ -1054,4 +1067,4 @@ parsePositiveInt = function (value, defaultValue) {
     window.Vivus = Vivus;
   }
 
-}(window, document));
+}());

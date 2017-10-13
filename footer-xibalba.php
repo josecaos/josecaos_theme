@@ -1,9 +1,12 @@
+</main>  <!-- end .main-content -->
+<?php
+get_template_part("sidebar");
+?>
+</div>
+<!-- contenedor -->
 
-</main>
-<!-- fin contenedor -->
 
-
-<footer class="footer columns fixed bottom left color-negro-bg shadow-up z1k">
+<footer class="footer columns fixed bottom left color-negro-bg shadow-up">
 
 	<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
 
@@ -37,8 +40,8 @@
 		</nav>
 
 		<div class="row expanded small-5 align-middle">
-			<div class="copyright columns h-a text-right font-xxs font-md-s">
-				&nbsp; <a href="http://mixfuckedup.net">Mixfuckedup</a>	&copy;  <?php echo date('Y');?> &nbsp; <?php  //bloginfo('name'); ?>
+			<div class="copyright columns h-a text-right m0 p2 font-xxs font-md-m">
+				&nbsp; Mixfuckedup	&copy;  <?php echo date('Y');?> &nbsp; <?php  //bloginfo('name'); ?>
 			</div>
 		</div>
 

@@ -1,7 +1,7 @@
 <?php
 /*Template Name: Presentaciones*/
 
-get_header('inicio');
+get_header();
 
 ?>
 
@@ -11,4 +11,4 @@ get_header('inicio');
 
 <?php
 
-get_footer('inicio');
+get_footer();

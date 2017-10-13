@@ -30,6 +30,11 @@ function caos_scripts() {
 add_action('wp_enqueue_scripts', 'caos_scripts');
 
 //
+register_nav_menus( array(
+  'principal'   => __( 'Menú principal', 'josecaos' ),
+) );
+
+//
 function sidebars() {
 
 	register_sidebar( array(

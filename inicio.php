@@ -1,7 +1,7 @@
 <?php
 /*Template Name: Inicio*/
 
-get_header('inicio');
+get_header();
 
 ?>
 
@@ -12,4 +12,4 @@ get_template_part('secciones/inicio/heroscreen');
 
 <?php
 
-get_footer('inicio');
+get_footer();

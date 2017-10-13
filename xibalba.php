@@ -1,7 +1,7 @@
 <?php
 /*Template Name: Xibalba-release*/
 
-get_header();
+get_header('xibalba');
 
 ?>
 
@@ -13,4 +13,4 @@ get_template_part('secciones/released/xibalba-new-release');
 
 <?php
 
-get_footer();
+get_footer('xibalba');

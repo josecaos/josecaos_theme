@@ -107,7 +107,7 @@ function texto_cursor(num_array) {
 
   id = setInterval(function () {
 
-    if (i == letras.length + 5) {
+    if (i == letras.length + 15) {
 
       texto.html("")
 
@@ -117,7 +117,7 @@ function texto_cursor(num_array) {
 
     i++
 
-  }, 150)
+  }, 100)
 }
 
 function svgs() {

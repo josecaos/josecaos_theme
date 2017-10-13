@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>.joseCaos</title>
+  <title><?php echo bloginfo(); ?></title>
   <!-- Force IE to use the latest rendering engine available -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -23,15 +23,15 @@
     <meta name="theme-color" content="#121212">
     <?php } ?>
 
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <!-- <link rel="pingback" href="<?php //bloginfo('pingback_url'); ?>"> -->
 
     <?php wp_head(); ?>
 
     <!-- Analytics -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-74096683-1', 'auto');
@@ -46,13 +46,12 @@
 
     <header id="header" class="columns h-10-v fixed top left p-0 shadow color-negro-bg z1k1">
       <!--  -->
-      <div class="columns small-10 medium-11">
+      <div class="columns small-10">
 
         <div id="jc-logo" class="row expanded align-middle">
-          <!-- <path id="jc-logo" class="columns p-0"></path> -->
-          <h3 class="columns p-0 p-t-0-2 color-azul-claro">
-            .joseCaos
-          </h3>
+          <h6 class="columns p-l-1 p-0 color-claro text-left">
+            <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a> <small><span class="texto-cursor"></span></small><span class="logo-cursor">|</span>
+          </h6>
 
         </div>
 
@@ -60,11 +59,11 @@
       </div>
 
       <!--  -->
-      <div class="columns small-2 medium-1">
-        <div class="row small-12 align-middle">
-          <div class="iconos columns text-center h-a regresa-icono-menu">
-            <a id="menu-bars" class="columns p-0 font-xl">
-              <!-- icono desde js -->
+      <div class="columns small-2">
+        <div class="row small-12 align-middle align-right">
+          <div class="iconos h-a regresa-icono-menu">
+            <a id="menu-bars" class="w-a p-l-1 p-r-1 font-xl">
+              <!-- icono animado desde js -->
             </a>
           </div>
         </div>
@@ -73,7 +72,7 @@
 
     </header>
 
-    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k shadow-up-white">
+    <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k color-amarillo-bg">
 
       <?php
       get_template_part('secciones/menu');
@@ -82,18 +81,12 @@
     </nav>
 
 
-    <div id="contenedor" class="columns h-100-v p-top rel">
+    <!-- <div id="contenedor" class="columns h-100-v p-top rel"> -->
 
+    <main id="main" class="columns h-a">
 
-      <div class="columns p-0 fixed top left imgLiquid imgLiquidFill z-1">
-        <img src="<?php echo get_stylesheet_directory_uri();?>/img/fondo-release.png" alt="" />
-      </div>
-      <div id="heroscreen-anim" class="columns p-0 fixed top left z-1">
+      <div id="fondo1" class="columns left z-1"></div>
 
-        <div id="heroscreen-svg" class="columns p-0"></div>
-
-      </div>
-
-
-
-      <main id="main" class="columns small-12 medium-8 large-9 p-0">
+      <?php
+      get_template_part("sidebar");
+      ?>

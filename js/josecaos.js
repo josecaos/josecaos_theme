@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 
   // cambio color fondo
   // $(document).on('hover click', function () {
-  var tiempoFondo = [1000,2000,4000]
+  var tiempoFondo = [6000,2000,4000]
   var t  = shuffle(tiempoFondo)
   var cambio
   cambio = t[0]

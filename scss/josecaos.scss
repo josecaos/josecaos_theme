@@ -88,7 +88,7 @@ a:hover {
   @extend .color-amarillo;
 }
 footer {
-height: 7vh;
+  height: 7vh;
 }
 .fa {
   transition: 0.1s;
@@ -111,9 +111,9 @@ height: 7vh;
 }
 // animacion boton menu
 @keyframes barras {
-    0% {opacity: 0.5;}
-    50% {opacity: 1;}
-    100% {opacity: 0.5;}
+  0% {opacity: 0.5;}
+  50% {opacity: 1;}
+  100% {opacity: 0.5;}
 }
 // .fa-bars,.fa-close
 .fa-barcode,.fa-align-left,.fa-align-right,
@@ -223,6 +223,37 @@ body {
   }
 }
 
+// enventos
+.card {
+  @extend .color-amarillo-bg;
+}
+.vevent {
+  @extend .card;
+  @extend .small-12;
+  @extend .color-negro;
+  @extend .p-1;
+
+  & .summary {
+    @extend .color-negro;
+    @extend .m-b-1;
+  }
+  & .description {
+    @extend .color-negro;
+    @extend .m-b-1;
+  }
+  & .event-time {
+    @extend .color-negro;
+    @extend .m-b-1;
+  }
+  & .info-link a {
+    @extend .color-negro;
+    @extend .m-b-1;
+  }
+  & .event-label {
+    @extend .color-negro;
+    @extend .m-b-1;
+  }
+}
 
 //
 @import "responsivos";

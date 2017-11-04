@@ -6,7 +6,8 @@ get_header();
 ?>
 
 <?php
-get_template_part('secciones/inicio/heroscreen');
+get_template_part('secciones/inicio/contenido');
+// get_template_part('secciones/inicio/heroscreen');
 
 ?>
 

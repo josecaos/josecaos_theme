@@ -12,7 +12,8 @@ function caos_styles() {
   ## fuente 8bit
   wp_enqueue_style( '8bit-font','https://fonts.googleapis.com/css?family=Press+Start+2P');
   ##
-  wp_enqueue_style( '8bit-font', 'https://fonts.googleapis.com/css?family=Roboto+Mono');
+  wp_enqueue_style( 'txt-font', 'https://fonts.googleapis.com/css?family=Roboto+Mono');
+  wp_enqueue_style( 'txxt-font', 'https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
 
 }
 add_action( 'wp_enqueue_scripts', 'caos_styles' );

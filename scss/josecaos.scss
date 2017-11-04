@@ -54,10 +54,15 @@
 @import "../bower_components/font-awesome/scss/font-awesome";
 @import "../style_utils/scss/style_utils";
 @import "colores";
+// @import "xibalba";
 //
 
 * {
   // outline: 1px dashed purple;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 //reset
@@ -67,7 +72,10 @@ div, main, section, article, ul, p {
 }
 div, ul, p{
   // font-family: 'Space Mono', monospace;
-  font-family: 'Roboto Mono', monospace;
+  // font-family: 'Roboto Mono', monospace;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: light;
 }
 //vectores
 path, svg, g {
@@ -82,18 +90,21 @@ h1,h2,h3,h4,h5,h6, #jc-logo {
   font-family: 'Press Start 2P', cursive;
 }
 a {
-  @extend .color-claro;
+  @extend .color-blanco;
 }
 a:hover {
   @extend .color-amarillo;
 }
+header {
+  height: 70px;
+  min-height: 70px;
+}
 footer {
-  height: 7vh;
+  height: 75px;
 }
 .fa {
   transition: 0.1s;
 }
-
 .p-top {
   padding-top: 10vh;//igual que header
 }

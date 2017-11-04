@@ -44,7 +44,7 @@
 
   <body>
 
-    <header id="header" class="columns h-10-v fixed top left p-0 shadow color-negro-bg z1k1">
+    <header id="header" class="columns fixed top left p-0 shadow color-negro-bg z1k1">
       <!--  -->
       <div class="columns small-10">
 

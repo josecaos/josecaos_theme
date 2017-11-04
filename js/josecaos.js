@@ -31,15 +31,13 @@ jQuery(document).ready(function($){
   }
 
   // cambio color fondo
-  // $(document).on('hover click', function () {
-  var tiempoFondo = [6000,2000,4000]
+  var tiempoFondo = [3000,6000,9000]
   var t  = shuffle(tiempoFondo)
   var cambio
   cambio = t[0]
   setInterval(function() {
     cambia_color()
   }, cambio)
-  // })
 
   jQuery(window).resize(function() {
     var ancho = jQuery("#menu").width()
@@ -303,12 +301,8 @@ function fondo_grid(block_num) {
   var grid = jQuery('#fondo1')
   var blockSize = 115 // Pixels
   var width = jQuery(document).width()/blockSize //Math.round(jQuery(document).width()/blockSize) //#bloques de ancho
-  // debug
-  console.log(width);
   //
   var height = Math.round(jQuery(document).height()/(blockSize)) //# bloques alto
-  // debug
-  console.log(height);
   //
   var animationMs = Math.random() * (1000 - 250) + 250
   var dir = -1
@@ -330,4 +324,14 @@ function fondo_grid(block_num) {
   //
   // },1000)
 
+}
+
+//
+// titulo heroscreen
+function texto_init() {
+  var titulo = jQuery('h1.titulo-inicio').text()
+  var a = titulo.split('')
+  titulo = shuffle(a)
+  var b = titulo.join('')
+    jQuery('h1.titulo-inicio').html(b)
 }

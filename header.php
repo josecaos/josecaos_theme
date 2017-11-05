@@ -46,11 +46,11 @@
 
     <header id="header" class="columns fixed top left p-0 shadow color-negro-bg z1k1">
       <!--  -->
-      <div class="columns small-10">
+      <div class="logo columns small-10">
 
         <div id="jc-logo" class="row expanded align-middle">
           <h6 class="columns p-l-1 p-0 color-claro text-left">
-            <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a> <small><span class="texto-cursor"></span></small><span class="logo-cursor">|</span>
+            <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a> <small><span class="texto-cursor color-negro-bg"></span></small><span class="logo-cursor">|</span>
           </h6>
 
         </div>
@@ -60,7 +60,7 @@
 
       <!--  -->
       <div class="columns small-2">
-        <div class="row small-12 align-middle align-right">
+        <div class="row small-12 align-top align-right">
           <div class="iconos h-a regresa-icono-menu">
             <a id="menu-bars" class="w-a p-l-1 p-r-1 font-xl">
               <!-- icono animado desde js -->

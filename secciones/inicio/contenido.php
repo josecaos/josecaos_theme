@@ -4,34 +4,34 @@
   <?php
   while (have_posts()): the_post();
   ?>
-  <div class="row h-90-v align-middle">
+  <div class="row h-80-v align-middle">
 
     <div class="columns text-center text-shadow h-a">
 
       <!-- <h2 class="columns"><?php //echo get_the_title(); ?></h2> -->
 
-      <!--  -->
-
+      <!-- dispara iteracion del titulo -->
       <script type="text/javascript">
       jQuery(document).ready(function () {
         setTimeout(function () {
           var t = 250;
           setInterval(function() {
-            if (jQuery('h1.titulo-inicio').text() == 'N O D I O S') {
-              t = 1000000
-            } else {
-              texto_init()
-            }
+            texto_init()
+            // if (jQuery('h1.titulo-inicio').text() == 'N O D I O S') {
+            //   t = 1000000
+            // } else {
+            //   // texto_init()
+            // }
           },t)
         },7000)
       });
       </script>
-      <h1 class="titulo-inicio columns p-0 text-center">
+      <h2 class="titulo-inicio columns p-0 text-center">
 
         <?php
         echo get_the_content();
         ?>
-      </h1>
+      </h2>
     </div>
 
 
@@ -53,7 +53,7 @@
 
       <h4 class="columns"><?php echo get_the_title(); ?></h4>
 
-      <div class="columns p-0 text-justify">
+      <div class="columns p-0 text-right">
 
         <!--  -->
         <div class=" columns h-a">

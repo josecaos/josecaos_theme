@@ -191,8 +191,8 @@ footer {
 // fondo inicio
 $blockx: 160px;
 $blocky: 160px;
-$blockMaxScale: 0.97;
-$animationMs: 500ms;
+$blockMaxScale: 1.97;
+$animationMs: 1000ms;
 $backgroundColor: #000; //#E3AE03;
 
 @keyframes go {
@@ -228,7 +228,7 @@ body {
       width: $blockx;
       height: $blocky;
       position: absolute;
-      transition: 0.2s;
+      transition: 0.5s;
       animation: go $animationMs ease infinite alternate;
 
     }
@@ -241,16 +241,22 @@ body {
 // enventos
 .card {
   @extend .color-amarillo-bg;
+  @extend .columns;
+  @extend .p-0;
+  @extend .end;
 }
 .vevent {
   @extend .card;
   @extend .small-12;
+  @extend .medium-6;
+  @extend .large-4;
   @extend .color-negro;
   @extend .p-1;
 
   & .summary {
     @extend .color-negro;
     @extend .m-b-1;
+    font-size: 1.15em;
   }
   & .description {
     @extend .color-negro;

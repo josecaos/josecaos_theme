@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
   }
 
   // cambio color fondo
-  var tiempoFondo = [3000,6000,9000]
+  var tiempoFondo = [5000,8000,12000]
   var t  = shuffle(tiempoFondo)
   var cambio
   cambio = t[0]
@@ -70,7 +70,7 @@ function logo_cursor() {
 
     i++
 
-  }, 500)
+  }, 250)
 }
 
 // Array textos
@@ -283,7 +283,7 @@ function menu() {
 //fondo inicio
 
 function get_color() {
-  var colors = ['rgba(0,0,0,0)','rgb(10,10,10)','rgb(20,20,20)','rgb(30,30,30)','rgba(0,250,0,0.35)']
+  var colors = ['rgba(0,0,0,0)','rgb(5,5,5)','rgb(10,10,10)','rgb(15,15,15)','rgba(0,250,0,0.35)']
   var index = Math.round(Math.random() * (colors.length - 1))
   return colors[index]
 }
@@ -304,7 +304,7 @@ function fondo_grid(block_num) {
   //
   var height = Math.round(jQuery(document).height()/(blockSize)) //# bloques alto
   //
-  var animationMs = Math.random() * (1000 - 250) + 250
+  var animationMs = Math.random() * (1000 - 250) 
   var dir = -1
   for (var i = 0; i < height; i++) {
     for (var j = 0; j < width; j++) {

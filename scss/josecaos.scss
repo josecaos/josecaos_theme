@@ -201,16 +201,16 @@ $backgroundColor: #000; //#E3AE03;
     -webkit-filter: blur(0); /* Safari 6.0 - 9.0 */
     filter: blur(0);
     // -webkit-filter: hue-rotate(0deg); /* Safari 6.0 - 9.0 */
-    // filter: hue-rotate(0deg);
+     filter: hue-rotate(0deg);
     // transform: scale(1, 1) translate(0, 0);
   }
 
   100% {
     // border-radius: 5px;
-    -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
-    filter: blur(3px);
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
     // -webkit-filter: hue-rotate(360deg); /* Safari 6.0 - 9.0 */
-    // filter: hue-rotate(360deg);
+     filter: hue-rotate(360deg);
     // transform: scale($blockMaxScale, $blockMaxScale) translate(0, 0);
   }
 }
@@ -240,38 +240,40 @@ body {
 
 // enventos
 .card {
-  @extend .color-amarillo-bg;
+  // @extend .color-amarillo-bg;
+  background: transparent !important;
   @extend .columns;
   @extend .p-0;
   @extend .end;
 }
-.vevent {
+.vevent .event-item {
   @extend .card;
   @extend .small-12;
   @extend .medium-6;
   @extend .large-4;
-  @extend .color-negro;
+  @extend .color-claro;
   @extend .p-1;
+  margin: 0.5em !important;
 
   & .summary {
-    @extend .color-negro;
+    @extend .color-claro;
     @extend .m-b-1;
     font-size: 1.15em;
   }
   & .description {
-    @extend .color-negro;
+    @extend .color-claro;
     @extend .m-b-1;
   }
   & .event-time {
-    @extend .color-negro;
+    @extend .color-claro;
     @extend .m-b-1;
   }
   & .info-link a {
-    @extend .color-negro;
+    @extend .color-claro;
     @extend .m-b-1;
   }
   & .event-label {
-    @extend .color-negro;
+    @extend .color-claro;
     @extend .m-b-1;
   }
 }

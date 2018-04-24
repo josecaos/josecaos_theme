@@ -246,14 +246,14 @@ body {
   @extend .p-0;
   @extend .end;
 }
-.vevent .event-item {
+.vevent {
   @extend .card;
   @extend .small-12;
   @extend .medium-6;
   @extend .large-4;
   @extend .color-claro;
   @extend .p-1;
-  margin: 0.5em !important;
+  // margin: 0.5em !important;
 
   & .summary {
     @extend .color-claro;

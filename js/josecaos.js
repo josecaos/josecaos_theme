@@ -304,7 +304,7 @@ function fondo_grid(block_num) {
   //
   var height = Math.round(jQuery(document).height()/(blockSize)) //# bloques alto
   //
-  var animationMs = Math.random() * (1000 - 250) 
+  var animationMs = Math.random() * (1000 - 250)
   var dir = -1
   for (var i = 0; i < height; i++) {
     for (var j = 0; j < width; j++) {
@@ -329,9 +329,53 @@ function fondo_grid(block_num) {
 //
 // titulo heroscreen
 function texto_init() {
-  var titulo = jQuery('h1.titulo-inicio').text()
+  var titulo = jQuery('.titulo-inicio').text()
   var a = titulo.split('')
   titulo = shuffle(a)
   var b = titulo.join('')
-    jQuery('h1.titulo-inicio').html(b)
+  jQuery('.sub-titulo-inicio').html(b)
+}
+
+function  steemit_posts() {
+  // var author = "jazzvoon",
+  var author = "elguille",
+  permalink = "how-to-embed-steemit-content-in-a-web-page-for-example-inside-a-wordpress-post";
+
+  function cleanHtml(s) {
+    var div = document.createElement('div');
+    div.innerHTML = s;
+    var scripts = div.getElementsByTagName('script');
+    var i = scripts.length;
+    while (i--) {
+      scripts[i].parentNode.removeChild(scripts[i]);
+    }
+    var styles = div.getElementsByTagName('style');
+    var i = styles.length;
+    while (i--) {
+      styles[i].parentNode.removeChild(styles[i]);
+    }
+    console.log("hola");
+    var imgs = div.getElementsByTagName('img');
+    console.log(imgs);
+    var i = imgs.length;
+    while (i--) {
+      imgs[i].removeAttribute("height");
+    }
+    return div.innerHTML;
+  }
+
+  var mdconverter = new showdown.Converter();
+
+  document.onreadystatechange = function () {
+    if (document.readyState == "interactive") {
+      steem.api.getContent(author, permalink, function(err, result) {
+        if(!err) {
+          document.getElementById("title").innerHTML = result.title;
+          var converted = mdconverter.makeHtml(cleanHtml(result.body));
+          converted = converted.replace(/\!\[([^\]]*)\]\(([^\)]*)\)/g, "<img src='$2' alt='$1'>")
+          document.getElementById("output").innerHTML = converted;
+        }
+      });
+    }
+  }
 }

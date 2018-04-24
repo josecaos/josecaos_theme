@@ -17,13 +17,12 @@
           var t = 250;
           setInterval(function() {
             texto_init()
-            // if (jQuery('h1.titulo-inicio').text() == 'N O D I O S') {
-            //   t = 1000000
-            // } else {
-            //   // texto_init()
-            // }
+            if (jQuery('h1.titulo-inicio').text() == 'N O D I O S') {
+              t = 66666
+              jQuery('.sub-titulo-inicio').css('color','orange')
+            }
           },t)
-        },7000)
+        },5000)
       });
       </script>
       <h2 class="titulo-inicio columns p-0 text-center">
@@ -32,6 +31,13 @@
         echo get_the_content();
         ?>
       </h2>
+      <h2 class="sub-titulo-inicio columns p-0 text-center">
+
+      </h2>
+      <div class="arrow columns text-center">
+        <i class="fa fa-arrow-down"></i>
+      </div>
+
     </div>
 
 
@@ -63,37 +69,15 @@
           echo get_the_content();
           ?>
 
-
-          <!-- <div class="column small-12 medium-5 large-6 p-2">
-
-          <p>Release número 14 del colectivo <a href="http://nucleoroto.org.mx">Núcleoroto</a></p>
-
-          <p>Descarga gratis desde el sitio: <a href="http://www.nucleoroto.org.mx/?p=1866" target="_blank"><strong>Nucleoroto<strong></a> </p>
-
-          <p>Apoya este proyecto comprandolo en: <a href="https://josecaos.bandcamp.com/releases" target="_blank"><strong>Bandcamp<strong></a>, <a href="http://www.amazon.com/gp/product/B06Y11VG1V" target="_blank">Amazon</a> y + tiendas digitales </small>
-
-          También escuchalo en <small><a href="https://open.spotify.com/album/6BTpqqG23MyUnTCPFCcFCq" target="_blank">Spotify</a> / <a href="https://itunes.apple.com/us/album/xibalb%C3%A1/id1222822679?uo=4&app=itunes&at=1001lry3&ct=dashboard" target="_blank">Itunes</a> </p>
-
-
-
         </div>
 
+        <!--  -->
 
-
-        <div class=" columns small-12 medium-7 large-6 p-2">
-        <iframe style="border: 0; width: 100%; height: 380px;" src="https://bandcamp.com/EmbeddedPlayer/album=2698965189/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="http://josecaos.bandcamp.com/album/xibalba">Xibalba by josecaos</a></iframe>
       </div>
-    -->
+    </div>
+
 
   </div>
-
-  <!--  -->
-
-</div>
-</div>
-
-
-</div>
 
 <?php endwhile; ?>
 </div>

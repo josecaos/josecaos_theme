@@ -8,33 +8,43 @@ get_header();
   <div id="inner-content" class="row expanded">
 
 
-      <main id="main" class="large-8 medium-8 columns" role="main">
+    <main id="main-blog" class="large-8 medium-8 columns" role="main">
 
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php //if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <!-- To see additional archive styles, visit the /parts directory -->
-        <?php get_template_part( 'parts/loop', 'archive' ); ?>
+        <?php //get_template_part( 'parts/loop', 'archive' ); ?>
 
-      <?php endwhile; ?>
+        <?php //endwhile; ?>
 
-        <?php joints_page_navi(); ?>
+        <?php //joints_page_navi(); ?>
 
-      <?php else : ?>
+        <?php //else : ?>
 
-        <?php get_template_part( 'parts/content', 'missing' ); ?>
+          <?php //get_template_part( 'parts/content', 'missing' ); ?>
 
-      <?php endif; ?>
+          <?php //endif; ?>
 
-      </main> <!-- end #main -->
+          <script>
 
-      <?php get_sidebar(); ?>
+            steemit_posts()
 
-  </div> <!-- end #inner-content -->
+          </script>
 
-</div> <!-- end #content -->
+          <!-- test steemit post -->
+          <h1 id="title"></h1>
+          <div id="output"></div>
 
-<?php
+        </main> <!-- end #main -->
 
-get_footer();
+        <?php get_sidebar(); ?>
 
- ?>
+      </div> <!-- end #inner-content -->
+
+    </div> <!-- end #content -->
+
+    <?php
+
+    get_footer();
+
+    ?>

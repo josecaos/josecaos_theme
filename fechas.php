@@ -11,4 +11,3 @@ get_template_part("secciones/fechas/fechas-contenido");
 
 
 get_footer();
- ?>

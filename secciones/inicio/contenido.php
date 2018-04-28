@@ -17,9 +17,9 @@
           var t = 250;
           setInterval(function() {
             texto_init()
-            if (jQuery('h1.titulo-inicio').text() == 'N O D I O S') {
-              t = 66666
+            if (jQuery('h2.titulo-inicio').text() == 'N O D I O S') {
               jQuery('.sub-titulo-inicio').css('color','orange')
+              t = 66666
             }
           },t)
         },5000)

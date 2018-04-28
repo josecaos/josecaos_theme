@@ -178,7 +178,9 @@ footer {
 .texto-skewed {
   transform: rotate(2deg);
 }
-
+div.wpcf7 {
+  text-align: left;
+}
 // override widgets
 .textwidget {
   height: auto !important;

@@ -16,6 +16,8 @@ jQuery(document).ready(function($){
   logo_cursor()
   fondo_grid()
 
+  subliminal()
+
 
   $('.imgLiquid.imgLiquidFill').imgLiquid()
   $('.imgLiquid.imgLiquidNoFill').imgLiquid({fill:false})
@@ -379,4 +381,29 @@ function  steemit_posts() {
       });
     }
   }
+}
+//
+function subliminal() {
+  setTimeout(() => {
+    var t = 50
+    var x = setInterval(() => {
+      texto_init()
+      var y = document.getElementById('scrambled')
+      var texto = y.innerText
+      //
+      if (texto === "N O D I O S" || texto === "D I O S N O") {
+
+        clearInterval(x)
+        jQuery('.sub-titulo-inicio').css('color','orange')
+
+        setTimeout(() => {
+          subliminal()
+          jQuery('.sub-titulo-inicio').css('color','#aaaaaa')
+        },3000)
+
+      } else {
+
+      }
+    },t)
+  },1000)
 }

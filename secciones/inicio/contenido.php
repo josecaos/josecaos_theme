@@ -8,29 +8,6 @@
 
     <div class="columns text-center text-shadow h-a">
 
-      <!-- <h2 class="columns"><?php //echo get_the_title(); ?></h2> -->
-
-      <!-- dispara iteracion del titulo -->
-      <script type="text/javascript">
-      // jQuery(document).ready(function () {
-      setTimeout(() => {
-        var t = 50
-        var x = setInterval(() => {
-          texto_init()
-          var y = document.getElementById('scrambled')
-          var texto = y.innerText
-          //
-          if (texto === "N O D I O S" || texto === "D I O S N O") {
-            clearInterval(x)
-            jQuery('.sub-titulo-inicio').css('color','orange')
-
-          } else {
-
-          }
-        },t)
-      },3000)
-      // });
-      </script>
       <h2 id="titulo-home" class="titulo-inicio columns p-0 text-center">
 
         <?php

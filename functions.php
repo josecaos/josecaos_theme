@@ -59,3 +59,8 @@ function page_id($id) {
   return array( 'page_id' => $id );
 
 }
+//SEO Press
+function seopress_theme_slug_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'seopress_theme_slug_setup' );

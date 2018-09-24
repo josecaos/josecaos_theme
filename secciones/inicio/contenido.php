@@ -17,8 +17,10 @@
         var t = 50
         var x = setInterval(() => {
           texto_init()
-          if (jQuery('h2.sub-titulo-inicio').text() == "N O D I O S" || jQuery('h2.sub-titulo-inicio').text() == ("D I O S N O")) {
-
+          var y = document.getElementById('scrambled')
+          var texto = y.innerText
+          //
+          if (texto === "N O D I O S" || texto === "D I O S N O") {
             clearInterval(x)
             jQuery('.sub-titulo-inicio').css('color','orange')
 
@@ -29,13 +31,13 @@
       },3000)
       // });
       </script>
-      <h2 class="titulo-inicio columns p-0 text-center">
+      <h2 id="titulo-home" class="titulo-inicio columns p-0 text-center">
 
         <?php
         echo get_the_content();
         ?>
       </h2>
-      <h2 class="sub-titulo-inicio columns p-0 text-center">
+      <h2 id="scrambled" class="sub-titulo-inicio columns p-0 text-center">
 
       </h2>
       <div class="arrow columns text-center">

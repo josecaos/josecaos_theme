@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title><?php echo bloginfo(); ?></title>
+  <!-- <title><?php //echo bloginfo(); ?></title> -->
   <!-- Force IE to use the latest rendering engine available -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 

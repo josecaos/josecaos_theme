@@ -17,18 +17,18 @@
 
     <?php
     $crypto = array(
-      'Bitcoin' => '3Mw527fhct6sfJLmGMGGLGdzykJfZSVZnY',
-      'Ethereum' => '0x6AA2D63dAAa46578FE0EA776EC38495387C1169e',
-      'ZCash' => 't1bSPYonAVkzAaVy9TX6StJ2SZPboYDEpzb',
-      'Litecoin' => 'MBfgPuc1vLhtyYZQRSZsSwyQRZoSkhwdXJ',
-      'Bitcoin Cash' => 'qzqqpvwvmrt9x0hkt2wulk6lesypkp999y5ep5dx7j'
+      'Bitcoin:' => '3Mw527fhct6sfJLmGMGGLGdzykJfZSVZnY',
+      'Ethereum:' => '0x6AA2D63dAAa46578FE0EA776EC38495387C1169e',
+      'ZCash:' => 't1bSPYonAVkzAaVy9TX6StJ2SZPboYDEpzb',
+      'Litecoin:' => 'MBfgPuc1vLhtyYZQRSZsSwyQRZoSkhwdXJ',
+      'Bitcoin Cash:' => 'qzqqpvwvmrt9x0hkt2wulk6lesypkp999y5ep5dx7j'
     );
 
     for ($i=0; $i < count($crypto); $i++):
       $titulo = key($crypto);
       ?>
 
-      <label for=""><?php echo $titulo;next($crypto);?>
+      <label for=""><i class="fa fa-arrow-down"></i> <?php echo $titulo;next($crypto);?>
         <input type="text" readonly value="<?php echo $crypto[$titulo];?>">
       </label>
 

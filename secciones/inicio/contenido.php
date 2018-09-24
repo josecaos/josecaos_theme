@@ -17,9 +17,8 @@
         var t = 50
         var x = setInterval(() => {
           texto_init()
-          // if (jQuery('h2.sub-titulo-inicio:contains("N O D I O S")') || jQuery('h2.sub-titulo-inicio:contains("D I O S N O")')) {
-          // if (jQuery('h2.sub-titulo-inicio').text("N O D I O S") || jQuery('h2.sub-titulo-inicio').text("D I O S N O")) {
-          if (jQuery('h2.sub-titulo-inicio').contents() == "N O D I O S" || jQuery('h2.sub-titulo-inicio').contents() == ("D I O S N O")) {
+          if (jQuery('h2.sub-titulo-inicio').text() == "N O D I O S" || jQuery('h2.sub-titulo-inicio').text() == ("D I O S N O")) {
+
             clearInterval(x)
             jQuery('.sub-titulo-inicio').css('color','orange')
 

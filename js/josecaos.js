@@ -330,11 +330,10 @@ function fondo_grid(block_num) {
 // titulo heroscreen
 function texto_init() {
   var titulo = jQuery('.titulo-inicio').text()
-  var a = titulo.split('')
+  var a = titulo.split('')//bug: agrega espacios al array
   titulo = shuffle(a)
-  var b = titulo.join(' ').replace(/\s/g,'')
-  var z = b.toString().replace(/(.{1})/g," $1")
-  console.log(z)
+  var b = titulo.join(' ').replace(/\s/g,'')//Fix: quita los espacios
+  var z = b.toString().replace(/(.{1})/g," $1")//Fix agrega espacios despues de cada letra
   return jQuery('.sub-titulo-inicio').html(z)
 }
 

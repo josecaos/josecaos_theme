@@ -332,8 +332,10 @@ function texto_init() {
   var titulo = jQuery('.titulo-inicio').text()
   var a = titulo.split('')
   titulo = shuffle(a)
-  var b = titulo.join('')
-  jQuery('.sub-titulo-inicio').html(b)
+  var b = titulo.join(' ').replace(/\s/g,'')
+  var z = b.toString().replace(/(.{1})/g," $1")
+  console.log(z)
+  return jQuery('.sub-titulo-inicio').html(z)
 }
 
 function  steemit_posts() {

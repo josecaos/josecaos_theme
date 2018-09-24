@@ -25,8 +25,8 @@
       </div>
 
     </div>
-
   </div>
+  <div class="columns p-bottom"></div>
 
 <?php endwhile; ?>
 

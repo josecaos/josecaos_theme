@@ -1,5 +1,5 @@
 <ul id="lista-menu" class="columns p-0 text-left h-20-v color-oscuro-bg">
-  
+
 <?php
 wp_nav_menu( array(
   'theme_location' => 'principal',
@@ -11,10 +11,10 @@ wp_nav_menu( array(
 
 <section class="columns p-t-0-3 text-left h-80-v">
   <h5 class="columns text-center">Donaciones</h5>
-  <small class="texto-donacion columns text-justify"><p class="color-oscuro">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum assumenda nihil soluta repudiandae.
-  </p></small>
+  <small class="texto-donacion columns text-justify"><p class="color-oscuro"> Hit me! with some #crypto"  </p></small>
 
-
-
+<div class="columns h-a">
+  <?php //echo do_shortcode('[bitmate-author-donate]'); ?>
+  <?php dynamic_sidebar( 'caos-1-sidebar' ); ?>
+</div>
 </section>

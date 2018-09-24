@@ -12,18 +12,21 @@
 
       <!-- dispara iteracion del titulo -->
       <script type="text/javascript">
-      jQuery(document).ready(function () {
-        setTimeout(function () {
-          var t = 250;
-          setInterval(function() {
-            texto_init()
-            if (jQuery('h2.titulo-inicio').text() == 'N O D I O S') {
-              jQuery('.sub-titulo-inicio').css('color','orange')
-              t = 66666
-            }
-          },t)
-        },5000)
-      });
+      // jQuery(document).ready(function () {
+      setTimeout(() => {
+        var t = 100
+        var x = setInterval(() => {
+          texto_init()
+          // if (jQuery('h2.sub-titulo-inicio:contains("N O D I O S")')||jQuery('h2.sub-titulo-inicio:contains("D I O S N O")')) {
+          console.log(jQuery('h2.sub-titulo-inicio').text());
+          if (jQuery('h2.sub-titulo-inicio').text("N O D I O S")||jQuery('h2.sub-titulo-inicio').text("D I O S N O")) {
+            clearInterval(x)
+            jQuery('.sub-titulo-inicio').css('color','orange')
+          } else {
+          }
+        },t)
+      },3000)
+      // });
       </script>
       <h2 class="titulo-inicio columns p-0 text-center">
 

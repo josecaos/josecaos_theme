@@ -49,7 +49,7 @@
       <div class="logo columns small-10">
 
         <div id="jc-logo" class="row expanded align-middle">
-          <h6 class="columns p-l-1 p-0 color-claro text-left">
+          <h6 class="columns p-l-1 p-0 color-claro text-left" style="text-transform:lowercase;">
             <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a> <small><span class="texto-cursor color-negro-bg"></span></small><span class="logo-cursor">|</span>
           </h6>
 

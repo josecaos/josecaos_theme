@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
   // svgs()
   logo_cursor()
-  fondo_grid()
+  // fondo_grid()
 
   subliminal()
 
@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
   }
 
   // cambio color fondo
-  var tiempoFondo = [5000,8000,12000]
+  var tiempoFondo = [1000,5000]
   var t  = shuffle(tiempoFondo)
   var cambio
   cambio = t[0]
@@ -79,7 +79,7 @@ function logo_cursor() {
 var textos = [
   ['P','r','o','y','e','c','t','o',' ','d','e',' ','s','í','n','t','e','s','i','s',',',' ','c','ó','d','i','g','o',' ','y',' ','M','ú','s','i','c','a'],
   ['S','u','p','e','r','C','o','l','l','i','d','e','r'],
-  ['L','i','v','e',' ','C','o','d','i','n','g',' ','A','l','g','o','r','a','v','e',' ','B','r','o','k','e','n','T','e','c','h']
+  ['L','i','v','e',' ','C','o','d','i','n','g',', ','A','l','g','o','r','a','v','e',', ','B','r','o','k','e','n','T','e','c','h',', ','T','r','i','p',', ','N','a','d','a']
 ]
 var  id = null
 function texto_cursor(num_array) {
@@ -107,7 +107,7 @@ function texto_cursor(num_array) {
 
   id = setInterval(function () {
 
-    if (i == letras.length + 15) {
+    if (i == letras.length + 25) {
 
       texto.html("")
 
@@ -168,19 +168,19 @@ function shuffle(array) {
 
 function contador() {
 
-  var iter = 0
-  setInterval(function(){
-
-    jQuery('.numeros').html('<p class="font-xxxl">' + iter + 'ms </p>')
-
-    if (iter <= 10) {
-      iter = iter + 1
-
-    } else {
-      iter = 0
-    }
-
-  },100)
+  // var iter = 0
+  // setInterval(function(){
+  //
+  //   jQuery('.numeros').html('<p class="font-xxxl">' + iter + 'ms </p>')
+  //
+  //   if (iter <= 10) {
+  //     iter = iter + 1
+  //
+  //   } else {
+  //     iter = 0
+  //   }
+  //
+  // },1000)
 
 }
 
@@ -285,7 +285,7 @@ function menu() {
 //fondo inicio
 
 function get_color() {
-  var colors = ['rgba(0,0,0,0)','rgb(5,5,5)','rgb(10,10,10)','rgb(15,15,15)','rgba(0,250,0,0.35)']
+  var colors = ['rgba(0,0,0,0)','rgb(5,5,5)','rgb(15,15,15)','rgb(30,30,30)','rgba(0,250,0,0.25)']
   var index = Math.round(Math.random() * (colors.length - 1))
   return colors[index]
 }
@@ -298,15 +298,17 @@ function cambia_color() {
     jQuery(this).css(style)
   })
 }
-function fondo_grid(block_num) {
+function fondo_grid() {
 
+  var size = [90,120,145,175]
   var grid = jQuery('#fondo1')
-  var blockSize = 115 // Pixels
+  var blockSize = size[Math.floor(Math.random()*size.length)] // Pixels
   var width = jQuery(document).width()/blockSize //Math.round(jQuery(document).width()/blockSize) //#bloques de ancho
+  console.log(width);
   //
   var height = Math.round(jQuery(document).height()/(blockSize)) //# bloques alto
   //
-  var animationMs = Math.random() * (1000 - 250)
+  var animationMs = Math.random() * (25 - 1)
   var dir = -1
   for (var i = 0; i < height; i++) {
     for (var j = 0; j < width; j++) {
@@ -320,12 +322,6 @@ function fondo_grid(block_num) {
       grid.append(block);
     }
   }
-
-  // setTimeout(function () {
-  //   cambia_color()
-  //
-  // },1000)
-
 }
 
 //
@@ -340,8 +336,8 @@ function texto_init() {
 }
 
 function  steemit_posts() {
-  // var author = "jazzvoon",
-  var author = "elguille",
+
+  var author = "jazzvoon",
   permalink = "how-to-embed-steemit-content-in-a-web-page-for-example-inside-a-wordpress-post";
 
   function cleanHtml(s) {
@@ -385,7 +381,7 @@ function  steemit_posts() {
 //
 function subliminal() {
   setTimeout(() => {
-    var t = 50
+    var t = 75
     var x = setInterval(() => {
       texto_init()
       var y = document.getElementById('scrambled')
@@ -393,6 +389,9 @@ function subliminal() {
       //
       if (texto === "N O D I O S" || texto === "D I O S N O") {
 
+        jQuery('#fondo1').html("")
+        fondo_grid()
+        //
         clearInterval(x)
         jQuery('.sub-titulo-inicio').css('color','orange')
 
@@ -401,9 +400,21 @@ function subliminal() {
           jQuery('.sub-titulo-inicio').css('color','#aaaaaa')
         },3000)
 
-      } else {
+      } else if (texto === "S O N I D O") {
+        jQuery('#fondo1').html("")
+        //
+        clearInterval(x)
+        jQuery('.sub-titulo-inicio').css('color','lime')
+
+        setTimeout(() => {
+          subliminal()
+          jQuery('.sub-titulo-inicio').css('color','#aaaaaa')
+        },5000)
+
+        fondo_grid()
 
       }
+
     },t)
-  },1000)
+  },100)
 }

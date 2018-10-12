@@ -17,7 +17,7 @@
 					'http://www.soundcloud.com/josecaos',
 					'http://www.twitter.com/josecaos',
 					'http://www.instagram.com/josecaos',
-					'http://www.vimeo.com/josecaos',
+					'http://www.vimeo.com/mixfuckedup',
 					'http://www.youtube.com/mixfuckedupmac'
 				);
 

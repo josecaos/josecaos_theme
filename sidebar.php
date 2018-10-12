@@ -1,6 +1,6 @@
 <?php
 
-$preguntas = ["¿Qué es?", "¿Qué lenguaje?", "Estilo"];
+$preguntas = ["¿Qué es?", "¿Con qué?", "¿Qué hace?"];
 $funcion = [1,2,3];
 ?>
 
@@ -10,8 +10,8 @@ $funcion = [1,2,3];
   <ul class="columns h-a p-0 p-t-1 show-for-medium" data-sticky data-margin-top="5">
     <?php
 
-    $preguntas = ["¿Qué es esto?", "¿Lenguaje favorito?", "¿Qué Música?"];
-    $funcion = [1,2,3];
+    // $preguntas = ["¿Qué es esto?", "¿Lenguaje favorito?", "¿Qué Música?"];
+    // $funcion = [1,2,3];
     for ($i=0; $i < 3; $i++):
 
       ?>

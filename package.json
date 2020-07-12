@@ -1,7 +1,7 @@
 {
-  "name": "foundation-sites-template",
-  "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "name": "josecaos",
+  "version": "0.1.0",
+  "description": "Sitio del proyecto de código y música josecaos",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -21,7 +21,7 @@
     "url": "https://github.com/zurb/foundation-sites/issues",
     "email": "foundation@zurb.com"
   },
-  "author": "ZURB <foundation@zurb.com>",
+  "author": "josecaos",
   "license": "MIT",
   "private": true,
   "dependencies": {

@@ -1,30 +1,45 @@
 {
-  "name": "josecaos",
-  "version": "0.1.0",
-  "description": "Sitio del proyecto de código y música josecaos",
+  "name": "josecaos_theme",
+  "version": "0.1.1",
+  "description": "Tema para sitio web",
   "main": "gulpfile.js",
+  "dependencies": {
+    "eslint-loader": "^4.0.2"
+  },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-sass": "^2.1.0"
+    "autoprefixer": "^9.8.5",
+    "browser-sync": "^2.26.9",
+    "child_process": "^1.0.2",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "eslint": "^7.4.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "git+https://github.com/josecaos/josecaos_theme.git"
   },
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
+  "keywords": [
+    "sound",
+    "synthesis",
+    "code",
+    "livecoding"
+  ],
   "author": "josecaos",
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "gulp-autoprefixer": "^3.1.0"
-  }
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josecaos/josecaos_theme/issues"
+  },
+  "homepage": "https://github.com/josecaos/josecaos_theme#readme"
 }

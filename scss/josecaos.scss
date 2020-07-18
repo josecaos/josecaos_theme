@@ -1,3 +1,4 @@
+@import "https://cdn.usebootstrap.com/bootstrap/4.5.0/css/bootstrap.min.css";
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "colores";
 
@@ -42,9 +43,9 @@ a:hover {
 header {
   height: auto;
   min-height: 50px;
-  @extend .p-t-0-2;
+  padding-top: 0.5rem;
   & div.logo {
-    @extend .p-t-0-2;
+    padding-top: 0.5rem;
   }
 }
 footer {
@@ -128,10 +129,10 @@ div.wpcf7 {
 // override widgets
 .textwidget {
   height: auto !important;
-  @extend .p-b-0-2;
+  padding-bottom: 0.5rem;
 }
 .easy_bitcoin_donate_widget_text_below {
-  @extend .font-xxs;
+  font-size: 0.75rem;
 }
 //
 // fondo inicio
@@ -185,44 +186,44 @@ body {
 }
 
 // enventos
-.card {
-  // @extend .color-amarillo-bg;
-  background: transparent !important;
-  @extend .columns;
-  @extend .p-0;
-  @extend .end;
-}
-.vevent {
-  @extend .card;
-  @extend .small-12;
-  @extend .medium-6;
-  @extend .large-4;
-  @extend .color-claro;
-  @extend .p-1;
-  // margin: 0.5em !important;
-
-  & .summary {
-    @extend .color-claro;
-    @extend .m-b-1;
-    font-size: 1.15em;
-  }
-  & .description {
-    @extend .color-claro;
-    @extend .m-b-1;
-  }
-  & .event-time {
-    @extend .color-claro;
-    @extend .m-b-1;
-  }
-  & .info-link a {
-    @extend .color-claro;
-    @extend .m-b-1;
-  }
-  & .event-label {
-    @extend .color-claro;
-    @extend .m-b-1;
-  }
-}
+// .card {
+//   // @extend .color-amarillo-bg;
+//   background: transparent !important;
+//   @extend .columns;
+//   @extend .p-0;
+//   @extend .end;
+// }
+// .vevent {
+//   @extend .card;
+//   @extend .small-12;
+//   @extend .medium-6;
+//   @extend .large-4;
+//   @extend .color-claro;
+//   @extend .p-1;
+//   // margin: 0.5em !important;
+//
+//   & .summary {
+//     @extend .color-claro;
+//     @extend .m-b-1;
+//     font-size: 1.15em;
+//   }
+//   & .description {
+//     @extend .color-claro;
+//     @extend .m-b-1;
+//   }
+//   & .event-time {
+//     @extend .color-claro;
+//     @extend .m-b-1;
+//   }
+//   & .info-link a {
+//     @extend .color-claro;
+//     @extend .m-b-1;
+//   }
+//   & .event-label {
+//     @extend .color-claro;
+//     @extend .m-b-1;
+//   }
+// }
 
 //
 @import "responsivos";

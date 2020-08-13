@@ -7,63 +7,48 @@ $oscuro: #333;
 $rojo: #290001;
 $amarillo: #E3AE03;
 $azul_claro: #36BCFF;
-$verde: rgba(0,250,0,0.75);
-$colores: (
-blanco $blanco,
-claro $claro,
-negro $negro,
-oscuro $oscuro,
-rojo $rojo,
-verde $verde,
-amarillo $amarillo,
-azul-claro $azul_claro
-);
-
-
+$verde: rgba(0, 250, 0, 0.75);
+$colores: ( blanco $blanco, claro $claro, negro $negro, oscuro $oscuro, rojo $rojo, verde $verde, amarillo $amarillo, azul-claro $azul_claro);
 @each $value in $colores {
-
-  .color-#{nth($value, 1)} {
-    & {
-      color: nth($value, 2) !important;
+    .color-#{nth($value, 1)} {
+        & {
+            color: nth($value, 2) !important;
+        }
     }
-  }
-  .color-#{nth($value, 1)}-bg {
-    & {
-      background-color: nth($value, 2) !important;
+    .color-#{nth($value, 1)}-bg {
+        & {
+            background-color: nth($value, 2) !important;
+        }
     }
-  }
-  .color-#{nth($value, 1)}-bd {
-    & {
-      border: 1px solid white;
-      border-color: nth($value, 2) !important;
+    .color-#{nth($value, 1)}-bd {
+        & {
+            border: 1px solid white;
+            border-color: nth($value, 2) !important;
+        }
     }
-  }
-
-  .color-#{nth($value, 1)}-hover:hover {
-    & {
-      color: nth($value, 2) !important;
+    .color-#{nth($value, 1)}-hover:hover {
+        & {
+            color: nth($value, 2) !important;
+        }
     }
-  }
-  .color-#{nth($value, 1)}-hover-bg:hover {
-    & {
-      background-color: nth($value, 2) !important;
+    .color-#{nth($value, 1)}-hover-bg:hover {
+        & {
+            background-color: nth($value, 2) !important;
+        }
     }
-  }
-  .color-#{nth($value, 1)}-hover-bd:hover {
-    & {
-      border: 1px solid white;
-      border-color: nth($value, 2) !important;
+    .color-#{nth($value, 1)}-hover-bd:hover {
+        & {
+            border: 1px solid white;
+            border-color: nth($value, 2) !important;
+        }
     }
-  }
-
-//cortinas transparentes
-.cortina-#{nth($value, 1)}-bg {
-  & {
-    background-color: nth($value, 2) !important;
-    opacity: 0.5;
-  }
-}
-
+    //cortinas transparentes
+    .cortina-#{nth($value, 1)}-bg {
+        & {
+            background-color: nth($value, 2) !important;
+            opacity: 0.5;
+        }
+    }
 }
 
 //

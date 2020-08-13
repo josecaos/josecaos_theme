@@ -1,0 +1,46 @@
+// fondo inicio
+$blockx: 160px;
+$blocky: 160px;
+$blockMaxScale: 1.97;
+$animationMs: 1000ms;
+$backgroundColor: #000; //#E3AE03;
+body {
+    background: $backgroundColor;
+    #fondo1 {
+        overflow: hidden;
+        position: fixed;
+        .block {
+            width: $blockx;
+            height: $blocky;
+            position: absolute;
+            transition: 0.5s;
+            animation: go $animationMs ease infinite alternate;
+        }
+        .block:hover {
+            color: #E3AE03;
+        }
+    }
+}
+
+@keyframes go {
+    0% {
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
+    100% {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+//
+#inicio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}

@@ -1,7 +1,7 @@
 <?php
 
 // Dependencias
-function caos_styles() {
+function dependencias() {
 
   ##custom scss compilado
   wp_enqueue_style( 'defaul-style',get_stylesheet_directory_uri() . '/style.css');
@@ -14,19 +14,11 @@ function caos_styles() {
   ##
   wp_enqueue_style( 'txt-font', 'https://fonts.googleapis.com/css?family=Roboto+Mono');
   wp_enqueue_style( 'txxt-font', 'https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
-
-}
-add_action( 'wp_enqueue_scripts', 'caos_styles' );
-//
-##custom scripts
-function caos_scripts() {
   wp_enqueue_script( 'josecaos-js', get_stylesheet_directory_uri() . '/public/js/josecaos.min.js', array( 'jquery' ), '0.1', true);
-  // steemit blog
-  wp_enqueue_script( 'steemit-js', '//cdn.steemjs.com/lib/latest/steem.min.js', array( 'jquery' ), '0.1', true);
-  wp_enqueue_script( 'showdown-js', 'https://rawgit.com/showdownjs/showdown/1.7.0/dist/showdown.min.js', array( 'jquery' ), '0.1', true);
-}
-add_action('wp_enqueue_scripts', 'caos_scripts');
 
+}
+add_action( 'wp_enqueue_scripts', 'dependencias' );
+//
 //
 register_nav_menus( array(
   'principal'   => __( 'Menú principal', 'josecaos' ),

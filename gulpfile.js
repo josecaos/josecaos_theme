@@ -1,6 +1,5 @@
 "use strict";
 
-// Load plugins
 const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
 const cp = require("child_process");

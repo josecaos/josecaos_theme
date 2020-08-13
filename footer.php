@@ -1,17 +1,16 @@
-
 </main>
 <!-- fin contenedor -->
 
 
-<footer class="footer columns fixed bottom left color-negro-bg shadow-up z1k">
+<footer class="container-fluid">
 
-	<div id="inner-footer" class="row expanded p-0 h-100 align-middle">
+	<div id="inner-footer" class="row">
 
-		<nav role="navigation" class="columns small-7 h-a">
+		<nav role="navigation" class="col-xs-12 col-sm-7">
 
-			<ul id="redes_sociales" class="small-12 columns p-0 m0 font-m font-md-l text-center">
+			<ul id="redes_sociales" class="col-12">
 				<?php
-				$red = array('github','soundcloud','twitter','instagram','vimeo','youtube');
+				$red = array('github', 'soundcloud', 'twitter', 'instagram', 'vimeo', 'youtube');
 				$link = array(
 					'http://www.github.com/josecaos',
 					'http://www.soundcloud.com/josecaos',
@@ -21,13 +20,13 @@
 					'http://www.youtube.com/mixfuckedupmac'
 				);
 
-				for ($i=0; $i < 6; $i++):
+				for ($i = 0; $i < 6; $i++) :
 
-					?>
-					<li class="columns small-2 p-0 h-100 align-middle">
+				?>
+					<li class="col-xs-12 col-2 ">
 
-						<a href="<?php echo $link[$i]?>" target="_blank" class="columns p-0 h-a">
-							<i class="fa fa-<?php echo $red[$i]?>"></i>
+						<a href="<?php echo $link[$i] ?>" target="_blank" class="col-12">
+							<i class="fa fa-<?php echo $red[$i] ?>"></i>
 						</a>
 
 					</li>
@@ -36,14 +35,16 @@
 			</ul>
 		</nav>
 
-		<div class="row expanded small-5 align-middle">
-			<div class="copyright columns h-a text-right font-xxs font-md-s">
-				&nbsp; <a href="http://mixfuckedup.net">Mixfuckedup</a>	&copy;  <?php echo date('Y');?> &nbsp; <?php  //bloginfo('name'); ?>
+		<div class="row col-5">
+			<div class="copyright col-xs-12 ">
+				&nbsp; <a href="http://mixfuckedup.net">Mixfuckedup</a> &copy; <?php echo date('Y'); ?> &nbsp; <?php  //bloginfo('name'); 
+																												?>
 			</div>
 		</div>
 
-	</div> <!-- end #inner-footer -->
-</footer> <!-- end .footer -->
+	</div>
+</footer>
 <?php wp_footer(); ?>
 </body>
-</html> <!-- end page -->
+
+</html>

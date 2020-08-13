@@ -1,4 +1,4 @@
-<section id="inicio" class="container-fluid">
+<section id="inicio" class="col-xs-12 col-md-9 col-lg-10">
   <!--  -->
 
   <?php
@@ -6,7 +6,7 @@
   ?>
     <div class="contenedor row">
 
-      <div class="col-xs-12">
+      <div class="titulo-contenedor col-xs-12">
 
         <h2 id="titulo-home" class="titulo-inicio col-12">
 

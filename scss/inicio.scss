@@ -7,8 +7,11 @@ $backgroundColor: #000; //#E3AE03;
 body {
     background: $backgroundColor;
     #fondo1 {
+        height: 100vh;
+        width: 100%;
         overflow: hidden;
         position: fixed;
+        z-index: 0;
         .block {
             width: $blockx;
             height: $blocky;
@@ -40,7 +43,25 @@ body {
 //
 #inicio {
     display: flex;
+    position: relative;
     flex-direction: column;
     height: 100%;
     width: 100%;
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 3.5rem);
+        .titulo-contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .titulo-home {
+                height: auto;
+            }
+            .scrambled {
+                height: auto;
+            }
+        }
+    }
 }

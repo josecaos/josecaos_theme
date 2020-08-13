@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
     // svgs();
     logo_cursor();
     fondo_grid();
-
+    // texto_cursor();
     subliminal();
 
     if ($(document).width() > 1024) {
@@ -70,39 +70,42 @@ let textos = [
 let id = null;
 const texto_cursor = (num_array) => {
 
-    let texto = jQuery("span.texto-cursor");
-    texto.html(""); //default borra el texto existente
-    let i = 0;
-    let letras;
-
-    clearInterval(id);
-
-    switch (num_array) {
-        case 1:
-            letras = textos[0];
-            break;
-        case 2:
-            letras = textos[1];
-            break;
-        case 3:
-            letras = textos[2];
-            break;
-    };
+    console.log("DEBUG:: No escribe el texto");
 
 
-    id = setInterval(function() {
+    // let texto = jQuery("span.texto-cursor");
+    // let i = 0;
+    // let letras;
+    // texto.html("");
 
-        if (i == letras.length + 25) {
+    // clearInterval(id);
 
-            texto.html("");
+    // switch (num_array) {
+    //     case 1:
+    //         letras = textos[0];
+    //         break;
+    //     case 2:
+    //         letras = textos[1];
+    //         break;
+    //     case 3:
+    //         letras = textos[2];
+    //         break;
+    // };
 
-        }
 
-        texto.append(letras[i]);
+    // id = setInterval(function() {
 
-        i++;
+    //     if (i == letras.length + 25) {
 
-    }, 100);
+    //         texto.html("");
+
+    //     }
+
+    //     texto.append(letras[i]);
+
+    //     i++;
+
+    // }, 100);
 
 };
 

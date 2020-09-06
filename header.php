@@ -77,12 +77,12 @@
 
   </nav>
 
+  <div id="fondo1" class="col-xs-12"></div>
 
   <!-- <div id="contenedor" class="columns h-100-v p-top rel"> -->
 
   <main id="main" class="container-fluid">
 
-    <div id="fondo1" class="col-xs-12"></div>
 
     <?php
     get_template_part("sidebar");

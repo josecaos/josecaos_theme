@@ -4,6 +4,12 @@
 // 
 * {
     outline: 1px dashed purple;
+    transition: 0.5s;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 //reset
@@ -96,12 +102,44 @@ header {
 }
 
 footer {
-    position: relative;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: $negro;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3.5rem;
+    height: 3rem;
     width: 100%;
+    #inner-footer {
+        display: flex;
+        width: 100%;
+        nav {
+            padding: 0;
+            ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    a {
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .copyright {
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
 }
 
 .fa {
@@ -120,11 +158,18 @@ footer {
     cursor: pointer;
 }
 
-.lista-about p {
+.lista-about button {
+    background-color: transparent;
+    padding: 1rem;
     color: #bbb !important;
+    cursor: pointer;
+    border: 0;
+    border-right-style: groove;
+    border-bottom-style: groove;
+    box-sizing: border-box;
 }
 
-.lista-about p:hover {
+.lista-about button:hover {
     @extend .color-amarillo;
 }
 
@@ -226,7 +271,10 @@ div.wpcf7 {
 main {
     display: flex;
     padding-top: 3.5rem;
+    padding-bottom: 3rem;
     height: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 // override widgets
@@ -240,5 +288,5 @@ main {
 }
 
 //
-@import "inicio.scss";
+@import "inicio";
 @import "responsivos";

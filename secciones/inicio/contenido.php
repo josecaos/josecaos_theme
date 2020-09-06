@@ -34,23 +34,22 @@
   <?php endwhile; ?>
 
   <!--  -->
-  <div class="columns  h-a h-md-100">
+  <div class="release container">
     <?php
     $args = page_id(70);
     $q = new WP_Query($args);
 
     while ($q->have_posts()) : $q->the_post();
     ?>
-      <div class="row w-100 align-middle">
+      <div class="row">
 
-        <div class="columns text-left text-shadow h-a">
 
-          <h4 class="columns"><?php echo get_the_title(); ?></h4>
-
-          <div class="columns p-0 text-right">
-
+        
+        <div class="col-12">
+          
+          <h4 class="col-12"><?php echo get_the_title(); ?></h4>
             <!--  -->
-            <div class=" columns h-a">
+            <div id="release" class="col-12-xs">
 
 
               <?php
@@ -62,7 +61,6 @@
             <!--  -->
 
           </div>
-        </div>
 
 
       </div>

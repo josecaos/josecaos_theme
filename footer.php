@@ -35,12 +35,9 @@
 			</ul>
 		</nav>
 
-		<div class="row col-5">
-			<div class="copyright col-xs-12 ">
-				&nbsp; <a href="http://mixfuckedup.net">Mixfuckedup</a> &copy; <?php echo date('Y'); ?> &nbsp; <?php  //bloginfo('name'); 
-																												?>
+			<div class="copyright col-xs-12 col-sm-5">
+				&nbsp; <a href="http://mixfuckedup.net">Mixfuckedup</a> &copy; <?php echo date('Y'); ?> &nbsp; <?php  //bloginfo('name'); ?>
 			</div>
-		</div>
 
 	</div>
 </footer>

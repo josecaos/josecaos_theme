@@ -14,9 +14,9 @@ $funcion = [1,2,3];
 
       ?>
 
-      <li class="lista-about col-xs-12 col-sm-6 col-md-12" onclick="texto_cursor(<?php echo $funcion[$i];?>)">
+      <li class="lista-about col-xs-12 col-sm-6 col-md-12" onclick="texto_cursor(<?php $funcion[$i];?>)">
 
-        <p class="col-xs-12"><?php echo $preguntas[$i]; ?></p>
+        <button><?php echo $preguntas[$i]; ?></button>
 
       </li>
 

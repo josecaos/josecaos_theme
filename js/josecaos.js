@@ -1,4 +1,3 @@
-// let hero = 0;
 jQuery(document).ready(function($) {
 
     // contador();
@@ -8,8 +7,8 @@ jQuery(document).ready(function($) {
     // svgs();
     logo_cursor();
     fondo_grid();
-    // texto_cursor();
     subliminal();
+    // texto_cursor();
 
     if ($(document).width() > 1024) {
         $("#info").addClass("fixed");
@@ -70,8 +69,7 @@ let textos = [
 let id = null;
 const texto_cursor = (num_array) => {
 
-    console.log("DEBUG:: No escribe el texto");
-
+    console.log("DEBUG:: No escribe el texto", num_array);
 
     // let texto = jQuery("span.texto-cursor");
     // let i = 0;

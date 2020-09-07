@@ -3,7 +3,7 @@
 @import "colores";
 // 
 * {
-    outline: 1px dashed purple;
+    // outline: 1px dashed purple;
     transition: 0.5s;
 }
 
@@ -159,18 +159,25 @@ footer {
 }
 
 .lista-about button {
+    transition: border 5s linear;
+    background-color: $negro;
     background-color: transparent;
     padding: 1rem;
     color: #bbb !important;
     cursor: pointer;
     border: 0;
-    border-right-style: groove;
-    border-bottom-style: groove;
+    border-right: 1px groove #FFF;
+    border-bottom: 1px groove #FFF;
     box-sizing: border-box;
+    margin-top: 1rem
 }
 
 .lista-about button:hover {
     @extend .color-amarillo;
+    border-top: 1px solid #FFF;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 1px solid #FFF;
 }
 
 #sidebar {
@@ -185,6 +192,13 @@ footer {
         padding: 0;
         margin: 0;
         list-style-type: none;
+        li {
+            padding: 0;
+            button {
+                padding: 1rem 0;
+                width: 100%;
+            }
+        }
     }
 }
 

@@ -201,9 +201,7 @@ const menu = () => {
                 menumovil.css(salemenu);
                 //
                 setInterval(() => {
-                    //boton menu
-                    jQuery(".iconos a").html("<i class=fa fa-" + iconos[Math.floor(Math.random() * iconos.length)] + " z-1 text-shadow'></i>");
-
+                    jQuery(".iconos a").html(`<i class="fa fa-${iconos[Math.floor(Math.random() * iconos.length)] }"></i>`);
                 }, 750);
 
                 //
@@ -297,49 +295,6 @@ const texto_init = () => {
     return jQuery(".sub-titulo-inicio").html(z);
 };
 
-const steemit_posts = () => {
-
-    let author = "jazzvoon",
-        permalink = "how-to-embed-steemit-content-in-a-web-page-for-example-inside-a-wordpress-post";
-
-    const cleanHtml = (s) => {
-        let div = document.createElement("div");
-        div.innerHTML = s;
-        let scripts = div.getElementsByTagName("script");
-        let i = scripts.length;
-        while (i--) {
-            scripts[i].parentNode.removeChild(scripts[i]);
-        }
-        let styles = div.getElementsByTagName("style");
-        i = styles.length;
-        while (i--) {
-            styles[i].parentNode.removeChild(styles[i]);
-        }
-        let imgs = div.getElementsByTagName("img");
-        console.log(imgs);
-        i = imgs.length;
-        while (i--) {
-            imgs[i].removeAttribute("height");
-        }
-        return div.innerHTML;
-    };
-
-    let mdconverter = new showdown.Converter();
-
-    document.onreadystatechange = function() {
-        if (document.readyState == "interactive") {
-            steem.api.getContent(author, permalink, function(err, result) {
-                if (!err) {
-                    document.getElementById("title").innerHTML = result.title;
-                    let converted = mdconverter.makeHtml(cleanHtml(result.body));
-                    converted = converted.replace(/\!\[([^\]]*)\]\(([^\)]*)\)/g, "<img src=`$2` alt=``$1`>");
-                    document.getElementById("output").innerHTML = converted;
-                }
-            });
-        }
-    };
-};
-//
 const subliminal = () => {
     setTimeout(() => {
         let t = 75;

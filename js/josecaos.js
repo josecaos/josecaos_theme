@@ -3,11 +3,9 @@ jQuery(document).ready(function($) {
     // contador();
 
     menu();
-
-    // svgs();
     logo_cursor();
-    fondo_grid();
     subliminal();
+    // fondo_grid();
     // texto_cursor();
 
     if ($(document).width() > 1024) {
@@ -69,8 +67,6 @@ let textos = [
 let id = null;
 const texto_cursor = (num_array) => {
 
-    console.log("DEBUG:: No escribe el texto", num_array);
-
     // let texto = jQuery("span.texto-cursor");
     // let i = 0;
     // let letras;
@@ -78,32 +74,35 @@ const texto_cursor = (num_array) => {
 
     // clearInterval(id);
 
-    // switch (num_array) {
-    //     case 1:
-    //         letras = textos[0];
-    //         break;
-    //     case 2:
-    //         letras = textos[1];
-    //         break;
-    //     case 3:
-    //         letras = textos[2];
-    //         break;
-    // };
+    // if (!!num_array) {
+
+    //     switch (num_array) {
+    //         case 1:
+    //             letras = textos[0];
+    //             break;
+    //         case 2:
+    //             letras = textos[1];
+    //             break;
+    //         case 3:
+    //             letras = textos[2];
+    //             break;
+    //     };
 
 
-    // id = setInterval(function() {
+    //     id = setInterval(function() {
 
-    //     if (i == letras.length + 25) {
+    //         if (i == letras.length + 25) {
 
-    //         texto.html("");
+    //             texto.html("");
 
-    //     }
+    //         }
 
-    //     texto.append(letras[i]);
+    //         texto.append(letras[i]);
 
-    //     i++;
+    //         i++;
 
-    // }, 100);
+    //     }, 100);
+    // }
 
 };
 
@@ -203,8 +202,6 @@ const menu = () => {
                 setInterval(() => {
                     jQuery(".iconos a").html(`<i class="fa fa-${iconos[Math.floor(Math.random() * iconos.length)] }"></i>`);
                 }, 750);
-
-                //
 
                 // resetea la posicion si un link es presionado
                 jQuery("#lista-menu > a").on("click", () => {
@@ -306,7 +303,7 @@ const subliminal = () => {
             if (texto === "N O D I O S" || texto === "D I O S N O") {
 
                 jQuery("#fondo1").html("");
-                // fondo_grid();
+                fondo_grid();
                 //
                 clearInterval(x);
                 jQuery(".sub-titulo-inicio").css("color", "orange");
@@ -327,7 +324,7 @@ const subliminal = () => {
                     jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
                 }, 5000);
 
-                // fondo_grid();
+                fondo_grid();
 
             }
 

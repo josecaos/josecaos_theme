@@ -51,7 +51,9 @@
 
       <div id="jc-logo" class="col-12">
         <h6 class="col-12" style="text-transform:lowercase;">
-          <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a> <small><span class="texto-cursor color-negro-bg"></span></small><span class="logo-cursor">|</span>
+          <a href="<?php echo home_url(); ?>" class="logo color-verde"><?php echo bloginfo(); ?></a>
+           <small><span class="texto-cursor color-negro-bg"></span></small>
+           <span class="logo-cursor">|</span>
         </h6>
 
       </div>

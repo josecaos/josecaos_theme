@@ -161,13 +161,12 @@ footer {
 .lista-about button {
     transition: border 5s linear;
     background-color: $negro;
-    background-color: transparent;
     padding: 1rem;
     color: #bbb !important;
     cursor: pointer;
     border: 0;
-    border-right: 1px groove #FFF;
-    border-bottom: 1px groove #FFF;
+    border-right: 1px groove $claro;
+    border-bottom: 1px groove $claro;
     box-sizing: border-box;
     margin-top: 1rem
 }

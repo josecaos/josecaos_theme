@@ -71,7 +71,7 @@
 
   </header>
 
-  <nav id="menu" class="menu columns small-8 medium-6 large-4 p-0 p-top h-100 fixed top right z1k color-amarillo-bg">
+  <nav id="menu" class="menu col-xs-12 col-sm-8 col-md-6 col-lg-4 fixed">
 
     <?php
     get_template_part('secciones/menu');

@@ -7,7 +7,6 @@ function dependencias() {
   wp_enqueue_style( 'defaul-style',get_stylesheet_directory_uri() . '/style.css');
   wp_enqueue_style( 'caos-style',get_stylesheet_directory_uri() . '/public/css/josecaos.css');
 
-  wp_enqueue_script( 'josecaos-js', get_stylesheet_directory_uri() . '/public/js/josecaos.min.js', array( 'jquery' ), '0.1', true);
   ## fuente contenidos
   wp_enqueue_style( 'content-font','https://fonts.googleapis.com/css?family=Space+Mono');
   ## fuente 8bit
@@ -15,6 +14,8 @@ function dependencias() {
   ##
   wp_enqueue_style( 'txt-font', 'https://fonts.googleapis.com/css?family=Roboto+Mono');
   wp_enqueue_style( 'txxt-font', 'https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
+   
+  wp_enqueue_script( 'josecaos-js', get_stylesheet_directory_uri() . '/public/js/josecaos.min.js', array( 'jquery' ), '0.1', false);
 
 }
 add_action( 'wp_enqueue_scripts', 'dependencias' );

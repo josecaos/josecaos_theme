@@ -5,8 +5,7 @@ jQuery(function() {
     menu();
     logo_cursor();
     subliminal();
-    // fondo_grid();
-    // texto_cursor();
+    texto_cursor();
 
     if (jQuery(document).width() > 1024) {
         jQuery("#info").addClass("fixed");
@@ -15,7 +14,7 @@ jQuery(function() {
     };
 
     // cambio color fondo
-    let tiempoFondo = [1000, 5000];
+    let tiempoFondo = [1000, 5000, 10000];
     let t = shuffle(tiempoFondo);
     let cambio;
     cambio = t[0];
@@ -23,8 +22,14 @@ jQuery(function() {
         cambia_color();
     }, cambio);
 
-    jQuery(window).on("resize", () => {
+    // resize
+    const resize = () => {
         let ancho = jQuery("#menu").width();
+
+        console.log("resize");
+
+        // subliminal();
+
         setTimeout(() => {
             jQuery("#menu").css({
                 "transition": "1s",
@@ -35,7 +40,8 @@ jQuery(function() {
                 "transform": "translateX(" + ancho + "px)"
             });
         });
-    });
+    };
+    window.onresize = resize;
 });
 
 const logo_cursor = () => {

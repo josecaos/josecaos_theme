@@ -14,7 +14,7 @@ $funcion = [1,2,3];
 
       ?>
 
-      <li class="lista-about" onclick="texto_cursor(<?php $funcion[$i];?>)">
+      <li class="lista-about pregunta-<?php echo $funcion[$i];?>">
 
         <button><?php echo $preguntas[$i]; ?></button>
 

@@ -74,7 +74,7 @@
   <nav id="menu" class="menu col-xs-12 col-sm-8 col-md-6 col-lg-4 fixed">
 
     <?php
-    get_template_part('secciones/menu');
+    // get_template_part('secciones/menu');
     ?>
 
   </nav>

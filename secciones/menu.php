@@ -10,7 +10,7 @@
 </ul>
 
 <section class="col-xs-12">
-  <!-- <h5 class="columns text-center">Donaciones</h5> -->
+
   <strong class="texto-donacion col-xs-12"><p class="color-oscuro"> Donaciones </p></strong>
 
   <div class="col-12">

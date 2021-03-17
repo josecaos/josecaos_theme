@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(function() {
 
     // contador();
 
@@ -8,11 +8,10 @@ jQuery(document).ready(function($) {
     // fondo_grid();
     // texto_cursor();
 
-    if ($(document).width() > 1024) {
-        $("#info").addClass("fixed");
+    if (jQuery(document).width() > 1024) {
+        jQuery("#info").addClass("fixed");
     } else {
-        $("#info").removeClass("fixed");
-
+        jQuery("#info").removeClass("fixed");
     };
 
     // cambio color fondo
@@ -24,7 +23,7 @@ jQuery(document).ready(function($) {
         cambia_color();
     }, cambio);
 
-    jQuery(window).resize(() => {
+    jQuery(window).on("resize", () => {
         let ancho = jQuery("#menu").width();
         setTimeout(() => {
             jQuery("#menu").css({
@@ -64,45 +63,49 @@ let textos = [
     ["S", "u", "p", "e", "r", "C", "o", "l", "l", "i", "d", "e", "r"],
     ["L", "i", "v", "e", " ", "C", "o", "d", "i", "n", "g", ", ", "A", "l", "g", "o", "r", "a", "v", "e", ", ", "B", "r", "o", "k", "e", "n", "T", "e", "c", "h", ", ", "T", "r", "i", "p", ", ", "N", "a", "d", "a"]
 ];
+
 let id = null;
+
 const texto_cursor = (num_array) => {
 
-    // let texto = jQuery("span.texto-cursor");
-    // let i = 0;
-    // let letras;
-    // texto.html("");
+    let texto = jQuery("span.texto-cursor");
+    let i = 0;
+    let letras;
+    texto.html("");
 
-    // clearInterval(id);
+    console.log("Debug::", num_array);
 
-    // if (!!num_array) {
+    clearInterval(id);
 
-    //     switch (num_array) {
-    //         case 1:
-    //             letras = textos[0];
-    //             break;
-    //         case 2:
-    //             letras = textos[1];
-    //             break;
-    //         case 3:
-    //             letras = textos[2];
-    //             break;
-    //     };
+    if (!!num_array) {
+
+        switch (num_array) {
+            case 1:
+                letras = textos[0];
+                break;
+            case 2:
+                letras = textos[1];
+                break;
+            case 3:
+                letras = textos[2];
+                break;
+        };
 
 
-    //     id = setInterval(function() {
+        id = setInterval(function() {
 
-    //         if (i == letras.length + 25) {
+            if (i == letras.length + 25) {
 
-    //             texto.html("");
+                texto.html("");
 
-    //         }
+            }
 
-    //         texto.append(letras[i]);
+            texto.append(letras[i]);
 
-    //         i++;
+            i++;
 
-    //     }, 100);
-    // }
+        }, 100);
+    }
 
 };
 

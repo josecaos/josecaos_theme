@@ -1,11 +1,12 @@
-jQuery(function() {
+jQuery(function () {
 
     // contador();
 
     menu();
     logo_cursor();
     subliminal();
-    texto_cursor();
+    fondo_grid();
+    escribe();
 
     if (jQuery(document).width() > 1024) {
         jQuery("#info").addClass("fixed");
@@ -26,9 +27,7 @@ jQuery(function() {
     const resize = () => {
         let ancho = jQuery("#menu").width();
 
-        console.log("resize");
-
-        // subliminal();
+        fondo_grid();
 
         setTimeout(() => {
             jQuery("#menu").css({
@@ -41,6 +40,7 @@ jQuery(function() {
             });
         });
     };
+
     window.onresize = resize;
 });
 
@@ -63,7 +63,6 @@ const logo_cursor = () => {
     }, 250);
 };
 
-// Array textos
 let textos = [
     ["P", "r", "o", "y", "e", "c", "t", "o", " ", "d", "e", " ", "s", "í", "n", "t", "e", "s", "i", "s", ",", " ", "c", "ó", "d", "i", "g", "o", " ", "y", " ", "M", "ú", "s", "i", "c", "a"],
     ["S", "u", "p", "e", "r", "C", "o", "l", "l", "i", "d", "e", "r"],
@@ -72,14 +71,26 @@ let textos = [
 
 let id = null;
 
+const escribe = () => {
+
+    let botones = document.querySelectorAll(".lista-about button");
+
+    botones.forEach((boton, i) => {
+
+        boton.addEventListener("click", b => {
+            let indice = i + 1;
+            texto_cursor(indice);
+        });
+
+    });
+};
+
 const texto_cursor = (num_array) => {
 
     let texto = jQuery("span.texto-cursor");
     let i = 0;
     let letras;
     texto.html("");
-
-    console.log("Debug::", num_array);
 
     clearInterval(id);
 
@@ -98,13 +109,13 @@ const texto_cursor = (num_array) => {
         };
 
 
-        id = setInterval(function() {
+        id = setInterval(function () {
 
             if (i == letras.length + 25) {
 
                 texto.html("");
 
-            }
+            };
 
             texto.append(letras[i]);
 
@@ -255,7 +266,7 @@ const get_color = () => {
 };
 
 const cambia_color = () => {
-    jQuery(".block").each(function() {
+    jQuery(".block").each(function () {
         let color = get_color();
         let style = {
             "background": color,
@@ -266,14 +277,16 @@ const cambia_color = () => {
 
 const fondo_grid = () => {
 
-    let size = [90, 120, 145, 175];
     let grid = jQuery("#fondo1");
+    let size = [90, 120, 145, 175].map((s, i) => {
+
+        let resultado = i >= 2 ? s / 3 : s * 3;
+
+        return resultado;
+    });
     let blockSize = size[Math.floor(Math.random() * size.length)]; // Pixels
     let width = jQuery(document).width() / blockSize; //Math.round(jQuery(document).width()/blockSize) //#bloques de ancho
-    console.log(width);
-    //
     let height = Math.round(jQuery(document).height() / (blockSize)); //# bloques alto
-    //
     let animationMs = Math.random() * (25 - 1);
     let dir = -1;
     for (let i = 0; i < height; i++) {
@@ -281,7 +294,6 @@ const fondo_grid = () => {
             let style = {
                 "bottom": (i * (dir * -1)) * (blockSize * (dir * -1)) + "px",
                 "left": (j * dir) * (blockSize * dir) + "px",
-                // "background": color,
                 "animation-delay": ((i + 1) + (j + 1)) * animationMs + "ms"
             };
             let block = jQuery("<div />").addClass("block").css(style);
@@ -320,7 +332,7 @@ const subliminal = () => {
                 setTimeout(() => {
                     subliminal();
                     jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
-                }, 3000);
+                }, 2000);
 
             } else if (texto === "S O N I D O") {
                 jQuery("#fondo1").html("");
@@ -331,7 +343,7 @@ const subliminal = () => {
                 setTimeout(() => {
                     subliminal();
                     jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
-                }, 5000);
+                }, 2000);
 
                 fondo_grid();
 

@@ -1,7 +1,7 @@
 <ul id="lista-menu" class="col-xs-12">
 
   <?php
-  wp_nav_menu( array(
+  wp_nav_menu(array(
     'theme_location' => 'principal',
     'items_wrap'  => '<ul id="nav" class="columns align-right">%3$s</ul>',
     'container' => ''
@@ -9,9 +9,11 @@
   ?>
 </ul>
 
-<section class="col-xs-12">
+<section id="donaciones" class="col-xs-12">
 
-  <strong class="texto-donacion col-xs-12"><p class="color-oscuro"> Donaciones </p></strong>
+  <strong class="texto-donacion col-xs-12">
+    <p class="color-blanco"> Drop me some crypto </p>
+  </strong>
 
   <div class="col-12">
 
@@ -22,15 +24,20 @@
       'ZCash:' => 't1bSPYonAVkzAaVy9TX6StJ2SZPboYDEpzb',
     );
 
-    for ($i=0; $i < count($crypto); $i++):
+    for ($i = 0; $i < count($crypto); $i++) :
       $titulo = key($crypto);
-      ?>
+    ?>
 
-      <label><i class="fa fa-arrow-down"></i> <?php echo $titulo;next($crypto);?>
-        <input type="text" readonly value="<?php echo $crypto[$titulo];?>">
+      <label class="color-blanco">
+        <div>
+          <i class="fa fa-money"></i>
+          <?php echo $titulo;
+          next($crypto); ?>
+        </div>
+        <input type="text" readonly value="<?php echo $crypto[$titulo]; ?>">
       </label>
 
-      <?php
+    <?php
     endfor;
     ?>
   </div>

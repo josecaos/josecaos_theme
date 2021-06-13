@@ -30,14 +30,7 @@ jQuery(function () {
         fondo_grid();
 
         setTimeout(() => {
-            jQuery("#menu").css({
-                "transition": "1s",
-                "-webkit-transform": "translateX(" + ancho + "px)",
-                "-moz-transform": "translateX(" + ancho + "px)",
-                "-ms-transform": "translateX(" + ancho + "px)",
-                "-o-transform": "translateX(" + ancho + "px)",
-                "transform": "translateX(" + ancho + "px)"
-            });
+            menu();
         });
     };
 
@@ -169,28 +162,26 @@ const contador = () => {
 const menu = () => {
     let menumovil = jQuery("#menu");
     // registra su posicion actual, fuera de la pantalla
-    let anchomenumovil = menumovil.width();
-    let posicioninicial = menumovil.css({
+    menumovil.css({
         "transition": "0.01s",
-        "-webkit-transform": "translateX(" + anchomenumovil + "px)",
-        "-moz-transform": "translateX(" + anchomenumovil + "px)",
-        "-ms-transform": "translateX(" + anchomenumovil + "px)",
-        "-o-transform": "translateX(" + anchomenumovil + "px)",
-        "transform": "translateX(" + anchomenumovil + "px)"
+        "-webkit-transform": "translateX(100%)",
+        "-moz-transform": "translateX(100%)",
+        "-ms-transform": "translateX(100%)",
+        "-o-transform": "translateX(100%)",
+        "transform": "translateX(100%)"
     });
     //
     let salemenu = {
         "transition": "0.25s",
-        "-webkit-transform": "translateX(" + anchomenumovil + "px)",
-        "-moz-transform": "translateX(" + anchomenumovil + "px)",
-        "-ms-transform": "translateX(" + anchomenumovil + "px)",
-        "-o-transform": "translateX(" + anchomenumovil + "px)",
-        "transform": "translateX(" + anchomenumovil + "px)"
+        "-webkit-transform": "translateX(100%)",
+        "-moz-transform": "translateX(100%)",
+        "-ms-transform": "translateX(100%)",
+        "-o-transform": "translateX(100%)",
+        "transform": "translateX(100%)"
     };
     // cambia consecutivamente el icono del menu
     let abreico = ["bars", "bars", "bars", "bars", "bars", "barcode", "barcode", "microchip", "align-left", "align-right", "bars"];
     let cierraico = ["close", "close", "close", "close", "close", "barcode", "check", "chevron-up", "close"];
-    let iconindex = 0;
     let arrlong, iconos;
 
     // valor default al array
@@ -204,11 +195,6 @@ const menu = () => {
 
     // default icono
     jQuery(".iconos a").html("<i class='fa fa-bars z-1 text-shadow'></i>");
-    //
-    // jQuery(".iconos a").on("mouseover",function () {
-    //   //boton menu
-    //   jQuery(".iconos a").html("<i class="fa fa-" + iconos[Math.floor(Math.random()*iconos.length)] + " z-1 text-shadow"></i>")
-    // })
 
     // click
     jQuery(".iconos a").on("click", () => {
@@ -216,31 +202,33 @@ const menu = () => {
         jQuery(".iconos").toggleClass("gira-icono-menu regresa-icono-menu");
 
         setTimeout(() => {
-
-            if (jQuery(".iconos").hasClass("regresa-icono-menu")) {
+            
+            if (jQuery(".iconos").hasClass("regresa-icono-menu")) {//cierra
+                console.log("menu cierra",);
                 iconos = abreico;
-                // sale
+                // sale menu
                 menumovil.css(salemenu);
                 //
                 setInterval(() => {
                     jQuery(".iconos a").html(`<i class="fa fa-${iconos[Math.floor(Math.random() * iconos.length)] }"></i>`);
                 }, 750);
-
+                
                 // resetea la posicion si un link es presionado
                 jQuery("#lista-menu > a").on("click", () => {
-
+                    
                     // retrasa cierre del menu despues del scroll
                     setTimeout(() => {
-
+                        
                         menumovil.css(salemenu);
-
+                        
                     }, 500);
-
+                    
                 });
                 //
                 jQuery(".iconos a").removeClass("color-amarillo").addClass("color-claro");
-
-            } else if (jQuery(".iconos").hasClass("gira-icono-menu")) {
+                
+            } else if (jQuery(".iconos").hasClass("gira-icono-menu")) {//abre
+                console.log("menu abre",);
                 jQuery(".iconos a").removeClass("color-claro").addClass("color-amarillo");
                 // entra menu
                 menumovil.css({

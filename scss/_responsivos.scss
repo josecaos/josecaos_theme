@@ -1,4 +1,24 @@
 //
+@media screen and (min-width: 568px) {
+  #inicio .contenedor .titulo-contenedor .titulo-inicio {
+    font-size: 1.75rem !important;
+}
+  #inicio .contenedor .titulo-contenedor .sub-titulo-inicio {
+    font-size: 1.75rem !important;
+}
+}
+//
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+  #sidebar {
+    height: 100%;
+  }
+  #inicio .contenedor {
+    height: calc(100vh - 3.5rem);
+  }
+}
 @media screen and (min-width: 1024px) {
   .h-md-100-v {
     height: 100vh;

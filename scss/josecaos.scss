@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "colores";
+
 // 
 * {
     // outline: 1px dashed purple;
@@ -75,24 +76,76 @@ header {
     height: auto;
     min-height: 3.5rem;
     box-shadow: 0 2px 7px rgba(255, 255, 255, 0.15);
-    z-index: 10000;
+    z-index: 10001;
     @extend .color-negro-bg;
+
     #menu-bars {
         cursor: pointer;
+
         i {
             font-size: 1.25rem;
         }
     }
+
     & div.logo {
         display: flex;
+
         #jc-logo {
             padding-left: 0;
+
             h6 {
                 padding-left: 0;
                 margin: 0;
             }
         }
     }
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+    max-width: initial;
+    z-index: 10000;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    #nav {
+        height: 4rem;
+        display: flex;
+        align-items: center;
+    }
+    #donaciones {
+        background-color: darkgoldenrod;
+        padding: 1rem;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+        min-width: 20rem;
+        max-width: 35rem;
+        div {
+            i {
+                color: $blanco !important;
+            }
+            color: $blanco !important;
+        }
+        p { 
+            text-align: center;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+#menu ul,
+#menu section,
+#menu p {
+    height: auto;
 }
 
 .fixed {
@@ -111,16 +164,20 @@ footer {
     align-items: center;
     height: 3rem;
     width: 100%;
+
     #inner-footer {
         display: flex;
         width: 100%;
+
         nav {
             padding: 0;
+
             ul {
                 display: flex;
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+
                 li {
                     a {
                         padding: 0;
@@ -133,6 +190,7 @@ footer {
                 }
             }
         }
+
         .copyright {
             padding: 0;
             display: flex;
@@ -159,40 +217,42 @@ footer {
 }
 
 .lista-about button {
-    transition: border 5s linear;
+    transition: border 0.25s linear;
     background-color: $negro;
     padding: 1rem;
-    color: #bbb !important;
+    color: #bbb;
     cursor: pointer;
-    border-top: 1px groove $oscuro;
-    border-left: 1px groove $oscuro;
-    border-right: 1px groove $blanco;
-    border-bottom: 1px groove $blanco;
+    border-top: 1px solid $oscuro;
+    border-left: 1px solid $oscuro;
+    border-right: 1px solid $blanco;
+    border-bottom: 1px solid $blanco;
     box-sizing: border-box;
     margin-top: 1rem
 }
 
 .lista-about button:hover {
     @extend .color-amarillo;
-    border-top: 1px groove $amarillo !important;
-    border-left: 1px groove $amarillo !important;
-    border-right: 1px groove $oscuro !important;
-    border-bottom: 1px groove $oscuro !important;
+    border-top: 1px solid $amarillo !important;
+    border-left: 1px solid $amarillo !important;
+    border-right: 1px solid $oscuro !important;
+    border-bottom: 1px solid $oscuro !important;
 }
+
 .lista-about button:focus,
 .lista-about button:active {
     @extend .color-amarillo;
-    border-top: 1px groove $amarillo !important;
-    border-left: 1px groove $amarillo !important;
-    border-right: 1px groove $oscuro !important;
-    border-bottom: 1px groove $oscuro !important;
+    border-top: 1px solid $amarillo !important;
+    border-left: 1px solid $amarillo !important;
+    border-right: 1px solid $oscuro !important;
+    border-bottom: 1px solid $oscuro !important;
 }
 
 #sidebar {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100vh;
+    min-height: auto;
+
     ul {
         position: -webkit-sticky;
         position: sticky;
@@ -200,8 +260,10 @@ footer {
         padding: 0;
         margin: 0;
         list-style-type: none;
+
         li {
             padding: 0;
+
             button {
                 padding: 1rem 0;
                 width: 100%;
@@ -215,9 +277,11 @@ footer {
     0% {
         opacity: 0.5;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0.5;
     }
@@ -292,6 +356,7 @@ div.wpcf7 {
 
 main {
     display: flex;
+    flex-direction: column;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
     height: 100%;

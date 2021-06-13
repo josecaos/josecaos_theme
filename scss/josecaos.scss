@@ -164,19 +164,28 @@ footer {
     padding: 1rem;
     color: #bbb !important;
     cursor: pointer;
-    border: 0;
-    border-right: 1px groove $claro;
-    border-bottom: 1px groove $claro;
+    border-top: 1px groove $oscuro;
+    border-left: 1px groove $oscuro;
+    border-right: 1px groove $blanco;
+    border-bottom: 1px groove $blanco;
     box-sizing: border-box;
     margin-top: 1rem
 }
 
 .lista-about button:hover {
     @extend .color-amarillo;
-    border-top: 1px solid #FFF;
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 1px solid #FFF;
+    border-top: 1px groove $amarillo !important;
+    border-left: 1px groove $amarillo !important;
+    border-right: 1px groove $oscuro !important;
+    border-bottom: 1px groove $oscuro !important;
+}
+.lista-about button:focus,
+.lista-about button:active {
+    @extend .color-amarillo;
+    border-top: 1px groove $amarillo !important;
+    border-left: 1px groove $amarillo !important;
+    border-right: 1px groove $oscuro !important;
+    border-bottom: 1px groove $oscuro !important;
 }
 
 #sidebar {

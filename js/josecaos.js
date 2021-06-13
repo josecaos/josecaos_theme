@@ -66,7 +66,7 @@ const logo_cursor = () => {
 let textos = [
     ["P", "r", "o", "y", "e", "c", "t", "o", " ", "d", "e", " ", "s", "í", "n", "t", "e", "s", "i", "s", ",", " ", "c", "ó", "d", "i", "g", "o", " ", "y", " ", "M", "ú", "s", "i", "c", "a"],
     ["S", "u", "p", "e", "r", "C", "o", "l", "l", "i", "d", "e", "r"],
-    ["L", "i", "v", "e", " ", "C", "o", "d", "i", "n", "g", ", ", "A", "l", "g", "o", "r", "a", "v", "e", ", ", "B", "r", "o", "k", "e", "n", "T", "e", "c", "h", ", ", "T", "r", "i", "p", ", ", "N", "a", "d", "a"]
+    ["L", "i", "v", "e", " ", "C", "o", "d", "i", "n", "g", ", ", "A", "l", "g", "o", "r", "a", "v", "e", ", ", "B", "r", "o", "k", "e", "n", "T", "e", "c", "h", ", ", "T", "r", "i", "p", ", ", "N", "o", "t", "h", "i", "n", "g"]
 ];
 
 let id = null;
@@ -74,8 +74,11 @@ let id = null;
 const escribe = () => {
 
     let botones = document.querySelectorAll(".lista-about button");
+    let preguntas = ["¿Qué hace?", "¿Con qué?", "¿Qué música?"];
 
     botones.forEach((boton, i) => {
+        
+        boton.innerHTML = preguntas[i];
 
         boton.addEventListener("click", b => {
             let indice = i + 1;

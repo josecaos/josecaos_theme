@@ -204,14 +204,6 @@ footer {
     transition: 0.1s;
 }
 
-.p-top {
-    padding-top: 10vh; //igual que header
-}
-
-.p-bottom {
-    padding-bottom: 7vh; //igual que header
-}
-
 .pointer {
     cursor: pointer;
 }
@@ -373,7 +365,15 @@ main {
 .easy_bitcoin_donate_widget_text_below {
     font-size: 0.75rem;
 }
-
+#contacto {
+    padding: 1rem;
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 //
 @import "inicio";
 @import "responsivos";

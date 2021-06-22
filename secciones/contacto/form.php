@@ -19,9 +19,7 @@
 
       <!-- formulario   -->
       <div class="formulario container">
-        <div class="col-12">
           <?php echo do_shortcode('[contact-form-7 id="15" title="Contact Caos"]'); ?>
-        </div>
       </div>
 
     </div>

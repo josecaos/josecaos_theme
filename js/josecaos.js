@@ -70,7 +70,7 @@ const escribe = () => {
     let preguntas = ["¿Qué hace?", "¿Con qué?", "¿Qué música?"];
 
     botones.forEach((boton, i) => {
-        
+
         boton.innerHTML = preguntas[i];
 
         boton.addEventListener("click", b => {
@@ -202,9 +202,9 @@ const menu = () => {
         jQuery(".iconos").toggleClass("gira-icono-menu regresa-icono-menu");
 
         setTimeout(() => {
-            
-            if (jQuery(".iconos").hasClass("regresa-icono-menu")) {//cierra
-                console.log("menu cierra",);
+
+            if (jQuery(".iconos").hasClass("regresa-icono-menu")) { //cierra
+                console.log("menu cierra", );
                 iconos = abreico;
                 // sale menu
                 menumovil.css(salemenu);
@@ -212,23 +212,23 @@ const menu = () => {
                 setInterval(() => {
                     jQuery(".iconos a").html(`<i class="fa fa-${iconos[Math.floor(Math.random() * iconos.length)] }"></i>`);
                 }, 750);
-                
+
                 // resetea la posicion si un link es presionado
                 jQuery("#lista-menu > a").on("click", () => {
-                    
+
                     // retrasa cierre del menu despues del scroll
                     setTimeout(() => {
-                        
+
                         menumovil.css(salemenu);
-                        
+
                     }, 500);
-                    
+
                 });
                 //
                 jQuery(".iconos a").removeClass("color-amarillo").addClass("color-claro");
-                
-            } else if (jQuery(".iconos").hasClass("gira-icono-menu")) {//abre
-                console.log("menu abre",);
+
+            } else if (jQuery(".iconos").hasClass("gira-icono-menu")) { //abre
+                console.log("menu abre", );
                 jQuery(".iconos a").removeClass("color-claro").addClass("color-amarillo");
                 // entra menu
                 menumovil.css({
@@ -310,36 +310,40 @@ const subliminal = () => {
         let x = setInterval(() => {
             texto_init();
             let y = document.getElementById("scrambled");
-            let texto = y.innerText;
-            //
-            if (texto === "N O D I O S" || texto === "D I O S N O") {
 
-                jQuery("#fondo1").html("");
-                fondo_grid();
+            if (!!y) {// protege en otras paginas
+
+                let texto = y.innerText;
                 //
-                clearInterval(x);
-                jQuery(".sub-titulo-inicio").css("color", "orange");
+                if (texto === "N O D I O S" || texto === "D I O S N O") {
 
-                setTimeout(() => {
-                    subliminal();
-                    jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
-                }, 2000);
+                    jQuery("#fondo1").html("");
+                    fondo_grid();
+                    //
+                    clearInterval(x);
+                    jQuery(".sub-titulo-inicio").css("color", "orange");
 
-            } else if (texto === "S O N I D O") {
-                jQuery("#fondo1").html("");
-                //
-                clearInterval(x);
-                jQuery(".sub-titulo-inicio").css("color", "lime");
+                    setTimeout(() => {
+                        subliminal();
+                        jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
+                    }, 2000);
 
-                setTimeout(() => {
-                    subliminal();
-                    jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
-                }, 2000);
+                } else if (texto === "S O N I D O") {
+                    jQuery("#fondo1").html("");
+                    //
+                    clearInterval(x);
+                    jQuery(".sub-titulo-inicio").css("color", "lime");
 
-                fondo_grid();
+                    setTimeout(() => {
+                        subliminal();
+                        jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
+                    }, 2000);
+
+                    fondo_grid();
+
+                }
 
             }
-
         }, t);
     }, 100);
 };

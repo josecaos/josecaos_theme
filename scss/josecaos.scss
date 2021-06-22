@@ -125,7 +125,7 @@ header {
         padding: 1rem;
         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
         min-width: 20rem;
-        max-width: 35rem;
+        max-width: 40rem;
         div {
             i {
                 color: $blanco !important;
@@ -138,6 +138,13 @@ header {
         label {
             display: flex;
             flex-direction: column;
+            input {
+                &:hover,
+                &:focus,
+                &:active-within {
+                    outline:rgba(0, 0, 0, 0.5) !important;
+                }
+            }
         }
     }
 }
@@ -350,7 +357,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 3.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     height: 100%;
     max-width: 80rem;
     margin: 0 auto;
@@ -378,7 +385,7 @@ main {
             }
             input,
             textarea {
-                color: #FFF;
+                color: #000;
                 background-color: #aaa;
                 padding: 0.25rem 0.5rem;
                 border: 0;

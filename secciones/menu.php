@@ -19,6 +19,7 @@
 
     <?php
     $crypto = array(
+      'EOS' => 'EOS6FWw948XvLPq7eGJbLMfFtWvTgTWwBWDi5DftKpkGLnHsGFRRM',
       'Bitcoin:' => '3Mw527fhct6sfJLmGMGGLGdzykJfZSVZnY',
       'Ethereum:' => '0x6AA2D63dAAa46578FE0EA776EC38495387C1169e',
       'ZCash:' => 't1bSPYonAVkzAaVy9TX6StJ2SZPboYDEpzb',

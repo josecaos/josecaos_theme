@@ -70,13 +70,15 @@ a:hover {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 0.5rem 1rem;
     height: auto;
     min-height: 3.5rem;
-    box-shadow: 0 2px 7px rgba(255, 255, 255, 0.15);
+    // box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075);
     z-index: 10001;
+    width: auto !important;
     @extend .color-negro-bg;
 
     #menu-bars {
@@ -84,6 +86,7 @@ header {
 
         i {
             font-size: 1.25rem;
+            @extend .color-verde;
         }
     }
 
@@ -169,9 +172,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: auto;
     width: 100%;
-
+    z-index: 10101;
     #inner-footer {
         display: flex;
         width: 100%;
@@ -182,7 +185,7 @@ footer {
             ul {
                 display: flex;
                 list-style-type: none;
-                padding: 0;
+                padding: 0.75rem 1rem;
                 margin: 0;
 
                 li {
@@ -301,20 +304,24 @@ footer {
 
 .gira-icono-menu {
     transition: 0.5s;
-    -webkit-transform: rotate(450deg);
-    -moz-transform: rotate(450deg);
-    -ms-transform: rotate(450deg);
-    -o-transform: rotate(450deg);
-    transform: rotate(450deg);
+    padding: 0.5rem 0 0;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    width: 1rem;
 }
 
 .regresa-icono-menu {
     transition: 0.5s;
+    padding: 0.5rem 0 0;
     -webkit-transform: rotate(-0deg);
     -moz-transform: rotate(-0deg);
     -ms-transform: rotate(-0deg);
     -o-transform: rotate(-0deg);
     transform: rotate(-0deg);
+    width: 1rem;
 }
 
 .shadow {
@@ -356,7 +363,7 @@ div.wpcf7 {
 main {
     display: flex;
     flex-direction: column;
-    padding-top: 3.5rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     height: 100%;
     max-width: 80rem;

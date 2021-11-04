@@ -306,7 +306,7 @@ const texto_init = () => {
 
 const subliminal = () => {
     setTimeout(() => {
-        let t = 75;
+        let t = 175;
         let x = setInterval(() => {
             texto_init();
             let y = document.getElementById("scrambled");
@@ -326,7 +326,7 @@ const subliminal = () => {
                     setTimeout(() => {
                         subliminal();
                         jQuery(".sub-titulo-inicio").css("color", "#aaaaaa");
-                    }, 2000);
+                    }, 1000);
 
                 } else if (texto === "S O N I D O") {
                     jQuery("#fondo1").html("");

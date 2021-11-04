@@ -13,6 +13,8 @@
     flex-direction: row;
   }
   #sidebar {
+    position: sticky;
+    top: 3.5rem;
     height: 100%;
   }
   #inicio .contenedor {
